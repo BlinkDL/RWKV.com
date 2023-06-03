@@ -48,7 +48,7 @@ Racoon is a community finetuned model, for chat and general purpose use. And is 
 
 It has its own quirky personality, and is more then willing to insult you the user if needed be.
 
-## What is the RWKV chat commands ?
+## What is the RWKV chat commands?
 
 RWKV.cpp and the RWKV discord chat bot include the following special commands. Which you can use accordingly.
 
@@ -69,7 +69,7 @@ You can only use one of the following command per prompt.
 
 These commands are implemented by the `chat.py` code, and are not part of the model itself.
 
-## I would like to study more on the architecture, where should I go ?
+## I would like to study more on the architecture, where should I go?
 
 If you are not not familiar machine learning, I would recommend [Andrej Karpathy series on neural networks](https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&ab_channel=AndrejKarpathy) - this would help provide a good foundation on various neural network architectures concepts.
 
