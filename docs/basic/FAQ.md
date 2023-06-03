@@ -34,9 +34,9 @@ In its simplest form, RWKV processes one token at a time, and update a "hidden s
 
 When used as a standard AI completion model. This "hidden state" will be generated using the model input state.
 
-Channel mixing is the process where the next token being generated is mixed with the previous state, to update this "state of mind". In general channel mixing contains data from the most recent tokens.
+Channel mixing is the process where the current token values is mixed with the previous token, to replace the channel "state of mind". 
 
-Time mixing is a similar process, however allows the model to retain the previous state of mind over a longer period of time. Which is trained by the model. This allow it to retain data from the past indefinitely, if it was trained to do so.
+Time mixing is a similar process, however it includes the previous "state of mind". While there is a decay on previous values, the model weights is applied as well, which allow it retain data from the past indefinitely, if it was trained to do so.
 
 Because the current token, is able to read data from the past state via channel and time mixing. This provides an alternative to "attention" models. 
 
