@@ -1,5 +1,5 @@
 {
-  "name": "rwkv-docs",
+  "name": "rwkv.com",
   "version": "1.0.0",
   "description": "RWKV consolidated help guide",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "docs:build": "vuepress build docs"
   },
   "author": "",
-  "license": "MIT",
+  "license": "Apache 2.0",
   "devDependencies": {
     "vuepress": "^2.0.0-beta.62"
   }
