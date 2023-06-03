@@ -1,0 +1,61 @@
+name: build & deploy
+
+on: 
+  push:
+    branches: [main, vuepress-build]
+  pull_request:
+    branches: [main]
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run docs:build # Build VuePress dist files
+      - name: Archive build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: vuepress-build
+          path: docs/.vuepress/dist/
+      # This helps resolve an artifact deploy issue
+      # See : https://github.com/orgs/community/discussions/40771
+      - name: Upload artifact for pages
+        uses: actions/upload-pages-artifact@v1
+        with: 
+          path: docs/.vuepress/dist/
+  
+  # ----
+  # Deploy step : Comment back in when ready to deploy
+  # ----
+  deploy:
+    # Limit to only the main branch
+    on: 
+      push:
+        branches: [main]
+    # Add a dependency to the build job
+    needs: build
+    # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+    permissions:
+      pages: write
+      id-token: write
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # Run the deploy steps
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy 🚀
+        id: deployment
+        uses: actions/deploy-pages@v2
