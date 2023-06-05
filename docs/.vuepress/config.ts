@@ -21,7 +21,7 @@ export default defineUserConfig({
 
 		// Sidebar menu
 		sidebar: [
-			{ text: 'RWKV Lanugage Model', link: '/' },
+			{ text: 'RWKV Language Model', link: '/' },
 			{ 
 				text: 'Getting Started', 
 				link: '/basic/play.md',
