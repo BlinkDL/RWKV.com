@@ -323,28 +323,25 @@ const allProjects = [
   },
 ];
 
-let currentProjects = allProjects; // 当前显示的项目列表
+let currentProjects = allProjects;
 let currentPage = 1;
-const itemsPerPage = 4; // 每页项目数量，确保为偶数以适配两列布局
+const itemsPerPage = 4;
 
 function filterProjects(category, element) {
-  // 先移除所有按钮的高亮和 hover 状态
   document.querySelectorAll(".filter-btn").forEach((btn) => {
     btn.classList.remove("bg-blue-500", "text-white", "hover:bg-blue-600");
     btn.classList.add("bg-gray-100", "text-gray-700", "hover:bg-gray-200");
   });
 
-  // 给当前点击的按钮添加高亮和 hover 状态
   element.classList.add("bg-blue-500", "text-white");
   element.classList.remove("bg-gray-100", "text-gray-700", "hover:bg-gray-200");
   element.classList.add("hover:bg-blue-600");
 
-  // 过滤项目
   currentProjects =
     category === "ALL"
       ? allProjects
       : allProjects.filter((project) => project.tags.includes(category));
-  currentPage = 1; // 重置为第一页
+  currentPage = 1;
   displayProjects();
   renderPagination();
   updateTotalCount();
@@ -352,19 +349,16 @@ function filterProjects(category, element) {
 
 function displayProjects() {
   const projectGrid = document.getElementById("projectGrid");
-  projectGrid.innerHTML = ""; // 清空当前项目
+  projectGrid.innerHTML = "";
 
-  // 获取当前页项目
   const start = (currentPage - 1) * itemsPerPage;
   const end = start + itemsPerPage;
   const projectsToDisplay = currentProjects.slice(start, end);
 
-  // 动态创建项目卡片
   projectsToDisplay.forEach((project) => {
-    // 创建卡片外层容器
     const projectLink = document.createElement("a");
-    projectLink.href = project.link; // 设置跳转链接
-    projectLink.target = "_blank"; // 在新窗口打开
+    projectLink.href = project.link;
+    projectLink.target = "_blank";
     projectLink.className =
       "block transform transition-transform duration-200 hover:scale-105";
 
@@ -388,18 +382,15 @@ function displayProjects() {
       </div>
     `;
 
-    // 将卡片添加到链接容器内
     projectLink.appendChild(projectCard);
 
-    // 将链接添加到项目网格容器
     projectGrid.appendChild(projectLink);
   });
 }
 
 function renderPagination() {
   const pagination = document.getElementById("pagination");
-  pagination.innerHTML = ""; // 清空分页按钮
-
+  pagination.innerHTML = "";
   const totalPages = Math.ceil(currentProjects.length / itemsPerPage);
 
   if (totalPages <= 1) {
@@ -409,7 +400,6 @@ function renderPagination() {
     pagination.style.display = "flex";
   }
 
-  // 前一页按钮
   const prevButton = document.createElement("button");
   prevButton.className = `px-2 py-1 text-gray-600 ${
     currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
@@ -420,7 +410,6 @@ function renderPagination() {
   };
   pagination.appendChild(prevButton);
 
-  // 页码按钮
   for (let i = 1; i <= totalPages; i++) {
     const pageButton = document.createElement("button");
     pageButton.className = `px-3 py-1 rounded border ${
@@ -431,7 +420,6 @@ function renderPagination() {
     pagination.appendChild(pageButton);
   }
 
-  // 下一页按钮
   const nextButton = document.createElement("button");
   nextButton.className = `px-2 py-1 text-gray-600 ${
     currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
@@ -454,9 +442,8 @@ function updateTotalCount() {
   totalCount.innerText = `Total ${currentProjects.length} articles found.`;
 
   if (currentProjects.length <= 4) {
-    totalCount.style.display = "none"; // 隐藏分页
+    totalCount.style.display = "none";
   }
 }
 
-// 初始化显示所有项目
 filterProjects("ALL", document.querySelector(".filter-btn"));
