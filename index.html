@@ -157,67 +157,6 @@
       </header>
 
       <section class="content-section">
-        <header class="section-header">
-          <h2>RWKV-Papers</h2>
-        </header>
-
-        <div
-          class="flex gap-1 py-1 bg-gray-50 rounded-lg border border-gray-200 shadow-sm mb-4"
-          style="padding-left: 0; padding-right: 0"
-        >
-          <button
-            onclick="filterProjects('ALL', this)"
-            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-blue-500 text-white rounded-md hover:bg-blue-600 active:scale-95 transition-transform shadow-sm"
-          >
-            ALL
-          </button>
-          <button
-            onclick="filterProjects('Language Model', this)"
-            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 active:scale-95 transition-transform shadow-sm"
-          >
-            Language Model
-          </button>
-          <button
-            onclick="filterProjects('Sequence Model', this)"
-            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 active:scale-95 transition-transform shadow-sm"
-          >
-            Sequence Model
-          </button>
-          <button
-            onclick="filterProjects('Visual', this)"
-            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 active:scale-95 transition-transform shadow-sm"
-          >
-            Visual
-          </button>
-          <button
-            onclick="filterProjects('Audio', this)"
-            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 active:scale-95 transition-transform shadow-sm"
-          >
-            Audio
-          </button>
-          <button
-            onclick="filterProjects('Robotics', this)"
-            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 active:scale-95 transition-transform shadow-sm"
-          >
-            Robotics
-          </button>
-          <button
-            onclick="filterProjects('Other', this)"
-            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 active:scale-95 transition-transform shadow-sm"
-          >
-            Other
-          </button>
-        </div>
-
-        <main id="projectGrid" class="grid grid-cols-2 gap-6">
-          <!-- 动态插入项目卡片 -->
-        </main>
-
-        <div class="flex justify-between items-center mt-6 mb-6">
-          <span id="totalCount" class="text-gray-600 text-sm"></span>
-
-          <div class="flex items-center space-x-1" id="pagination"></div>
-        </div>
 
         <header class="section-header">
           <h2>RWKV-Projects</h2>
@@ -386,8 +325,59 @@
           </h3>
           <p class="resume-item-copy">Community wiki (with guide and FAQ)</p>
         </div>
+
+        <header class="section-header">
+          <h2>RWKV-Papers</h2>
+        </header>
+
+        <div
+          class="flex gap-1 py-1 bg-gray-50 rounded-lg border border-gray-200 shadow-sm mb-4"
+          style="padding-left: 0; padding-right: 0"
+        >
+          <button
+            onclick="filterProjects('ALL', this)"
+            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-blue-500 text-white rounded-md hover:bg-blue-600 active:scale-95 transition-transform shadow-sm"
+          >
+            ALL
+          </button>
+          <button
+            onclick="filterProjects('Language', this)"
+            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 active:scale-95 transition-transform shadow-sm"
+          >
+            Language
+          </button>
+          <button
+            onclick="filterProjects('Vision', this)"
+            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 active:scale-95 transition-transform shadow-sm"
+          >
+            Vision
+          </button>
+          <button
+            onclick="filterProjects('Sequence', this)"
+            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 active:scale-95 transition-transform shadow-sm"
+          >
+            Sequence
+          </button>
+          <button
+            onclick="filterProjects('Audio', this)"
+            class="filter-btn flex-1 px-2 py-1 text-xs font-semibold bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 active:scale-95 transition-transform shadow-sm"
+          >
+            Audio
+          </button>
+        </div>
+
+        <main id="projectGrid" class="grid grid-cols-2 gap-6">
+        </main>
+
+        <div class="flex justify-between items-center mt-6 mb-6">
+          <span id="totalCount" class="text-gray-600 text-sm"></span>
+
+          <div class="flex items-center space-x-1" id="pagination"></div>
+        </div>
+
+
         <div id="rwkv6_img">
-          <img src="images/RWKV-6-MQAR.png" style="width: 100%" />
+          <!-- <img src="images/RWKV-6-MQAR.png" style="width: 100%" /> -->
           <p style="font-weight: bold; font-size: 150%">
             RWKV v6 illustrated (<a href="https://huggingface.co/BlinkDL/temp"
               >download preview checkpts</a

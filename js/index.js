@@ -1,10 +1,10 @@
 const allProjects = [
   {
-    title: "Video RWKV:Video Action Recognition Based RWKV",
+    title: "Video RWKV: Video Action Recognition Based RWKV",
     description:
       "The paper proposes LSTM CrossRWKV (LCR) for video understanding. It uses a novel CrossRWKV gate to handle video challenges. LCR stores long-term memory and reduces redundant information. Experiments on datasets show its effectiveness, setting a new benchmark in video understanding with RWKV.",
     date: "2024-11-8",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/video-rwkv.png",
     link: "https://arxiv.org/abs/2411.05636",
   },
@@ -14,7 +14,7 @@ const allProjects = [
     description:
       "The paper proposes RuleVM for weakly supervised violence monitoring. It uses a dual-branch structure with different designs for images and text. The implicit branch uses visual features for coarse-grained classification, and the explicit branch uses language-image alignment with YOLO-World and data mining. RWKV is used in the lightweight time-series module.",
     date: "2024-10-29",
-    tags: "Other",
+    tags: "Vision",
     img: "images/papers-images/pipeline-of-RuleVM-system.png",
     link: "https://arxiv.org/abs/2410.21991",
   },
@@ -24,7 +24,7 @@ const allProjects = [
     description:
       "The paper focuses on MARL. It proposes MAM and MARWKV architectures inspired by MAT. Experiments show they perform comparably to MAT. MARWKV offers better inference computational efficiency, especially with more agents. RWKV is used in MARWKV for sequence modeling.",
     date: "2024-10-28",
-    tags: "Sequence Model",
+    tags: "Sequence",
     img: "images/papers-images/marwkv-architecture.png",
     link: "https://epub.jku.at/obvulihs/content/titleinfo/10580112",
   },
@@ -34,7 +34,7 @@ const allProjects = [
     description:
       "Stock price prediction is challenging. Existing work has limitations. This paper proposes MATCC, a novel framework. It extracts market trends, decomposes stock data, and mines cross-time correlation. Experiments show MATCC outperforms previous works. It uses RWKV to model inter-temporal correlations",
     date: "2024-10-21",
-    tags: "Other",
+    tags: "Sequence",
     img: "images/papers-images/matcc-cumulative-return-comparison.png",
     link: "https://dl.acm.org/doi/abs/10.1145/3627673.3679715",
   },
@@ -44,7 +44,7 @@ const allProjects = [
     description:
       "The paper presents VisualRWKV-HD and VisualRWKV-UHD for high-resolution visual inputs in visual language models. It details techniques like lossless downsampling and image segmentation. Experiments on benchmarks show their effectiveness, with RWKV models achieving better performance in handling high-resolution tasks.",
     date: "2024-10-15",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/VisualRWKV-HD-UHD-Architecture_Design.png",
     link: "https://arxiv.org/abs/2410.11665",
   },
@@ -54,7 +54,7 @@ const allProjects = [
     description:
       "The paper presents AttnInput, a novel approach leveraging RWKV for Pinyin IME. It integrates Pinyin into RWKV's internal state, addressing semantic discontinuity. Using a pre-training strategy, it reduces costs. Experimental results show it achieves state-of-the-art performance on abbreviated Pinyin input.",
     date: "2024-10-13",
-    tags: "Other",
+    tags: "Language",
     img: "images/papers-images/rwkv-attninput-architecture.png",
     link: "https://openreview.net/forum?id=9OxTqscUwi",
   },
@@ -64,7 +64,7 @@ const allProjects = [
     description:
       "The paper presents OccRWKV, an efficient 3D semantic occupancy network inspired by RWKV. It separates predictions into branches with Sem-RWKV and GeoRWKV blocks. By projecting features to BEV space and using BEV-RWKV block, it achieves real-time inference. It outperforms state-of-the-art methods on SemanticKITTI dataset",
     date: "2024-09-26",
-    tags: "Robotics",
+    tags: "Vision",
     img: "images/papers-images/occrwkv-architecture.jpg",
     link: "https://www.arxiv.org/abs/2409.19987",
   },
@@ -74,7 +74,7 @@ const allProjects = [
     description:
       "The paper proposes MSRWKV-2DTCN for short-term PV power forecasting. It uses FFT to identify periodicity, combines RWKV with a multi-scale 2D TCN, and conducts experiments on real datasets. The model shows high accuracy and strong generalization capabilities.",
     date: "2024-09-06",
-    tags: "Sequence Model",
+    tags: "Sequence",
     img: "images/papers-images/MSRWKV-2DTCN-architecture.png",
     link: "https://www.sciencedirect.com/science/article/abs/pii/S0360544224028433",
   },
@@ -83,7 +83,7 @@ const allProjects = [
     description:
       "The paper investigates RWKV's efficacy in content moderation. It creates a novel dataset for distillation, generates responses using LLMs, and fine-tunes RWKV. The study shows RWKV can improve content moderation accuracy and efficiency, and paves the way for more efficient models.",
     date: "2024-09-05",
-    tags: "Other",
+    tags: "Language",
     img: "images/papers-images/mod-rwkv-architecture.png",
     link: "https://arxiv.org/abs/2409.03939",
   },
@@ -93,7 +93,7 @@ const allProjects = [
     description:
       "The paper presents TIM for efficient human-human motion generation. It proposes Causal Interactive Injection, Role-Evolving Mixing, and Localized Pattern Amplification. Experiments on InterHuman show TIM's superiority, achieving state-of-the-art results with only 32% of InterGen's trainable parameters, using RWKV",
     date: "2024-08-30",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/rwkv-tim-architecture.png",
     link: "https://arxiv.org/abs/2408.17135",
   },
@@ -103,7 +103,7 @@ const allProjects = [
     description:
       "The paper explores a small sports-domain language model. It creates the OnlySports collection (dataset, benchmark, LM). Using 600 billion tokens data, it optimizes RWKV-v6 for sports tasks, training a 196M param model. OnlySportsLM outperforms prior models and rivals larger ones in the sports domain.",
     date: "2024-08-30",
-    tags: "Language Model",
+    tags: "Language",
     img: "images/papers-images/onlysportslm-table.png",
     link: "https://arxiv.org/abs/2409.00286",
   },
@@ -123,7 +123,7 @@ const allProjects = [
     description:
       "The paper explores RWKV's integration with decision transformer and experience replay in robotic manipulation. It proposes the Decision-RWKV model, tests it on D4RL and D’Claw platforms, and shows its effectiveness in single-task and lifelong learning, with code open-sourced.",
     date: "2024-07-23",
-    tags: "Robotics",
+    tags: "Sequence",
     img: "images/papers-images/Decision-RWKV-block-overview.png",
     link: "https://arxiv.org/abs/2407.16306",
   },
@@ -133,7 +133,7 @@ const allProjects = [
     description:
       "The paper proposes BSBP-RWKV for accurate and efficient medical image segmentation. It combines the advantages of PMD and RWKV, devises DWT-PMD RWKV Block and Multi-Step Runge-Kutta convolutional Block, and proposes a novel loss function. Experiments show its superior accuracy and efficiency.",
     date: "2024-07-21",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/BSBP-RWKV-architecture.png",
     link: "https://openreview.net/pdf?id=ULD5RCk0oo",
   },
@@ -143,7 +143,7 @@ const allProjects = [
     description:
       "The paper presents GoldFinch, a hybrid Linear Attention/Transformer model. It uses a new technique to generate a highly compressed KV-Cache. GoldFinch stacks GOLD transformer on an enhanced RWKV-6 (Finch) architecture. It shows improved performance with reduced cache size compared to Finch and Llama.",
     date: "2024-07-16",
-    tags: "Sequence Model",
+    tags: "Language",
     img: "images/papers-images/GoldFinch-architecture.png",
     link: "https://arxiv.org/abs/2407.12077",
   },
@@ -153,7 +153,7 @@ const allProjects = [
     description:
       "The paper of this paper proposes Restore-RWKV, the first RWKV-based model for medical image restoration. It modifies RWKV's attention and token shift layers to handle 2D images, capturing global and local dependencies. Experiments show its superiority in various tasks, serving as an efficient and effective backbone.",
     date: "2024-07-14",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/restore-rwkv-architecture.png",
     link: "https://arxiv.org/abs/2407.11087",
   },
@@ -163,7 +163,7 @@ const allProjects = [
     description:
       "RThe paper focuses on designing an efficient segment-anything model. It proposes RWKV-SAM with a mixed backbone of convolution and RWKV operation. This model achieves high accuracy and efficiency, outperforming others in benchmarks. It also trains on a combined high-quality dataset for better segmentation.",
     date: "2024-06-27",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/rwkv-sam-architecture.png",
     link: "https://arxiv.org/abs/2406.19369",
   },
@@ -173,7 +173,7 @@ const allProjects = [
     description:
       "The paper presents VisualRWKV, the first application of the linear RNN model RWKV in multimodal learning. It proposes novel mechanisms like data-dependent recurrence. Experiments show it performs competitively compared to Transformer models, with efficient computation and memory usage.",
     date: "2024-06-19",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/visual-rwkv-architecture.png",
     link: "https://arxiv.org/abs/2406.13362",
   },
@@ -182,7 +182,7 @@ const allProjects = [
     description:
       "The paper explores CLIP from data and model architecture perspectives. It proposes a diverse description generation framework and RWKV-CLIP, the first RWKV-driven vision-language model. Experiments show RWKV-CLIP's robustness and effectiveness, achieving state-of-the-art performance in multiple downstream tasks.",
     date: "2024-06-11",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/rwkv-clip-architecture.png",
     link: "https://arxiv.org/abs/2406.06973",
   },
@@ -192,7 +192,7 @@ const allProjects = [
     description:
       "The paper proposes PointRWKV, a new model with linear complexity adapted from RWKV in NLP for 3D point cloud learning. It uses modified multi-headed matrix-valued states and a dynamic attention recurrence mechanism to explore global processing capabilities and a parallel branch to encode local geometric features, outperforming other models and saving FLOPs.",
     date: "2024-05-24",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/point-rwkv--architecture.png",
     link: "https://arxiv.org/abs/2405.15214",
   },
@@ -202,7 +202,7 @@ const allProjects = [
     description:
       "The paper presents Eagle (RWKV-5) and Finch (RWKV-6), improving RWKV-4. Their architectural enhancements include multiheaded matrix-valued states and dynamic recurrence. New multilingual corpus and tokenizer are introduced. Trained models show competitive performance, and all are publicly released.",
     date: "2024-04-08",
-    tags: "Language Model",
+    tags: "Language",
     img: "images/papers-images/rwkv-5-6-architecture.png",
     link: "https://arxiv.org/abs/2404.05892",
   },
@@ -212,7 +212,7 @@ const allProjects = [
     description:
       "The paper presents Diffusion-RWKV, an architecture adapting RWKV for diffusion models in image generation. It handles long-range hidden states linearly, showing comparable performance to Transformers but with lower complexity, thus being a promising alternative in this field.",
     date: "2024-04-06",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/Diffusion-RWKV-architecture.png",
     link: "https://arxiv.org/abs/2404.04478",
   },
@@ -222,7 +222,7 @@ const allProjects = [
     description:
       "Deep learning in spacecraft hyperspectral image compression was challenging. This paper designs LineRWKV, a predictive neural network. It uses a novel hybrid operation, combines Transformers & RNNs. LineRWKV outperforms CCSDS-123.0-B-2 in compression and shows good throughput on a 7W system.",
     date: "2024-03-26",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/LineRWKV-architecture.png",
     link: "https://arxiv.org/abs/2403.17677",
   },
@@ -232,7 +232,7 @@ const allProjects = [
     description:
       "The paper presents Vision-RWKV (VRWKV), an adaptation of the RWKV model for vision tasks. It offers efficient handling of sparse inputs and strong global processing, with reduced spatial aggregation complexity. VRWKV outperforms ViT in image classification and shows advantages in dense prediction tasks, being a promising alternative for visual perception.",
     date: "2024-03-07",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/Vision-RWKV-architecture.png",
     link: "https://arxiv.org/abs/2403.02308",
   },
@@ -242,7 +242,7 @@ const allProjects = [
     description:
       "The paper proposes TLS-RWKV for online action detection. It utilizes the RWKV model with temporal label smoothing. Experiments on THUMOS’14 and TVSeries datasets show state-of-the-art performance and high efficiency, making it suitable for real-time applications and resource-constrained devices.",
     date: "2024-2-19",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/TLS-RWKV-architecture.png",
     link: "https://link.springer.com/article/10.1007/s11063-024-11540-0",
   },
@@ -251,7 +251,7 @@ const allProjects = [
     description:
       "The paper proposes Spiking Diffusion Transformer (SDiT), a novel SNN diffusion model. It uses RWKV for efficient self-attention. SDiT aims to provide a baseline for SNN generative models and shows competitiveness on multiple datasets, generating high-quality images with lower cost and shorter sampling time.",
     date: "2024-02-18",
-    tags: "Visual",
+    tags: "Vision",
     img: "images/papers-images/sdit-architecture.png",
     link: "https://arxiv.org/abs/2402.11588",
   },
@@ -261,7 +261,7 @@ const allProjects = [
     description:
       "Traditional RNNs have declined in time series tasks. This paper presents RWKV-TS, an efficient RNN-based model. It has O(L) complexity, captures long-term info well, and is computationally efficient. RWKV-TS shows competitive performance with reduced latency and memory use in various tasks.",
     date: "2024-01-17",
-    tags: "Sequence Model",
+    tags: "Sequence",
     img: "images/papers-images/rwkv-ts-architecture.png",
     link: "https://arxiv.org/abs/2401.09093",
   },
@@ -280,7 +280,7 @@ const allProjects = [
     description:
       "The paper presents an RWKV-based encoder-decoder model for code completion. It aims to address challenges in this area. The model shows good performance and has potential for improving code generation efficiency, but more research is needed for wider application and optimization.",
     date: "2023-11-17",
-    tags: "Language Model",
+    tags: "Language",
     img: "images/papers-images/RWKV-Code-Completion.png",
     link: "https://ieeexplore.ieee.org/abstract/document/10442108",
   },
@@ -290,7 +290,7 @@ const allProjects = [
     description:
       "The paper presents a novel methodology for a PANI-CeO2 ammonia gas sensor to address temperature and humidity compensation. It uses the RWKV network with a Linear attention mechanism. The process has three stages. The method shows high predictive accuracy, with low mean absolute and relative errors.",
     date: "2023-10-25",
-    tags: "Other",
+    tags: "Sequence",
     img: "images/papers-images/RWKV-for-Gas-Sensors.png",
     link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4612708",
   },
@@ -304,20 +304,11 @@ const allProjects = [
     link: "https://arxiv.org/abs/2309.14758",
   },
   {
-    title: "RRWKV: Capturing Long-range Dependencies in RWKV",
-    description:
-      "Transformers dominate NLP tasks. RWKV, a non-transformer architecture, aims to address dot-product attention drawbacks. But it has limitations in capturing long-range dependencies. Thus, the paper devises RRWKV by adding retrospecting ability to RWKV, maintaining efficiency.",
-    date: "2023-06-09",
-    tags: "Language Model",
-    img: "images/papers-images/rrwkv-architecture.png",
-    link: "https://arxiv.org/abs/2306.05176",
-  },
-  {
     title: "RWKV: Reinventing RNNs for the Transformer Era",
     description:
       "The paper proposes RWKV, a novel model architecture. It combines the efficient parallelizable training of transformers with the efficient inference of RNNs. RWKV uses a linear attention mechanism, scales to 14 billion parameters, and performs comparably to similar-sized transformers, advancing sequence processing tasks.",
     date: "2023-05-22",
-    tags: "Language Model",
+    tags: "Language",
     img: "images/papers-images/rwkv-4.png",
     link: "https://arxiv.org/abs/2305.13048",
   },
@@ -439,7 +430,7 @@ function goToPage(page) {
 
 function updateTotalCount() {
   const totalCount = document.getElementById("totalCount");
-  totalCount.innerText = `Total ${currentProjects.length} articles found.`;
+  totalCount.innerText = ``;//Total ${currentProjects.length} papers.`;
 
   if (currentProjects.length <= 4) {
     totalCount.style.display = "none";
