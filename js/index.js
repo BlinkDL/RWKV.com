@@ -1,9 +1,18 @@
 const allProjects = [
   {
+    title: "DFT: A Dual-branch Framework of Fluctuation and Trend for Stock Price Prediction",
+    description:
+      "The paper proposes a Dual-branch Framework of Fluctuation and Trend (DFT) for stock price prediction. The RWKV model is used in the DFT to model time correlations in both the fluctuation and trend branches. It combines the power of RNN and Transformer, maintaining the time sequence of input features and satisfying the causality of the input. This helps in effectively capturing short-term fluctuations and trend information from stocks while explicitly modeling temporal variations and causal correlations, leading to improved performance compared to existing methods",
+    date: "2024-11-09",
+    tags: "Sequence",
+    img: "images/papers-images/DFT.png",
+    link: "https://arxiv.org/abs/2411.06065",
+  },
+  {
     title: "Video RWKV: Video Action Recognition Based RWKV",
     description:
       "The paper proposes LSTM CrossRWKV (LCR) for video understanding. It uses a novel CrossRWKV gate to handle video challenges. LCR stores long-term memory and reduces redundant information. Experiments on datasets show its effectiveness, setting a new benchmark in video understanding with RWKV.",
-    date: "2024-11-8",
+    date: "2024-11-08",
     tags: "Vision",
     img: "images/papers-images/video-rwkv.png",
     link: "https://arxiv.org/abs/2411.05636",
