@@ -1,5 +1,32 @@
 const allProjects = [
   {
+    title: "PCF-RWKV: Product Carbon Footprint Estimation System Based on Large Language Model",
+    description:
+      "The paper presents PCF-RWKV, a product carbon footprint assessment model built on the RWKV architecture, featuring stacked residual blocks and three task-specific LoRA adapters. Through Multi-Agents technology integration, the model automates LCI construction for production processes and matches them with emission factors to calculate carbon footprints, enhancing efficiency and security in enterprise carbon footprint assessment while overcoming traditional method limitations.",
+    date: "2024-12-18",
+    tags: "Language",
+    img: "images/papers-images/PCF-RWKV-architecture.png",
+    link: "https://www.preprints.org/manuscript/202412.1705/v1",
+  },
+  {
+    title: "RWKV-edge: Deeply Compressed RWKV for Resource-Constrained Devices",
+    description:
+      "The paper introduces RWKV-edge, a solution for running RWKV models on resource-constrained devices. Using techniques like low-rank approximation, sparsity prediction, and clustered heads, it achieves 4.95-3.8x model compression with only 2.95pp accuracy loss. RWKV-edge provides an effective approach for deploying RWKV models on edge devices.",
+    date: "2024-12-14",
+    tags: "Language",
+    img: "images/papers-images/RWKV-edge.png",
+    link: "https://arxiv.org/abs/2412.10856",
+  },
+  {
+    title: "Exploring Real&Synthetic Dataset and Linear Attention in Image Restoration",
+    description:
+      "The paper proposes RWKV-IR, a novel RWKV-based image restoration model that supports both global and local receptive fields. The model demonstrates superior performance on Urban100 x4 benchmark, achieving 0.08dB improvement over SwinIR and 0.03dB over MambaIR, showcasing RWKV-IR's advanced image restoration capabilities and fast convergence.",
+    date: "2024-12-11",
+    tags: "Image",
+    img: "images/papers-images/RWKV-IR-architecture.png",
+    link: "https://arxiv.org/abs/2412.03814",
+  },
+  {
     title: "DFT: A Dual-branch Framework of Fluctuation and Trend for Stock Price Prediction",
     description:
       "The paper proposes a Dual-branch Framework of Fluctuation and Trend (DFT) for stock price prediction. The RWKV model is used in the DFT to model time correlations in both the fluctuation and trend branches. It combines the power of RNN and Transformer, maintaining the time sequence of input features and satisfying the causality of the input. This helps in effectively capturing short-term fluctuations and trend information from stocks while explicitly modeling temporal variations and causal correlations, leading to improved performance compared to existing methods",
