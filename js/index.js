@@ -1,5 +1,14 @@
 const allProjects = [
   {
+    title: "L3TC: Leveraging RWKV for Learned Lossless Low-Complexity Text Compression",
+    description:
+      "This paper presents L3TC, a novel text compression method. It selects RWKV for its fast decoding speed. With an outlier-aware tokenizer and high-rank reparameterization, L3TC achieves 48% bit saving vs gzip, 50× param reduction, and is the fastest learned compressor.",
+    date: "2024-12-21",
+    tags: "Language",
+    img: "images/papers-images/L3TC-architecture.png",
+    link: "https://arxiv.org/abs/2412.16642",
+  },
+  {
     title: "PCF-RWKV: Product Carbon Footprint Estimation System Based on Large Language Model",
     description:
       "The paper presents PCF-RWKV, a product carbon footprint assessment model built on the RWKV architecture, featuring stacked residual blocks and three task-specific LoRA adapters. Through Multi-Agents technology integration, the model automates LCI construction for production processes and matches them with emission factors to calculate carbon footprints, enhancing efficiency and security in enterprise carbon footprint assessment while overcoming traditional method limitations.",
