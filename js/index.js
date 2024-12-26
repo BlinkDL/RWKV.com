@@ -115,6 +115,16 @@ const allProjects = [
   },
   {
     title:
+      "Bone: Block Affine Transformation as Parameter Efficient Fine-tuning Methods for Large Language Models",
+    description:
+      "The paper introduces Bone, a new PEFT method. It divides LLM weights into subspaces and uses a shared matrix, differing from LoRA. It surpasses LoRA and its variants. The combination with Weight Guide and the development of Bat enhance its performance. Experiments on RWKV and other models confirm its efficacy.",
+    date: "2024-09-19",
+    tags: "Language",
+    img: "images/papers-images/bone.png",
+    link: "https://arxiv.org/abs/2409.15371",
+  },
+  {
+    title:
       "Multi-scale RWKV with 2-dimensional temporal convolutional network for short-term photovoltaic power forecasting",
     description:
       "The paper proposes MSRWKV-2DTCN for short-term PV power forecasting. It uses FFT to identify periodicity, combines RWKV with a multi-scale 2D TCN, and conducts experiments on real datasets. The model shows high accuracy and strong generalization capabilities.",
