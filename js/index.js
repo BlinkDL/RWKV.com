@@ -1,6 +1,7 @@
 const allProjects = [
   {
-    title: "L3TC: Leveraging RWKV for Learned Lossless Low-Complexity Text Compression",
+    title:
+      "L3TC: Leveraging RWKV for Learned Lossless Low-Complexity Text Compression",
     description:
       "This paper presents L3TC, a novel text compression method. It selects RWKV for its fast decoding speed. With an outlier-aware tokenizer and high-rank reparameterization, L3TC achieves 48% bit saving vs gzip, 50× param reduction, and is the fastest learned compressor.",
     date: "2024-12-21",
@@ -9,7 +10,17 @@ const allProjects = [
     link: "https://arxiv.org/abs/2412.16642",
   },
   {
-    title: "PCF-RWKV: Product Carbon Footprint Estimation System Based on Large Language Model",
+    title: "A Survey of RWKV",
+    description:
+      "A collection of papers and resources related to a survey of RWKV.",
+    date: "2024-12-19",
+    tags: "Language",
+    img: "images/papers-images/RWKV_survey.png",
+    link: "https://github.com/MLGroupJLU/RWKV-Survey",
+  },
+  {
+    title:
+      "PCF-RWKV: Product Carbon Footprint Estimation System Based on Large Language Model",
     description:
       "The paper presents PCF-RWKV, a product carbon footprint assessment model built on the RWKV architecture, featuring stacked residual blocks and three task-specific LoRA adapters. Through Multi-Agents technology integration, the model automates LCI construction for production processes and matches them with emission factors to calculate carbon footprints, enhancing efficiency and security in enterprise carbon footprint assessment while overcoming traditional method limitations.",
     date: "2024-12-18",
@@ -27,7 +38,8 @@ const allProjects = [
     link: "https://arxiv.org/abs/2412.10856",
   },
   {
-    title: "Exploring Real&Synthetic Dataset and Linear Attention in Image Restoration",
+    title:
+      "Exploring Real&Synthetic Dataset and Linear Attention in Image Restoration",
     description:
       "The paper proposes RWKV-IR, a novel RWKV-based image restoration model that supports both global and local receptive fields. The model demonstrates superior performance on Urban100 x4 benchmark, achieving 0.08dB improvement over SwinIR and 0.03dB over MambaIR, showcasing RWKV-IR's advanced image restoration capabilities and fast convergence.",
     date: "2024-12-11",
@@ -36,7 +48,8 @@ const allProjects = [
     link: "https://arxiv.org/abs/2412.03814",
   },
   {
-    title: "DFT: A Dual-branch Framework of Fluctuation and Trend for Stock Price Prediction",
+    title:
+      "DFT: A Dual-branch Framework of Fluctuation and Trend for Stock Price Prediction",
     description:
       "The paper proposes a Dual-branch Framework of Fluctuation and Trend (DFT) for stock price prediction. The RWKV model is used in the DFT to model time correlations in both the fluctuation and trend branches. It combines the power of RNN and Transformer, maintaining the time sequence of input features and satisfying the causality of the input. This helps in effectively capturing short-term fluctuations and trend information from stocks while explicitly modeling temporal variations and causal correlations, leading to improved performance compared to existing methods",
     date: "2024-11-09",
@@ -176,7 +189,7 @@ const allProjects = [
     title:
       "Optimizing Robotic Manipulation with Decision-RWKV: A Recurrent Sequence Modeling Approach for Lifelong Learning",
     description:
-      "The paper explores RWKV's integration with decision transformer and experience replay in robotic manipulation. It proposes the Decision-RWKV model, tests it on D4RL and D’Claw platforms, and shows its effectiveness in single-task and lifelong learning, with code open-sourced.",
+      "The paper explores RWKV's integration with decision transformer and experience replay in robotic manipulation. It proposes the Decision-RWKV model, tests it on D4RL and D'Claw platforms, and shows its effectiveness in single-task and lifelong learning, with code open-sourced.",
     date: "2024-07-23",
     tags: "Sequence",
     img: "images/papers-images/Decision-RWKV-block-overview.png",
@@ -295,7 +308,7 @@ const allProjects = [
     title:
       "TLS-RWKV: Real-Time Online Action Detection with Temporal Label Smoothing",
     description:
-      "The paper proposes TLS-RWKV for online action detection. It utilizes the RWKV model with temporal label smoothing. Experiments on THUMOS’14 and TVSeries datasets show state-of-the-art performance and high efficiency, making it suitable for real-time applications and resource-constrained devices.",
+      "The paper proposes TLS-RWKV for online action detection. It utilizes the RWKV model with temporal label smoothing. Experiments on THUMOS'14 and TVSeries datasets show state-of-the-art performance and high efficiency, making it suitable for real-time applications and resource-constrained devices.",
     date: "2024-2-19",
     tags: "3D/4D",
     img: "images/papers-images/TLS-RWKV-architecture.png",
@@ -406,22 +419,22 @@ function displayProjects() {
     projectLink.href = project.link;
     projectLink.target = "_blank";
     projectLink.className =
-      "block transform transition-transform duration-200 hover:scale-105";
+      "block transform transition-transform duration-200 hover:scale-105 h-[420px]";
 
     const projectCard = document.createElement("div");
     projectCard.className =
-      "bg-white rounded-lg overflow-hidden shadow border border-gray-200";
+      "bg-white rounded-lg overflow-hidden shadow border border-gray-200 h-full flex flex-col";
 
     projectCard.innerHTML = `
-      <div class="relative w-full h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+      <div class="relative w-full h-48 bg-gray-100 flex items-center justify-center overflow-hidden flex-shrink-0">
         <img src="${project.img}" alt="Project Image" class="w-full h-full object-cover transition-transform duration-200 ease-in-out hover:scale-105">
       </div>
-      <div class="p-4">
+      <div class="p-4 flex flex-col flex-grow">
         <h3 class="text-lg font-semibold text-gray-800 mb-2 project-card-title line-clamp-2" title="${project.title}">
           ${project.title}
         </h3>
-        <p class="text-gray-600 text-sm leading-snug mb-4 project-card-description">${project.description}</p>
-        <div class="flex items-center justify-between">
+        <p class="text-gray-600 text-sm leading-snug mb-4 project-card-description line-clamp-4 flex-grow">${project.description}</p>
+        <div class="flex items-center justify-between mt-auto">
           <div class="text-gray-500 text-xs">#${project.tags}</div>
           <div class="text-gray-500 text-xs">${project.date}</div>
         </div>
@@ -429,7 +442,6 @@ function displayProjects() {
     `;
 
     projectLink.appendChild(projectCard);
-
     projectGrid.appendChild(projectLink);
   });
 }
@@ -485,7 +497,7 @@ function goToPage(page) {
 
 function updateTotalCount() {
   const totalCount = document.getElementById("totalCount");
-  totalCount.innerText = ``;//Total ${currentProjects.length} papers.`;
+  totalCount.innerText = ``; //Total ${currentProjects.length} papers.`;
 
   if (currentProjects.length <= 4) {
     totalCount.style.display = "none";
