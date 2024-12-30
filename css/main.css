@@ -432,9 +432,28 @@ body {
 .content-section {
   margin: 0 0 3rem;
 }
-.content-section .resume-item {
-  margin-bottom: 2rem;
+.project-item {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
+.project-item .project-item-title {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: -0.05rem;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+.project-item .project-item-description {
+  font-size: 1rem;
+  line-height: 2;
+  margin: 0;
+}
+
 .content-section .resume-item-title {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -582,5 +601,13 @@ body {
     flex-direction: row;
     gap: 0.3rem;
     font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-item {
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 }
