@@ -435,10 +435,10 @@ body {
 
 .project-item {
   width: 100%;
-  margin-bottom: .2rem;
+  margin-bottom: .6rem;
   display: flex;
   flex-direction: column;
-  gap: 0rem;
+  gap: .2rem;
 }
 .project-item .project-item-title {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -446,12 +446,11 @@ body {
   margin: 0;
   font-size: 1.3rem;
   letter-spacing: -0.05rem;
-  line-height: 1.2;
-  text-decoration: underline;
+  line-height: 1;
 }
 .project-item .project-item-description {
   font-size: 1rem;
-  line-height: 2;
+  line-height: 1;
   margin: 0;
 }
 
