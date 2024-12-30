@@ -430,27 +430,31 @@ body {
   width: 400px;
 }
 .content-section {
-  margin: 0 0 3rem;
+  margin: 0 0 2rem;
 }
 .project-item {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: .6rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: start;
+  gap: .2rem;
+  transition: all 0.2s ease;
+}
+.project-item:hover {
+  opacity: 0.8;
 }
 .project-item .project-item-title {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: -0.05rem;
-  line-height: 1.2;
-  text-decoration: underline;
+  line-height: 1;
 }
 .project-item .project-item-description {
   font-size: 1rem;
-  line-height: 2;
+  line-height: 1;
   margin: 0;
 }
 
@@ -596,6 +600,7 @@ body {
   white-space: normal;
 }
 
+/* Desktop */
 @media (min-width: 600px) {
   .contact-button {
     flex-direction: row;
@@ -604,10 +609,12 @@ body {
   }
 }
 
+/* Desktop */
 @media (min-width: 600px) {
   .project-item {
     flex-direction: row;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
   }
 }
