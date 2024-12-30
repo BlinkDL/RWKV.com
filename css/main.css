@@ -406,14 +406,18 @@ body {
   background-color: #efefef;
   text-decoration: none;
   text-align: center;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 1.5rem auto;
+  padding: 2px;
   width: 220px;
-  font-size: 1.375rem;
+  min-height: 55px;
+  font-size: 1rem;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #333;
-  line-height: 55px;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -426,11 +430,34 @@ body {
   width: 400px;
 }
 .content-section {
-  margin: 0 0 3rem;
+  margin: 0 0 2rem;
 }
-.content-section .resume-item {
-  margin-bottom: 2rem;
+.project-item {
+  width: 100%;
+  margin-bottom: .6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: .2rem;
+  transition: all 0.2s ease;
 }
+.project-item:hover {
+  opacity: 0.8;
+}
+.project-item .project-item-title {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.3rem;
+  letter-spacing: -0.05rem;
+  line-height: 1;
+}
+.project-item .project-item-description {
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0;
+}
+
 .content-section .resume-item-title {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -549,7 +576,7 @@ body {
 .project-card-title {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2; 
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   white-space: normal;
@@ -571,4 +598,23 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+}
+
+/* Desktop */
+@media (min-width: 600px) {
+  .contact-button {
+    flex-direction: row;
+    gap: 0.3rem;
+    font-size: 1.3rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 600px) {
+  .project-item {
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
 }
