@@ -6,7 +6,7 @@ const allProjects = [
       "This paper presents StyleRWKV, a new style transfer method. It adopts an architecture inspired by RWKV to resolve the shortcomings of previous approaches, such as high computational complexity. By means of crucial elements like the Re-WKV attention mechanism, it accomplishes efficient and high-quality style transfer.",
     date: "2024-12-27",
     tags: "Image",
-    img: "images/papers-images/style-rwkv-architecture.png",
+    img: "images/papers-images/style-RWKV-architecture.png",
     link: "https://arxiv.org/abs/2412.19535",
   },
   {
