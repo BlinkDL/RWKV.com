@@ -430,20 +430,21 @@ body {
   width: 400px;
 }
 .content-section {
-  margin: 0 0 3rem;
+  margin: 0 0 2rem;
 }
+
 .project-item {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: .2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0rem;
 }
 .project-item .project-item-title {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: -0.05rem;
   line-height: 1.2;
   text-decoration: underline;
@@ -596,6 +597,7 @@ body {
   white-space: normal;
 }
 
+/* Desktop */
 @media (min-width: 600px) {
   .contact-button {
     flex-direction: row;
@@ -604,10 +606,11 @@ body {
   }
 }
 
+/* Desktop */
 @media (min-width: 600px) {
   .project-item {
     flex-direction: row;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    gap: 0.6rem;
+    margin-bottom: .6rem;
   }
 }
