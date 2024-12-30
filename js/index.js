@@ -1,6 +1,16 @@
 const allProjects = [
   {
     title:
+    "StyleRWKV: High-Quality and High-Efficiency Style Transfer with RWKV-like Architecture",
+    description:
+      "This paper presents StyleRWKV, a new style transfer method. It adopts an architecture inspired by RWKV to resolve the shortcomings of previous approaches, such as high computational complexity. By means of crucial elements like the Re-WKV attention mechanism, it accomplishes efficient and high-quality style transfer.",
+    date: "2024-12-27",
+    tags: "Image",
+    img: "images/papers-images/style-rwkv-architecture.png",
+    link: "https://arxiv.org/abs/2412.19535",
+  },
+  {
+    title:
       "L3TC: Leveraging RWKV for Learned Lossless Low-Complexity Text Compression",
     description:
       "This paper presents L3TC, a novel text compression method. It selects RWKV for its fast decoding speed. With an outlier-aware tokenizer and high-rank reparameterization, L3TC achieves 48% bit saving vs gzip, 50× param reduction, and is the fastest learned compressor.",
