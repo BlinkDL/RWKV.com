@@ -24,7 +24,7 @@ const allProjects = [
     description:
       "A collection of papers and resources related to a survey of RWKV.",
     date: "2024-12-19",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/RWKV_survey.png",
     link: "https://github.com/MLGroupJLU/RWKV-Survey",
   },
@@ -43,7 +43,7 @@ const allProjects = [
     description:
       "The paper introduces RWKV-edge, a solution for running RWKV models on resource-constrained devices. Using techniques like low-rank approximation, sparsity prediction, and clustered heads, it achieves 4.95-3.8x model compression with only 2.95pp accuracy loss. RWKV-edge provides an effective approach for deploying RWKV models on edge devices.",
     date: "2024-12-14",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/RWKV-edge.png",
     link: "https://arxiv.org/abs/2412.10856",
   },
@@ -53,7 +53,7 @@ const allProjects = [
     description:
       "This paper proposes an innovative channel estimation scheme for V2X communications. Considering the doubly selective fading and limited pilots in IEEE 802.11p standard, it introduces the RWKV network with linear attention combined with DPA. The RWKV-DPA estimator enhances performance and reduces complexity compared to existing ones.",
     date: "2024-12-13",
-    tags: "Language",
+    tags: "Sequence",
     img: "images/papers-images/RWkV-DPA-estimator-architecture.png",
     link: "https://ieeexplore.ieee.org/abstract/document/10779439",
   },
@@ -152,7 +152,7 @@ const allProjects = [
     description:
       "The paper introduces Bone, a new PEFT method. It divides LLM weights into subspaces and uses a shared matrix, differing from LoRA. It surpasses LoRA and its variants. The combination with Weight Guide and the development of Bat enhance its performance. Experiments on RWKV and other models confirm its efficacy.",
     date: "2024-09-19",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/bone.png",
     link: "https://arxiv.org/abs/2409.15371",
   },
@@ -231,7 +231,7 @@ const allProjects = [
     description:
       "The paper presents GoldFinch, a hybrid Linear Attention/Transformer model. It uses a new technique to generate a highly compressed KV-Cache. GoldFinch stacks GOLD transformer on an enhanced RWKV-6 (Finch) architecture. It shows improved performance with reduced cache size compared to Finch and Llama.",
     date: "2024-07-16",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/GoldFinch-architecture.png",
     link: "https://arxiv.org/abs/2407.12077",
   },
@@ -290,7 +290,7 @@ const allProjects = [
     description:
       "The paper presents Eagle (RWKV-5) and Finch (RWKV-6), improving RWKV-4. Their architectural enhancements include multiheaded matrix-valued states and dynamic recurrence. New multilingual corpus and tokenizer are introduced. Trained models show competitive performance, and all are publicly released.",
     date: "2024-04-08",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/rwkv-5-6-architecture.png",
     link: "https://arxiv.org/abs/2404.05892",
   },
@@ -396,7 +396,7 @@ const allProjects = [
     description:
       "The paper proposes RWKV, a novel model architecture. It combines the efficient parallelizable training of transformers with the efficient inference of RNNs. RWKV uses a linear attention mechanism, scales to 14 billion parameters, and performs comparably to similar-sized transformers, advancing sequence processing tasks.",
     date: "2023-05-22",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/rwkv-4.png",
     link: "https://arxiv.org/abs/2305.13048",
   },
