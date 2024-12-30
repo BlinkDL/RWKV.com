@@ -49,6 +49,16 @@ const allProjects = [
   },
   {
     title:
+      "Linear Attention Based Channel Estimation Scheme for V2X Communications",
+    description:
+      "This paper proposes an innovative channel estimation scheme for V2X communications. Considering the doubly selective fading and limited pilots in IEEE 802.11p standard, it introduces the RWKV network with linear attention combined with DPA. The RWKV-DPA estimator enhances performance and reduces complexity compared to existing ones.",
+    date: "2024-12-13",
+    tags: "Language",
+    img: "images/papers-images/RWkV-DPA-estimator-architecture.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/10779439",
+  },
+  {
+    title:
       "Exploring Real&Synthetic Dataset and Linear Attention in Image Restoration",
     description:
       "The paper proposes RWKV-IR, a novel RWKV-based image restoration model that supports both global and local receptive fields. The model demonstrates superior performance on Urban100 x4 benchmark, achieving 0.08dB improvement over SwinIR and 0.03dB over MambaIR, showcasing RWKV-IR's advanced image restoration capabilities and fast convergence.",
