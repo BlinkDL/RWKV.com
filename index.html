@@ -313,7 +313,11 @@
           class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6"
         ></main>
 
-        <div class="flex justify-between items-center mt-6 mb-6">
+        <!-- 
+          TODO:
+          @Moment, fix pagination overflow on mobile
+        -->
+        <div class="flex justify-between items-center mt-6 mb-6 w-full overflow-x-auto">
           <span id="totalCount" class="text-gray-600 text-sm"></span>
 
           <div class="flex items-center space-x-1" id="pagination"></div>
