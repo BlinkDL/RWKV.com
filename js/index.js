@@ -1,6 +1,16 @@
 const allProjects = [
   {
     title:
+    "Injecting Explainability and Lightweight Design into Weakly Supervised Video Anomaly Detection Systems",
+    description:
+      "This paper introduces TCVADS, a system for video anomaly detection. It operates in two stages. In the first stage, it employs an enhanced RWKV module for efficient time series analysis. Through knowledge distillation and cross-modal learning, it achieves better performance than existing methods.",
+    date: "2024-12-28",
+    tags: "Sequence",
+    img: "images/papers-images/TCVADS-architecture.png",
+    link: "https://arxiv.org/abs/2412.20201",
+  },
+  {
+    title:
     "StyleRWKV: High-Quality and High-Efficiency Style Transfer with RWKV-like Architecture",
     description:
       "StyleRWKV, a new style transfer method. It adopts an architecture inspired by RWKV to resolve the shortcomings of previous approaches, such as high computational complexity. By means of crucial elements like the Re-WKV attention mechanism, it accomplishes efficient and high-quality style transfer.",
@@ -69,6 +79,26 @@ const allProjects = [
   },
   {
     title:
+      "Voice dialog system based on RWKV model",
+    description:
+      "This paper aims to develop an intelligent voice dialog system for the elderly. It uses the RWKV model fine-tuned by LoRA. Experimental results show it improves answer fluency and reasonableness. It has potential in elder care and future work will optimize the model.",
+    date: "2024-11-28",
+    tags: "Audio",
+    img: "images/papers-images/RWKV-Voice-Dialog-System.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/10762107",
+  },
+  {
+    title:
+      "Visualrwkv-Hm: Enhancing Linear Visual-Language Models Via Hybrid Mixing",
+    description:
+      "This paper presents VisualRWKV-HM, a linear-complexity visual-language model. It integrates time and cross state mixing based on RWKV. Achieving SOTA on multiple benchmarks, it outperforms models like LLaVA-1.5 in efficiency at 24K context, showing strong scalability.",
+    date: "2024-11-21",
+    tags: "Image",
+    img: "images/papers-images/VisualRWKV-HM-architecture.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5028149",
+  },
+  {
+    title:
       "DFT: A Dual-branch Framework of Fluctuation and Trend for Stock Price Prediction",
     description:
       "A Dual-branch Framework of Fluctuation and Trend (DFT) for stock price prediction. The RWKV model is used in the DFT to model time correlations in both the fluctuation and trend branches. It combines the power of RNN and Transformer, maintaining the time sequence of input features and satisfying the causality of the input. This helps in effectively capturing short-term fluctuations and trend information from stocks while explicitly modeling temporal variations and causal correlations, leading to improved performance compared to existing methods",
@@ -105,6 +135,16 @@ const allProjects = [
     tags: "Sequence",
     img: "images/papers-images/marwkv-architecture.png",
     link: "https://epub.jku.at/obvulihs/content/titleinfo/10580112",
+  },
+  {
+    title:
+      "AutoGMM-RWKV: A Detecting Scheme Based on Attention Mechanisms Against Selective Forwarding Attacks in Wireless Sensor Networks",
+    description:
+      "This paper presents AutoGMM - RWKV to detect selective forwarding attacks in WSNs. It focuses on node SFRs time series. By integrating autoencoder, GMM, and K - means with RWKV, it improves detection accuracy. Simulation shows low FDR and MDR, offering a robust solution.",
+    date: "2024-10-23",
+    tags: "Sequence",
+    img: "images/papers-images/AutoGMM-RWKV-overview.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/10729884",
   },
   {
     title:
@@ -197,6 +237,16 @@ const allProjects = [
   },
   {
     title:
+      "Revenge of the Fallen? Recurrent Models Match Transformers at Predicting Human Language Comprehension MetricsRevenge of the Fallen? Recurrent Models Match Transformers at Predicting Human Language Comprehension Metrics",
+    description:
+      "The paper proposes that while transformers have been dominant in natural language processing, the newly developed RWKV and Mamba recurrent models are now challenging this status. It shows that these recurrent models can perform as well as or even better than transformers in predicting human language comprehension metrics, thus opening up new discussions on the suitability of different architectures for this task.",
+    date: "2024-08-26",
+    tags: "General",
+    img: "images/papers-images/Recurrent-Models-Match-Transformers.png",
+    link: "https://arxiv.org/abs/2404.19178",
+  },
+  {
+    title:
       "Why Perturbing Symbolic Music is Necessary: Fitting the Distribution of Never-used Notes through a Joint Probabilistic Diffusion Model",
     description:
       "Music-Diff architecture, which uses a joint probabilistic diffusion model. It improves note distribution fitting and sample diversity compared to language models like RWKV-music, enhancing rhythmic and structural coherence in generated music.",
@@ -244,6 +294,16 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/restore-rwkv-architecture.png",
     link: "https://arxiv.org/abs/2407.11087",
+  },
+  {
+    title:
+      "Enhancing Transformer RNNs with Multiple Temporal Perspectives",
+    description:
+      "This paper introduces the concept of multiple temporal perspectives to enhance RNNs. Applied to RWKV, it enriches context understanding with minimal parameter increase. Empirical results validate its effectiveness, showing improved performance on benchmarks while maintaining linear inference complexity.",
+    date: "2024-07-11",
+    tags: "General",
+    img: "images/papers-images/Enhancing-Transformer-RNNs-with-Multiple-Temporal-PerspectivesEnhancing-Transformer-RNNs-with-Multiple-Temporal-Perspectives.png",
+    link: "https://arxiv.org/abs/2402.02625",
   },
   {
     title:
