@@ -144,7 +144,7 @@ const allProjects = [
     description: "TTIM for efficient human-human motion generation. It proposes Causal Interactive Injection, Role-Evolving Mixing, and Localized Pattern Amplification. Experiments on InterHuman show TIM's superiority, achieving state-of-the-art results with only 32% of InterGen's trainable parameters, using RWKV",
     date: "2024-08-30",
     tags: "3D/4D",
-    img: "images/papers-images/img-2-20240830.png",
+    img: "images/papers-images/img-1-20240830.png",
     link: "https://arxiv.org/abs/2408.17135"},
   {title: "OnlySportsLM: Optimizing Sports-Domain Language Models with SOTA Performance under Billion Parameter",
     description: "A small sports-domain language model. It creates the OnlySports collection (dataset, benchmark, LM). Using 600 billion tokens data, it optimizes RWKV-v6 for sports tasks, training a 196M param model. OnlySportsLM outperforms prior models and rivals larger ones in the sports domain.",
