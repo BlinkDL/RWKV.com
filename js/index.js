@@ -1,25 +1,36 @@
 const allProjects = [
-    {
+  {
+    title: "GDSR: Global-Detail Integration through Dual-Branch Network with Wavelet Losses for Remote Sensing Image Super-Resolution",
+    description: "The paper presents a new method for remote sensing image super-resolution (RSISR) named GDSR. Considering the deficiencies of existing methods in handling global and local dependencies, GDSR innovatively introduces RWKV to capture long-range dependencies with the advantage of linear complexity. Meanwhile, it uses a dual-branch structure to effectively integrate global and local information. Experimental results show that GDSR has excellent performance, surpassing the current state-of-the-art methods, and the wavelet loss further improves the super-resolution effect.",
+    date: "2024-12-31",
+    tags: "Image",
+    img: "images/papers-images/img-1-20241231.png",
+    link: "https://arxiv.org/abs/2501.01460"
+  },
+  {
     title: "Injecting Explainability and Lightweight Design into Weakly Supervised Video Anomaly Detection Systems",
     description: "This paper introduces TCVADS, a system for video anomaly detection. It operates in two stages. In the first stage, it employs an enhanced RWKV module for efficient time series analysis. Through knowledge distillation and cross-modal learning, it achieves better performance than existing methods.",
     date: "2024-12-28",
     tags: "Sequence",
     img: "images/papers-images/img-1-20241228.png",
-    link: "https://arxiv.org/abs/2412.20201"},
+    link: "https://arxiv.org/abs/2412.20201"
+  },
   {
     title: "StyleRWKV: High-Quality and High-Efficiency Style Transfer with RWKV-like Architecture",
     description: "StyleRWKV, a new style transfer method. It adopts an architecture inspired by RWKV to resolve the shortcomings of previous approaches, such as high computational complexity. By means of crucial elements like the Re-WKV attention mechanism, it accomplishes efficient and high-quality style transfer.",
     date: "2024-12-27",
     tags: "Image",
     img: "images/papers-images/img-1-20241227.png",
-    link: "https://arxiv.org/abs/2412.19535"},
+    link: "https://arxiv.org/abs/2412.19535"
+  },
   {
     title: "L3TC: Leveraging RWKV for Learned Lossless Low-Complexity Text Compression",
     description: "L3TC, a novel text compression method. It selects RWKV for its fast decoding speed. With an outlier-aware tokenizer and high-rank reparameterization, L3TC achieves 48% bit saving vs gzip, 50× param reduction, and is the fastest learned compressor.",
     date: "2024-12-21",
     tags: "Language",
     img: "images/papers-images/img-1-20241221.png",
-    link: "https://arxiv.org/abs/2412.16642"},
+    link: "https://arxiv.org/abs/2412.16642"
+  },
   {
     title: "A Survey of RWKV",
     description: "A collection of papers and resources related to a survey of RWKV.",
@@ -34,262 +45,344 @@ const allProjects = [
     date: "2024-12-18",
     tags: "Language",
     img: "images/papers-images/img-1-20241218.png",
-    link: "https://www.preprints.org/manuscript/202412.1705/v1"},
+    link: "https://www.preprints.org/manuscript/202412.1705/v1"
+  },
   {
     title: "RWKV-edge: Deeply Compressed RWKV for Resource-Constrained Devices",
     description: "RWKV-edge, a solution for running RWKV models on resource-constrained devices. Using techniques like low-rank approximation, sparsity prediction, and clustered heads, it achieves 4.95-3.8x model compression with only 2.95pp accuracy loss. RWKV-edge provides an effective approach for deploying RWKV models on edge devices.",
     date: "2024-12-14",
     tags: "General",
     img: "images/papers-images/img-1-20241214.png",
-    link: "https://arxiv.org/abs/2412.10856"},
+    link: "https://arxiv.org/abs/2412.10856"
+  },
   {
     title: "Linear Attention Based Channel Estimation Scheme for V2X Communications",
     description: "An innovative channel estimation scheme for V2X communications. Considering the doubly selective fading and limited pilots in IEEE 802.11p standard, it introduces the RWKV network with linear attention combined with DPA. The RWKV-DPA estimator enhances performance and reduces complexity compared to existing ones.",
     date: "2024-12-13",
     tags: "Sequence",
     img: "images/papers-images/img-1-20241213.png",
-    link: "https://ieeexplore.ieee.org/abstract/document/10779439"},
-  {title: "Exploring Real&Synthetic Dataset and Linear Attention in Image Restoration",
+    link: "https://ieeexplore.ieee.org/abstract/document/10779439"
+  },
+  {
+    title: "Exploring Real&Synthetic Dataset and Linear Attention in Image Restoration",
     description: "RWKV-IR, a novel RWKV-based image restoration model that supports both global and local receptive fields. The model demonstrates superior performance on Urban100 x4 benchmark, achieving 0.08dB improvement over SwinIR and 0.03dB over MambaIR, showcasing RWKV-IR's advanced image restoration capabilities and fast convergence.",
     date: "2024-12-11",
     tags: "Image",
     img: "images/papers-images/img-1-20241211.png",
-    link: "https://arxiv.org/abs/2412.03814"},
-  {title: "Voice dialog system based on RWKV model",
+    link: "https://arxiv.org/abs/2412.03814"
+  },
+  {
+    title: "Voice dialog system based on RWKV model",
     description: "This paper aims to develop an intelligent voice dialog system for the elderly. It uses the RWKV model fine-tuned by LoRA. Experimental results show it improves answer fluency and reasonableness. It has potential in elder care and future work will optimize the model.",
     date: "2024-11-28",
     tags: "Audio",
     img: "images/papers-images/img-1-20241128.png",
-    link: "https://ieeexplore.ieee.org/abstract/document/10762107"},
-  {title: "Visualrwkv-Hm: Enhancing Linear Visual-Language Models Via Hybrid Mixing",
+    link: "https://ieeexplore.ieee.org/abstract/document/10762107"
+  },
+  {
+    title: "Visualrwkv-Hm: Enhancing Linear Visual-Language Models Via Hybrid Mixing",
     description: "This paper presents VisualRWKV-HM, a linear-complexity visual-language model. It integrates time and cross state mixing based on RWKV. Achieving SOTA on multiple benchmarks, it outperforms models like LLaVA-1.5 in efficiency at 24K context, showing strong scalability.",
     date: "2024-11-21",
     tags: "Image",
     img: "images/papers-images/img-1-20241121.png",
-    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5028149"},
-  {title: "DFT: A Dual-branch Framework of Fluctuation and Trend for Stock Price Prediction",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5028149"
+  },
+  {
+    title: "DFT: A Dual-branch Framework of Fluctuation and Trend for Stock Price Prediction",
     description: "A Dual-branch Framework of Fluctuation and Trend (DFT) for stock price prediction. The RWKV model is used in the DFT to model time correlations in both the fluctuation and trend branches. It combines the power of RNN and Transformer, maintaining the time sequence of input features and satisfying the causality of the input. This helps in effectively capturing short-term fluctuations and trend information from stocks while explicitly modeling temporal variations and causal correlations, leading to improved performance compared to existing methods",
     date: "2024-11-09",
     tags: "Sequence",
     img: "images/papers-images/img-1-20241109.png",
-    link: "https://arxiv.org/abs/2411.06065"},
-  {title: "Video RWKV: Video Action Recognition Based RWKV",
+    link: "https://arxiv.org/abs/2411.06065"
+  },
+  {
+    title: "Video RWKV: Video Action Recognition Based RWKV",
     description: "LSTM CrossRWKV (LCR) for video understanding. It uses a novel CrossRWKV gate to handle video challenges. LCR stores long-term memory and reduces redundant information. Experiments on datasets show its effectiveness, setting a new benchmark in video understanding with RWKV.",
     date: "2024-11-08",
     tags: "3D/4D",
     img: "images/papers-images/img-1-20241108.png",
-    link: "https://arxiv.org/abs/2411.05636"},
-  {title: "From Explicit Rules to Implicit Reasoning in an Interpretable Violence Monitoring System",
+    link: "https://arxiv.org/abs/2411.05636"
+  },
+  {
+    title: "From Explicit Rules to Implicit Reasoning in an Interpretable Violence Monitoring System",
     description: "RuleVM for weakly supervised violence monitoring. It uses a dual-branch structure with different designs for images and text. The implicit branch uses visual features for coarse-grained classification, and the explicit branch uses language-image alignment with YOLO-World and data mining. RWKV is used in the lightweight time-series module.",
     date: "2024-10-29",
     tags: "3D/4D",
     img: "images/papers-images/img-1-20241029.png",
-    link: "https://arxiv.org/abs/2410.21991"},
-  {title: "Modern Sequence Models in Context of Multi-Agent Reinforcement Learning",
+    link: "https://arxiv.org/abs/2410.21991"
+  },
+  {
+    title: "Modern Sequence Models in Context of Multi-Agent Reinforcement Learning",
     description: "MAM and MARWKV architectures inspired by MAT. Experiments show they perform comparably to MAT. MARWKV offers better inference computational efficiency, especially with more agents. RWKV is used in MARWKV for sequence modeling.",
     date: "2024-10-28",
     tags: "Sequence",
     img: "images/papers-images/img-1-20241028.png",
-    link: "https://epub.jku.at/obvulihs/content/titleinfo/10580112"},
-  {title: "AutoGMM-RWKV: A Detecting Scheme Based on Attention Mechanisms Against Selective Forwarding Attacks in Wireless Sensor Networks",
+    link: "https://epub.jku.at/obvulihs/content/titleinfo/10580112"
+  },
+  {
+    title: "AutoGMM-RWKV: A Detecting Scheme Based on Attention Mechanisms Against Selective Forwarding Attacks in Wireless Sensor Networks",
     description: "This paper presents AutoGMM - RWKV to detect selective forwarding attacks in WSNs. It focuses on node SFRs time series. By integrating autoencoder, GMM, and K - means with RWKV, it improves detection accuracy. Simulation shows low FDR and MDR, offering a robust solution.",
     date: "2024-10-23",
     tags: "Sequence",
     img: "images/papers-images/img-1-20241023.png",
-    link: "https://ieeexplore.ieee.org/abstract/document/10729884"},
-  {title: "MATCC: A Novel Approach for Robust Stock Price Prediction Incorporating Market Trends and Cross-time Correlations",
+    link: "https://ieeexplore.ieee.org/abstract/document/10729884"
+  },
+  {
+    title: "MATCC: A Novel Approach for Robust Stock Price Prediction Incorporating Market Trends and Cross-time Correlations",
     description: "MATCC, extracts market trends, decomposes stock data, and mines cross-time correlation. Experiments show MATCC outperforms previous works. It uses RWKV to model inter-temporal correlations",
     date: "2024-10-21",
     tags: "Sequence",
     img: "images/papers-images/img-1-20241021.png",
-    link: "https://dl.acm.org/doi/abs/10.1145/3627673.3679715"},
-  {title: "VisualRWKV-HD and UHD: Advancing High-Resolution Processing for Visual Language Models",
+    link: "https://dl.acm.org/doi/abs/10.1145/3627673.3679715"
+  },
+  {
+    title: "VisualRWKV-HD and UHD: Advancing High-Resolution Processing for Visual Language Models",
     description: "VisualRWKV-HD and VisualRWKV-UHD for high-resolution visual inputs in visual language models. It details techniques like lossless downsampling and image segmentation. Experiments on benchmarks show their effectiveness, with RWKV models achieving better performance in handling high-resolution tasks.",
     date: "2024-10-15",
     tags: "Image",
     img: "images/papers-images/img-1-20241015.png",
-    link: "https://arxiv.org/abs/2410.11665"},
+    link: "https://arxiv.org/abs/2410.11665"
+  },
   {
     title: "AttnInput: Revolutionizing Pinyin Input with Context-Aware RWKV Language Models",
     description: "AttnInput, a novel approach leveraging RWKV for Pinyin IME. It integrates Pinyin into RWKV s internal state, addressing semantic discontinuity. Using a pre-training strategy, it reduces costs. Experimental results show it achieves state-of-the-art performance on abbreviated Pinyin input.",
     date: "2024-10-13",
     tags: "Language",
     img: "images/papers-images/img-1-20241013.png",
-    link: "https://openreview.net/forum?id=9OxTqscUwi"},
-  {title: "OccRWKV: Rethinking Efficient 3D Semantic Occupancy Prediction with Linear Complexity",
+    link: "https://openreview.net/forum?id=9OxTqscUwi"
+  },
+  {
+    title: "OccRWKV: Rethinking Efficient 3D Semantic Occupancy Prediction with Linear Complexity",
     description: "OccRWKV, an efficient 3D semantic occupancy network inspired by RWKV. It separates predictions into branches with Sem-RWKV and GeoRWKV blocks. By projecting features to BEV space and using BEV-RWKV block, it achieves real-time inference. It outperforms state-of-the-art methods on SemanticKITTI dataset",
     date: "2024-09-26",
     tags: "3D/4D",
     img: "images/papers-images/img-1-20240926.jpg",
-    link: "https://www.arxiv.org/abs/2409.19987"},
-  {title: "Bone: Block Affine Transformation as Parameter Efficient Fine-tuning Methods for Large Language Models",
+    link: "https://www.arxiv.org/abs/2409.19987"
+  },
+  {
+    title: "Bone: Block Affine Transformation as Parameter Efficient Fine-tuning Methods for Large Language Models",
     description: "Bone, a new PEFT method. It divides LLM weights into subspaces and uses a shared matrix, differing from LoRA. It surpasses LoRA and its variants. The combination with Weight Guide and the development of Bat enhance its performance. Experiments on RWKV and other models confirm its efficacy.",
     date: "2024-09-19",
     tags: "General",
     img: "images/papers-images/img-1-20240919.png",
-    link: "https://arxiv.org/abs/2409.15371"},
-  {title: "Multi-scale RWKV with 2-dimensional temporal convolutional network for short-term photovoltaic power forecasting",
+    link: "https://arxiv.org/abs/2409.15371"
+  },
+  {
+    title: "Multi-scale RWKV with 2-dimensional temporal convolutional network for short-term photovoltaic power forecasting",
     description: "MSRWKV-2DTCN for short-term PV power forecasting. It uses FFT to identify periodicity, combines RWKV with a multi-scale 2D TCN, and conducts experiments on real datasets. The model shows high accuracy and strong generalization capabilities.",
     date: "2024-09-06",
     tags: "Sequence",
     img: "images/papers-images/img-1-20240906.png",
-    link: "https://www.sciencedirect.com/science/article/abs/pii/S0360544224028433"},
-  {title: "Experimentation in Content Moderation using RWKV",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S0360544224028433"
+  },
+  {
+    title: "Experimentation in Content Moderation using RWKV",
     description: "Investigates RWKV's efficacy in content moderation. It creates a novel dataset for distillation, generates responses using LLMs, and fine-tunes RWKV. The study shows RWKV can improve content moderation accuracy and efficiency, and paves the way for more efficient models.",
     date: "2024-09-05",
     tags: "Language",
     img: "images/papers-images/img-1-20240905.png",
-    link: "https://arxiv.org/abs/2409.03939"},
-  {title: "Temporal and Interactive Modeling for Efficient Human-Human Motion Generation",
+    link: "https://arxiv.org/abs/2409.03939"
+  },
+  {
+    title: "Temporal and Interactive Modeling for Efficient Human-Human Motion Generation",
     description: "TTIM for efficient human-human motion generation. It proposes Causal Interactive Injection, Role-Evolving Mixing, and Localized Pattern Amplification. Experiments on InterHuman show TIM's superiority, achieving state-of-the-art results with only 32% of InterGen's trainable parameters, using RWKV",
     date: "2024-08-30",
     tags: "3D/4D",
     img: "images/papers-images/img-1-20240830.png",
-    link: "https://arxiv.org/abs/2408.17135"},
-  {title: "OnlySportsLM: Optimizing Sports-Domain Language Models with SOTA Performance under Billion Parameter",
+    link: "https://arxiv.org/abs/2408.17135"
+  },
+  {
+    title: "OnlySportsLM: Optimizing Sports-Domain Language Models with SOTA Performance under Billion Parameter",
     description: "A small sports-domain language model. It creates the OnlySports collection (dataset, benchmark, LM). Using 600 billion tokens data, it optimizes RWKV-v6 for sports tasks, training a 196M param model. OnlySportsLM outperforms prior models and rivals larger ones in the sports domain.",
     date: "2024-08-30",
     tags: "Language",
     img: "images/papers-images/img-2-20240830.png",
-    link: "https://arxiv.org/abs/2409.00286"},
-  {title: "Revenge of the Fallen? Recurrent Models Match Transformers at Predicting Human Language Comprehension MetricsRevenge of the Fallen? Recurrent Models Match Transformers at Predicting Human Language Comprehension Metrics",
+    link: "https://arxiv.org/abs/2409.00286"
+  },
+  {
+    title: "Revenge of the Fallen? Recurrent Models Match Transformers at Predicting Human Language Comprehension MetricsRevenge of the Fallen? Recurrent Models Match Transformers at Predicting Human Language Comprehension Metrics",
     description: "The paper proposes that while transformers have been dominant in natural language processing, the newly developed RWKV and Mamba recurrent models are now challenging this status. It shows that these recurrent models can perform as well as or even better than transformers in predicting human language comprehension metrics, thus opening up new discussions on the suitability of different architectures for this task.",
     date: "2024-08-26",
     tags: "General",
     img: "images/papers-images/img-1-20240826.png",
-    link: "https://arxiv.org/abs/2404.19178"},
-  {title: "Why Perturbing Symbolic Music is Necessary: Fitting the Distribution of Never-used Notes through a Joint Probabilistic Diffusion Model",
+    link: "https://arxiv.org/abs/2404.19178"
+  },
+  {
+    title: "Why Perturbing Symbolic Music is Necessary: Fitting the Distribution of Never-used Notes through a Joint Probabilistic Diffusion Model",
     description: "Music-Diff architecture, which uses a joint probabilistic diffusion model. It improves note distribution fitting and sample diversity compared to language models like RWKV-music, enhancing rhythmic and structural coherence in generated music.",
     date: "2024-08-04",
     tags: "Audio",
     img: "images/papers-images/img-1-20240804.png",
-    link: "https://arxiv.org/abs/2408.01950"},
-  {title: "Optimizing Robotic Manipulation with Decision-RWKV: A Recurrent Sequence Modeling Approach for Lifelong Learning",
+    link: "https://arxiv.org/abs/2408.01950"
+  },
+  {
+    title: "Optimizing Robotic Manipulation with Decision-RWKV: A Recurrent Sequence Modeling Approach for Lifelong Learning",
     description: "Explores RWKV's integration with decision transformer and experience replay in robotic manipulation. It proposes the Decision-RWKV model, tests it on D4RL and D'Claw platforms, and shows its effectiveness in single-task and lifelong learning, with code open-sourced.",
     date: "2024-07-23",
     tags: "Sequence",
     img: "images/papers-images/img-1-20240723.png",
-    link: "https://arxiv.org/abs/2407.16306"},
-  {title: "BSBP-RWKV: Background Suppression with Boundary Preservation for Efficient Medical Image Segmentation",
+    link: "https://arxiv.org/abs/2407.16306"
+  },
+  {
+    title: "BSBP-RWKV: Background Suppression with Boundary Preservation for Efficient Medical Image Segmentation",
     description: "BSBP-RWKV for accurate and efficient medical image segmentation. It combines the advantages of PMD and RWKV, devises DWT-PMD RWKV Block and Multi-Step Runge-Kutta convolutional Block, and proposes a novel loss function. Experiments show its superior accuracy and efficiency.",
     date: "2024-07-21",
     tags: "Image",
     img: "images/papers-images/img-1-20240721.png",
-    link: "https://openreview.net/pdf?id=ULD5RCk0oo"},
-  {title: "GoldFinch: High Performance RWKV/Transformer Hybrid with Linear Pre-Fill and Extreme KV-Cache Compression",
+    link: "https://openreview.net/pdf?id=ULD5RCk0oo"
+  },
+  {
+    title: "GoldFinch: High Performance RWKV/Transformer Hybrid with Linear Pre-Fill and Extreme KV-Cache Compression",
     description: "GoldFinch, a hybrid Linear Attention/Transformer model. It uses a new technique to generate a highly compressed KV-Cache. GoldFinch stacks GOLD transformer on an enhanced RWKV-6 (Finch) architecture. It shows improved performance with reduced cache size compared to Finch and Llama.",
     date: "2024-07-16",
     tags: "General",
     img: "images/papers-images/img-1-20240716.png",
-    link: "https://arxiv.org/abs/2407.12077"},
-  {title: "Restore-RWKV: Efficient and Effective Medical Image Restoration with RWKV",
+    link: "https://arxiv.org/abs/2407.12077"
+  },
+  {
+    title: "Restore-RWKV: Efficient and Effective Medical Image Restoration with RWKV",
     description: "Restore-RWKV, the first RWKV-based model for medical image restoration. It modifies RWKV's attention and token shift layers to handle 2D images, capturing global and local dependencies. Experiments show its superiority in various tasks, serving as an efficient and effective backbone.",
     date: "2024-07-14",
     tags: "Image",
     img: "images/papers-images/img-1-20240714.png",
-    link: "https://arxiv.org/abs/2407.11087"},
-  {title: "Enhancing Transformer RNNs with Multiple Temporal Perspectives",
+    link: "https://arxiv.org/abs/2407.11087"
+  },
+  {
+    title: "Enhancing Transformer RNNs with Multiple Temporal Perspectives",
     description: "This paper introduces the concept of multiple temporal perspectives to enhance RNNs. Applied to RWKV, it enriches context understanding with minimal parameter increase. Empirical results vali date its effectiveness, showing improved performance on benchmarks while maintaining linear inference complexity.",
     date: "2024-07-11",
     tags: "General",
     img: "images/papers-images/img-1-20240711.png",
-    link: "https://arxiv.org/abs/2402.02625"},
-  {title: "Mamba or RWKV: Exploring High-Quality and High-Efficiency Segment Anything Model",
+    link: "https://arxiv.org/abs/2402.02625"
+  },
+  {
+    title: "Mamba or RWKV: Exploring High-Quality and High-Efficiency Segment Anything Model",
     description: "RWKV-SAM, an efficient segment-anything model with a mixed backbone of convolution and RWKV operation. This model achieves high accuracy and efficiency, outperforming others in benchmarks. It also trains on a combined high-quality dataset for better segmentation.",
     date: "2024-06-27",
     tags: "Image",
     img: "images/papers-images/img-1-20240627.png",
-    link: "https://arxiv.org/abs/2406.19369"},
-  {title: "VisualRWKV: Exploring Recurrent Neural Networks for Visual Language Models",
+    link: "https://arxiv.org/abs/2406.19369"
+  },
+  {
+    title: "VisualRWKV: Exploring Recurrent Neural Networks for Visual Language Models",
     description: "VisualRWKV, the first application of the linear RNN model RWKV in multimodal learning. It proposes novel mechanisms like data-dependent recurrence. Experiments show it performs competitively compared to Transformer models, with efficient computation and memory usage.",
     date: "2024-06-19",
     tags: "Image",
     img: "images/papers-images/img-1-20240619.png",
-    link: "https://arxiv.org/abs/2406.13362"},
-  {title: "RWKV-CLIP: A Robust Vision-Language Representation Learner",
+    link: "https://arxiv.org/abs/2406.13362"
+  },
+  {
+    title: "RWKV-CLIP: A Robust Vision-Language Representation Learner",
     description: "RWKV-CLIP, the first RWKV-driven vision-language model. Experiments show RWKV-CLIP's robustness and effectiveness, achieving state-of-the-art performance in multiple downstream tasks.",
     date: "2024-06-11",
     tags: "Image",
     img: "images/papers-images/img-1-20240611.png",
-    link: "https://arxiv.org/abs/2406.06973"},
-  {title: "PointRWKV: Efficient RWKV-Like Model for Hierarchical Point Cloud Learning",
+    link: "https://arxiv.org/abs/2406.06973"
+  },
+  {
+    title: "PointRWKV: Efficient RWKV-Like Model for Hierarchical Point Cloud Learning",
     description: "PointRWKV, a new model with linear complexity adapted from RWKV in NLP for 3D point cloud learning. It uses modified multi-headed matrix-valued states and a dynamic attention recurrence mechanism to explore global processing capabilities and a parallel branch to encode local geometric features, outperforming other models and saving FLOPs.",
     date: "2024-05-24",
     tags: "3D/4D",
     img: "images/papers-images/img-1-20240524.png",
-    link: "https://arxiv.org/abs/2405.15214"},
-  {title: "Eagle and Finch: RWKV with Matrix-Valued States and Dynamic Recurrence",
+    link: "https://arxiv.org/abs/2405.15214"
+  },
+  {
+    title: "Eagle and Finch: RWKV with Matrix-Valued States and Dynamic Recurrence",
     description: "Eagle (RWKV-5) and Finch (RWKV-6), improving RWKV-4. Their architectural enhancements include multiheaded matrix-valued states and dynamic recurrence. New multilingual corpus and tokenizer are introduced. Trained models show competitive performance, and all are publicly released.",
     date: "2024-04-08",
     tags: "General",
     img: "images/papers-images/img-1-20240408.png",
-    link: "https://arxiv.org/abs/2404.05892"},
-  {title: "Diffusion-RWKV: Scaling RWKV-Like Architectures for Diffusion Models",
+    link: "https://arxiv.org/abs/2404.05892"
+  },
+  {
+    title: "Diffusion-RWKV: Scaling RWKV-Like Architectures for Diffusion Models",
     description: "Diffusion-RWKV, an architecture adapting RWKV for diffusion models in image generation. It handles long-range hidden states linearly, showing comparable performance to Transformers but with lower complexity, thus being a promising alternative in this field.",
     date: "2024-04-06",
     tags: "Image",
     img: "images/papers-images/img-1-20240406.png",
-    link: "https://arxiv.org/abs/2404.04478"},
-  {title: "Onboard deep lossless and near-lossless predictive coding of hyperspectral images with line-based attention",
+    link: "https://arxiv.org/abs/2404.04478"
+  },
+  {
+    title: "Onboard deep lossless and near-lossless predictive coding of hyperspectral images with line-based attention",
     description: "Deep learning in spacecraft hyperspectral image compression was challenging. This paper designs LineRWKV, a predictive neural network. It uses a novel hybrid operation, combines Transformers & RNNs. LineRWKV outperforms CCSDS-123.0-B-2 in compression and shows good throughput on a 7W system.",
     date: "2024-03-26",
     tags: "Image",
     img: "images/papers-images/img-1-20240326.png",
-    link: "https://arxiv.org/abs/2403.17677"},
-  {title: "Vision-RWKV: Efficient and Scalable Visual Perception with RWKV-Like Architectures",
+    link: "https://arxiv.org/abs/2403.17677"
+  },
+  {
+    title: "Vision-RWKV: Efficient and Scalable Visual Perception with RWKV-Like Architectures",
     description: "Vision-RWKV, an adaptation of the RWKV model for vision tasks. It offers efficient handling of sparse inputs and strong global processing, with reduced spatial aggregation complexity. VRWKV outperforms ViT in image classification and shows advantages in dense prediction tasks, being a promising alternative for visual perception.",
     date: "2024-03-07",
     tags: "Image",
     img: "images/papers-images/img-1-20240307.png",
-    link: "https://arxiv.org/abs/2403.02308"},
-  {title: "TLS-RWKV: Real-Time Online Action Detection with Temporal Label Smoothing",
+    link: "https://arxiv.org/abs/2403.02308"
+  },
+  {
+    title: "TLS-RWKV: Real-Time Online Action Detection with Temporal Label Smoothing",
   description: "TLS-RWKV for online action detection. It utilizes the RWKV model with temporal label smoothing. Experiments on THUMOS'14 and TVSeries datasets show state-of-the-art performance and high efficiency, making it suitable for real-time applications and resource-constrained devices.",
     date: "2024-02-19",
     tags: "3D/4D",
     img: "images/papers-images/img-1-20240219.png",
-    link: "https://link.springer.com/article/10.1007/s11063-024-11540-0"},
-  {title: "SDiT: Spiking Diffusion Model with Transformer",
+    link: "https://link.springer.com/article/10.1007/s11063-024-11540-0"
+  },
+  {
+    title: "SDiT: Spiking Diffusion Model with Transformer",
     description: "Spiking Diffusion Transformer (SDiT), a novel SNN diffusion model. It uses RWKV for efficient self-attention. SDiT aims to provide a baseline for SNN generative models and shows competitiveness on multiple datasets, generating high-quality images with lower cost and shorter sampling time.",
     date: "2024-02-18",
     tags: "Image",
     img: "images/papers-images/img-1-20240218.png",
-    link: "https://arxiv.org/abs/2402.11588"},
-  {title: "RWKV-TS: Beyond Traditional Recurrent Neural Network for Time Series Tasks",
+    link: "https://arxiv.org/abs/2402.11588"
+  },
+  {
+    title: "RWKV-TS: Beyond Traditional Recurrent Neural Network for Time Series Tasks",
     description: "Traditional RNNs have declined in time series tasks. This paper presents RWKV-TS, an efficient RNN-based model. It has O(L) complexity, captures long-term info well, and is computationally efficient. RWKV-TS shows competitive performance with reduced latency and memory use in various tasks.",
     date: "2024-01-17",
     tags: "Sequence",
     img: "images/papers-images/img-1-20240117.png",
-    link: "https://arxiv.org/abs/2401.09093"},
-  {title: "Advancing VAD Systems Based on Multi-Task Learning with Improved Model Structures",
+    link: "https://arxiv.org/abs/2401.09093"
+  },
+  {
+    title: "Advancing VAD Systems Based on Multi-Task Learning with Improved Model Structures",
     description: "Semantic VAD systems based on multi-task learning with improved models (RWKV for real-time, SAN-M for offline) to address issues in traditional binary VAD. Evaluations show significant improvements in CER, DCF, and NRR metrics compared to DFSMN-based systems.",
     date: "2023-12-19",
     tags: "Audio",
     img: "images/papers-images/img-1-20231219.png",
-    link: "https://arxiv.org/abs/2312.14860"},
-  {title: "RWKV-based Encoder-Decoder Model for Code Completion",
+    link: "https://arxiv.org/abs/2312.14860"
+  },
+  {
+    title: "RWKV-based Encoder-Decoder Model for Code Completion",
     description: "An RWKV-based encoder-decoder model for code completion. It aims to address challenges in this area. The model shows good performance and has potential for improving code generation efficiency, but more research is needed for wider application and optimization.",
     date: "2023-11-17",
     tags: "Language",
     img: "images/papers-images/img-1-20231117.png",
-    link: "https://ieeexplore.ieee.org/abstract/document/10442108"},
-  {title: "RWKV: A Linear Attention Mechanism for Temperature and Humidity Compensation for Gas Sensors",
+    link: "https://ieeexplore.ieee.org/abstract/document/10442108"
+  },
+  {
+    title: "RWKV: A Linear Attention Mechanism for Temperature and Humidity Compensation for Gas Sensors",
     description: "A novel methodology for a PANI-CeO2 ammonia gas sensor to address temperature and humidity compensation. It uses the RWKV network with a Linear attention mechanism. The process has three stages. The method shows high predictive accuracy, with low mean absolute and relative errors.",
     date: "2023-10-25",
     tags: "Sequence",
     img: "images/papers-images/img-1-20231025.png",
-    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4612708"},
-  {title: "Exploring RWKV for Memory Efficient and Low Latency Streaming ASR",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4612708"
+  },
+  {
+    title: "Exploring RWKV for Memory Efficient and Low Latency Streaming ASR",
     description: "Applying RWKV, a linear attention transformer variant, to streaming ASR. It combines transformer performance and RNN inference efficiency. Experiments show RWKV-Transducer and RWKV-Boundary-Aware-Transducer achieve good accuracy with minimal latency and memory cost.",
     date: "2023-09-26",
     tags: "Audio",
     img: "images/papers-images/img-1-20230926.png",
-    link: "https://arxiv.org/abs/2309.14758"},
-  {title: "RWKV: Reinventing RNNs for the Transformer Era",
+    link: "https://arxiv.org/abs/2309.14758"
+  },
+  {
+    title: "RWKV: Reinventing RNNs for the Transformer Era",
     description: "RWKV, a novel model architecture. It combines the efficient parallelizable training of transformers with the efficient inference of RNNs. RWKV uses a linear attention mechanism, scales to 14 billion parameters, and performs comparably to similar-sized transformers, advancing sequence processing tasks.",
     date: "2023-05-22",
     tags: "General",
     img: "images/papers-images/img-1-20230522.png",
-    link: "https://arxiv.org/abs/2305.13048"},
+    link: "https://arxiv.org/abs/2305.13048"
+  },
 ];
 
 let currentProjects = allProjects;
