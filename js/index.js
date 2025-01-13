@@ -1,5 +1,21 @@
 const allProjects = [
   {
+    title: "Reducing Cross-Sensor Domain Gaps in Tactile Sensing via Few-Sample-Driven Style-to-Content Unsupervised Domain Adaptation",
+    description: "The paper proposes a few-sample-driven style-to-content unsupervised domain adaptation method FSSC to reduce cross-sensor domain gaps in tactile sensing. In the design of the bottleneck layer, modules are integrated based on the RWKV architecture to extract and fuse spatio-temporal information, improving the model performance, and experiments prove its effectiveness.",
+    date: "2025-01-05",
+    tags: "sequence",
+    img: "images/papers-images/img-1-20250105.png",
+    link: "https://www.mdpi.com/1424-8220/25/1/256"
+  },
+  {
+    title: "Efficient Relational Context Perception for Knowledge Graph Completion",
+    description: "The paper proposes a novel method for knowledge graph completion integrating the Triple Receptance Perception (TRP) architecture and Tucker decomposition module. Inspired by Rwkv, the TRP effectively models sequential information through time and channel mixing blocks to learn dynamic embeddings. Experiments show that this method outperforms existing models.",
+    date: "2024-12-31",
+    tags: "Image",
+    img: "images/papers-images/img-2-20241231.png",
+    link: "https://arxiv.org/abs/2501.00397"
+  },
+  {
     title: "GDSR: Global-Detail Integration through Dual-Branch Network with Wavelet Losses for Remote Sensing Image Super-Resolution",
     description: "The paper presents a new method for remote sensing image super-resolution (RSISR) named GDSR. Considering the deficiencies of existing methods in handling global and local dependencies, GDSR innovatively introduces RWKV to capture long-range dependencies with the advantage of linear complexity. Meanwhile, it uses a dual-branch structure to effectively integrate global and local information. Experimental results show that GDSR has excellent performance, surpassing the current state-of-the-art methods, and the wavelet loss further improves the super-resolution effect.",
     date: "2024-12-31",
