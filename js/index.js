@@ -20,16 +20,8 @@ const allProjects = [
     description: "The paper proposes a novel method for knowledge graph completion integrating the Triple Receptance Perception (TRP) architecture and Tucker decomposition module. Inspired by Rwkv, the TRP effectively models sequential information through time and channel mixing blocks to learn dynamic embeddings. Experiments show that this method outperforms existing models.",
     date: "2024-12-31",
     tags: "Language",
-    img: "images/papers-images/img-20241231-2.png",
-    link: "https://arxiv.org/abs/2501.00397"
-  },
-  {
-    title: "GDSR: Global-Detail Integration through Dual-Branch Network with Wavelet Losses for Remote Sensing Image Super-Resolution",
-    description: "The paper presents a new method for remote sensing image super-resolution (RSISR) named GDSR. Considering the deficiencies of existing methods in handling global and local dependencies, GDSR innovatively introduces RWKV to capture long-range dependencies with the advantage of linear complexity. Meanwhile, it uses a dual-branch structure to effectively integrate global and local information. Experimental results show that GDSR has excellent performance, surpassing the current state-of-the-art methods, and the wavelet loss further improves the super-resolution effect.",
-    date: "2024-12-31",
-    tags: "Image",
     img: "images/papers-images/img-20241231-1.png",
-    link: "https://arxiv.org/abs/2501.01460"
+    link: "https://arxiv.org/abs/2501.00397"
   },
   {
     title: "Injecting Explainability and Lightweight Design into Weakly Supervised Video Anomaly Detection Systems",
