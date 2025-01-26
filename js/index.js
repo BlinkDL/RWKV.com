@@ -35,7 +35,7 @@ const allProjects = [
     title: "Injecting Explainability and Lightweight Design into Weakly Supervised Video Anomaly Detection Systems",
     description: "This paper introduces TCVADS, a system for video anomaly detection. It operates in two stages. In the first stage, it employs an enhanced RWKV module for efficient time series analysis. Through knowledge distillation and cross-modal learning, it achieves better performance than existing methods.",
     date: "2024-12-28",
-    tags: "Sequence",
+    tags: "3D/4D",
     img: "images/papers-images/img-20241228-1.png",
     link: "https://arxiv.org/abs/2412.20201"
   },
