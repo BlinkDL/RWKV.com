@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "RWKV-UI: UI Understanding with Enhanced Perception and Reasoning",
+    description: "The paper proposes the RWKV-UI, a visual language model based on the RWKV architecture, designed for high-resolution UI understanding. It addresses information loss and reasoning limitations in existing VLMs by integrating three visual encoders (SIGLIP, DINO, SAM) with a partition-encoding strategy to process 4096×4096 UI images while preserving details. Leveraging RWKV’s efficient RNN-based structure, the model combines layout detection and Chain-of-Thought (CoT) visual prompts to enhance spatial reasoning and multi-step interaction prediction. Experiments demonstrate superior performance on UI tasks, outperforming larger models in action grounding and element recognition. RWKV-UI highlights RWKV’s adaptability in multimodal scenarios through efficient feature fusion and reasoning mechanisms.",
+    date: "2025-02-06",
+    tags: "Image",
+    img: "images/papers-images/img-20250206-1.png",
+    link: "https://arxiv.org/abs/2502.03971"
+  },
+  {
     title: "Exploring Linear Attention Alternative for Single Image Super-Resolution",
     description: "The paper proposes the OmniRWKVSR model for single-image super-resolution, integrating the Receptance Weighted Key Value (RWKV) architecture with novel feature extraction techniques (VRSM and VRCM) to address computational complexity and reconstruction quality. By leveraging RWKV's linear computational efficiency and hybrid RNN-Transformer strengths, the model avoids quadratic attention costs while enhancing multi-scale feature capture. Experimental results demonstrate superior performance over MambaIR and SwinIR, achieving 0.26% PSNR and 0.16% SSIM improvements in 4× upscaling tasks, along with 15% faster training. The work highlights RWKV's effectiveness in balancing efficiency and image restoration quality, particularly for remote sensing applications.",
     date: "2025-02-01",
