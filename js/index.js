@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "Training Language Models for Social Deduction with Multi-Agent Reinforcement Learning",
+    description: "The paper proposes training language models for social deduction games using multi-agent reinforcement learning (MARL), focusing on natural language communication without human demonstrations. By integrating 'istening' (predicting imposters from discussions) and 'speaking' (rewarding messages that shift others' beliefs), the framework employs the RWKV model—a recurrent architecture with linear attention—to efficiently handle long gameplay sequences and reduce computational overhead. Results show RWKV-based agents outperform standard RL methods, doubling win rates and exhibiting human-like strategies such as evidence-based accusations. The choice of RWKV addresses challenges in scalability and context length, critical for real-time multi-agent interactions.",
+    date: "2025-02-09",
+    tags: "Language",
+    img: "images/papers-images/img-20250209-1.png",
+    link: "https://arxiv.org/abs/2502.06060"
+  },
+  {
     title: "RWKV-UI: UI Understanding with Enhanced Perception and Reasoning",
     description: "The paper proposes the RWKV-UI, a visual language model based on the RWKV architecture, designed for high-resolution UI understanding. It addresses information loss and reasoning limitations in existing VLMs by integrating three visual encoders (SIGLIP, DINO, SAM) with a partition-encoding strategy to process 4096×4096 UI images while preserving details. Leveraging RWKV’s efficient RNN-based structure, the model combines layout detection and Chain-of-Thought (CoT) visual prompts to enhance spatial reasoning and multi-step interaction prediction. Experiments demonstrate superior performance on UI tasks, outperforming larger models in action grounding and element recognition. RWKV-UI highlights RWKV’s adaptability in multimodal scenarios through efficient feature fusion and reasoning mechanisms.",
     date: "2025-02-06",
