@@ -24,6 +24,14 @@ const allProjects = [
     link: "https://arxiv.org/abs/2502.00404"
   },
   {
+    title: "ARWKV: Pretrain is not what we need, an RNN-Attention-Based Language Model Born from Transformer",
+    description: "The paper proposes ARWKV, an RNN-attention-based language model derived from the RWKV architecture, aiming to enhance expressiveness and state-tracking capabilities beyond transformers. By distilling knowledge from transformer-based models like Qwen2.5 into RNNs, ARWKV replaces self-attention with the RWKV-7 time-mixing module, enabling efficient training on limited resources (e.g., a 7B model on a single A100 GPU). The method involves three stages: attention alignment, knowledge distillation, and supervised fine-tuning. Evaluations show competitive performance on benchmarks, though architectural mismatches between teacher-student scales may degrade results. The work bridges transformer efficiency with RNN strengths, highlighting RWKV’s potential for hybrid architectures.",
+    date: "2025-01-26",
+    tags: "General",
+    img: "images/papers-images/img-20250126-1.png",
+    link: "https://arxiv.org/abs/2501.15570"
+  },
+  {
     title: "Rate-Aware Learned Speech Compression",
     description: "This paper proposes a learning-based speech compression scheme based on a channel-aware entropy model, which enhances rate-distortion performance by replacing traditional quantizers. It utilizes multi-scale convolutions and hybrid RWKV blocks to improve the representational capacity of both encoder and decoder. Experimental results demonstrate that the proposed method achieves significant improvements in bitrate savings and acoustic quality metrics compared to existing codecs. This research finding has important implications for addressing speech compression in real-time communication and provides new insights and directions for future research.",
     date: "2025-01-21",
