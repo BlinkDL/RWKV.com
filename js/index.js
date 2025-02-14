@@ -24,6 +24,14 @@ const allProjects = [
     link: "https://arxiv.org/abs/2502.00404"
   },
   {
+    title: "RWKV-Lite: Deeply Compressed RWKV for Resource-Constrained Devices",
+    description: "The paper proposes the RWKV-Lite, a suite of compression techniques tailored for the RNN-based RWKV architecture to enable efficient deployment on resource-constrained devices. By combining low-rank approximations for projection matrices, sparsity-aware predictors for FFN layers, embedding caching, and hierarchical weight decomposition for classification heads, the approach reduces RWKV's memory footprint by 3.4–5× with minimal accuracy loss. Compared to similarly accurate transformer-based models, RWKV-Lite achieves 4× lower memory usage while retaining computational efficiency. The work highlights RWKV's adaptability to compression and its potential as a lightweight alternative to transformers for edge applications.",
+    date: "2025-01-31",
+    tags: "General",
+    img: "images/papers-images/img-20250131-1.png",
+    link: "https://arxiv.org/abs/2412.10856"
+  },
+  {
     title: "ARWKV: Pretrain is not what we need, an RNN-Attention-Based Language Model Born from Transformer",
     description: "The paper proposes ARWKV, an RNN-attention-based language model derived from the RWKV architecture, aiming to enhance expressiveness and state-tracking capabilities beyond transformers. By distilling knowledge from transformer-based models like Qwen2.5 into RNNs, ARWKV replaces self-attention with the RWKV-7 time-mixing module, enabling efficient training on limited resources (e.g., a 7B model on a single A100 GPU). The method involves three stages: attention alignment, knowledge distillation, and supervised fine-tuning. Evaluations show competitive performance on benchmarks, though architectural mismatches between teacher-student scales may degrade results. The work bridges transformer efficiency with RNN strengths, highlighting RWKV’s potential for hybrid architectures.",
     date: "2025-01-26",
