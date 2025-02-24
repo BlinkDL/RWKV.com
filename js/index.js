@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "Substation equipment non-rigid defect detection via receptance weighted key value-based causality-aware networks",
+    description: "The paper proposes a causal - aware equipment defect detection framework based on the RWKV architecture to address non - rigid defect detection and long - tailed distribution issues in substation equipment. The RWKV architecture, with its global receptive field, enhances defect feature extraction. It's integrated with other modules in the framework. Experiments show this framework outperforms baseline methods, validating its effectiveness.",
+    date: "2025-02-13",
+    tags: "Image",
+    img: "images/papers-images/img-20250213-1.png",
+    link: "https://link.springer.com/article/10.1007/s11760-025-03852-y"
+  },
+  {
     title: "Training Language Models for Social Deduction with Multi-Agent Reinforcement Learning",
     description: "The paper proposes training language models for social deduction games using multi-agent reinforcement learning (MARL), focusing on natural language communication without human demonstrations. By integrating 'istening' (predicting imposters from discussions) and 'speaking' (rewarding messages that shift others' beliefs), the framework employs the RWKV model—a recurrent architecture with linear attention—to efficiently handle long gameplay sequences and reduce computational overhead. Results show RWKV-based agents outperform standard RL methods, doubling win rates and exhibiting human-like strategies such as evidence-based accusations. The choice of RWKV addresses challenges in scalability and context length, critical for real-time multi-agent interactions.",
     date: "2025-02-09",
@@ -14,6 +22,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20250206-1.png",
     link: "https://arxiv.org/abs/2502.03971"
+  },
+  {
+    title: "Multi-Modal Dynamic Brain Graph Representation Learning for Brain Disorder Diagnosis Via Temporal Sequence Model",
+    description: "The paper proposes the ET_MGNN model for brain disorder diagnosis. It integrates multimodal brain network information and uses RWKV for dynamic sequence modeling. By fusing structural and functional connectivity, the model can capture complex brain network features. Experiments on datasets like ABIDE II and ADNI show that ET_MGNN outperforms other methods, and RWKV plays a crucial role in improving performance.",
+    date: "2025-02-05",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250205-1.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5114041"
   },
   {
     title: "Exploring Linear Attention Alternative for Single Image Super-Resolution",
@@ -48,12 +64,28 @@ const allProjects = [
     link: "https://arxiv.org/abs/2501.11999"
   },
   {
+    title: "Learnable Sparsification of Die-to-Die Communication via Spike-Based Encoding",
+    description: "The paper proposes SNAP, a hybrid neural network architecture that combines SNNs and ANNs. To evaluate SNAP, RWKV is integrated as a representative language model architecture. Experiments show that SNAP outperforms traditional SNNs and non-spiking models, achieving up to 5.3× energy efficiency improvements and 15.2× reductions in inference latency, highlighting its potential in large-scale AI systems.",
+    date: "2025-01-15",
+    tags: "General",
+    img: "images/papers-images/img-20250115-1.png",
+    link: "https://arxiv.org/abs/2501.08645"
+  },
+  {
     title: "RWKV-UNet: Improving UNet with Long-Range Cooperation for Effective Medical Image Segmentation",
     description: "The paper proposes RWKV-UNet, which integrates the RWKV structure into U-Net for medical image segmentation. The IR-RWKV module enhances the ability to capture long-range dependencies, and combined with the CCM module, it improves skip connections. Experiments show that it achieves SOTA performance on multiple datasets, and its variants balance performance and efficiency.",
     date: "2025-01-14",
     tags: "Image",
     img: "images/papers-images/img-20250114-1.png",
     link: "https://arxiv.org/abs/2501.08458"
+  },
+  {
+    title: "Explore Activation Sparsity in Recurrent LLMs for Energy-Efficient Neuromorphic Computing",
+    description: "The paper proposes a low - cost, training - free algorithm to sparsify Recurrent LLMs' activations for energy - efficient neuromorphic computing. It takes RWKV as an example to show the effectiveness of the method. By adding thresholding functions in RWKV, the average activation sparsity is increased. Hardware simulations show significant energy savings and latency improvements, and the method can also be extended to other models.",
+    date: "2025-01-09",
+    tags: "General",
+    img: "images/papers-images/img-20250109-1.png",
+    link: "https://arxiv.org/abs/2501.16337"
   },
   {
     title: "Reducing Cross-Sensor Domain Gaps in Tactile Sensing via Few-Sample-Driven Style-to-Content Unsupervised Domain Adaptation",
