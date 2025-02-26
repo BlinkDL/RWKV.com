@@ -1,5 +1,61 @@
 const allProjects = [
   {
+    title: "Substation equipment non-rigid defect detection via receptance weighted key value-based causality-aware networks",
+    description: "The paper proposes a causal - aware equipment defect detection framework based on the RWKV architecture to address non - rigid defect detection and long - tailed distribution issues in substation equipment. The RWKV architecture, with its global receptive field, enhances defect feature extraction. It's integrated with other modules in the framework. Experiments show this framework outperforms baseline methods, validating its effectiveness.",
+    date: "2025-02-13",
+    tags: "Image",
+    img: "images/papers-images/img-20250213-1.png",
+    link: "https://link.springer.com/article/10.1007/s11760-025-03852-y"
+  },
+  {
+    title: "Training Language Models for Social Deduction with Multi-Agent Reinforcement Learning",
+    description: "The paper proposes training language models for social deduction games using multi-agent reinforcement learning (MARL), focusing on natural language communication without human demonstrations. By integrating 'istening' (predicting imposters from discussions) and 'speaking' (rewarding messages that shift others' beliefs), the framework employs the RWKV model—a recurrent architecture with linear attention—to efficiently handle long gameplay sequences and reduce computational overhead. Results show RWKV-based agents outperform standard RL methods, doubling win rates and exhibiting human-like strategies such as evidence-based accusations. The choice of RWKV addresses challenges in scalability and context length, critical for real-time multi-agent interactions.",
+    date: "2025-02-09",
+    tags: "Language",
+    img: "images/papers-images/img-20250209-1.png",
+    link: "https://arxiv.org/abs/2502.06060"
+  },
+  {
+    title: "RWKV-UI: UI Understanding with Enhanced Perception and Reasoning",
+    description: "The paper proposes the RWKV-UI, a visual language model based on the RWKV architecture, designed for high-resolution UI understanding. It addresses information loss and reasoning limitations in existing VLMs by integrating three visual encoders (SIGLIP, DINO, SAM) with a partition-encoding strategy to process 4096×4096 UI images while preserving details. Leveraging RWKV’s efficient RNN-based structure, the model combines layout detection and Chain-of-Thought (CoT) visual prompts to enhance spatial reasoning and multi-step interaction prediction. Experiments demonstrate superior performance on UI tasks, outperforming larger models in action grounding and element recognition. RWKV-UI highlights RWKV’s adaptability in multimodal scenarios through efficient feature fusion and reasoning mechanisms.",
+    date: "2025-02-06",
+    tags: "Image",
+    img: "images/papers-images/img-20250206-1.png",
+    link: "https://arxiv.org/abs/2502.03971"
+  },
+  {
+    title: "Multi-Modal Dynamic Brain Graph Representation Learning for Brain Disorder Diagnosis Via Temporal Sequence Model",
+    description: "The paper proposes the ET_MGNN model for brain disorder diagnosis. It integrates multimodal brain network information and uses RWKV for dynamic sequence modeling. By fusing structural and functional connectivity, the model can capture complex brain network features. Experiments on datasets like ABIDE II and ADNI show that ET_MGNN outperforms other methods, and RWKV plays a crucial role in improving performance.",
+    date: "2025-02-05",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250205-1.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5114041"
+  },
+  {
+    title: "Exploring Linear Attention Alternative for Single Image Super-Resolution",
+    description: "The paper proposes the OmniRWKVSR model for single-image super-resolution, integrating the Receptance Weighted Key Value (RWKV) architecture with novel feature extraction techniques (VRSM and VRCM) to address computational complexity and reconstruction quality. By leveraging RWKV's linear computational efficiency and hybrid RNN-Transformer strengths, the model avoids quadratic attention costs while enhancing multi-scale feature capture. Experimental results demonstrate superior performance over MambaIR and SwinIR, achieving 0.26% PSNR and 0.16% SSIM improvements in 4× upscaling tasks, along with 15% faster training. The work highlights RWKV's effectiveness in balancing efficiency and image restoration quality, particularly for remote sensing applications.",
+    date: "2025-02-01",
+    tags: "Image",
+    img: "images/papers-images/img-20250201-1.png",
+    link: "https://arxiv.org/abs/2502.00404"
+  },
+  {
+    title: "RWKV-Lite: Deeply Compressed RWKV for Resource-Constrained Devices",
+    description: "The paper proposes the RWKV-Lite, a suite of compression techniques tailored for the RNN-based RWKV architecture to enable efficient deployment on resource-constrained devices. By combining low-rank approximations for projection matrices, sparsity-aware predictors for FFN layers, embedding caching, and hierarchical weight decomposition for classification heads, the approach reduces RWKV's memory footprint by 3.4–5× with minimal accuracy loss. Compared to similarly accurate transformer-based models, RWKV-Lite achieves 4× lower memory usage while retaining computational efficiency. The work highlights RWKV's adaptability to compression and its potential as a lightweight alternative to transformers for edge applications.",
+    date: "2025-01-31",
+    tags: "General",
+    img: "images/papers-images/img-20250131-1.png",
+    link: "https://arxiv.org/abs/2412.10856"
+  },
+  {
+    title: "ARWKV: Pretrain is not what we need, an RNN-Attention-Based Language Model Born from Transformer",
+    description: "The paper proposes ARWKV, an RNN-attention-based language model derived from the RWKV architecture, aiming to enhance expressiveness and state-tracking capabilities beyond transformers. By distilling knowledge from transformer-based models like Qwen2.5 into RNNs, ARWKV replaces self-attention with the RWKV-7 time-mixing module, enabling efficient training on limited resources (e.g., a 7B model on a single A100 GPU). The method involves three stages: attention alignment, knowledge distillation, and supervised fine-tuning. Evaluations show competitive performance on benchmarks, though architectural mismatches between teacher-student scales may degrade results. The work bridges transformer efficiency with RNN strengths, highlighting RWKV’s potential for hybrid architectures.",
+    date: "2025-01-26",
+    tags: "General",
+    img: "images/papers-images/img-20250126-1.png",
+    link: "https://arxiv.org/abs/2501.15570"
+  },
+  {
     title: "Rate-Aware Learned Speech Compression",
     description: "This paper proposes a learning-based speech compression scheme based on a channel-aware entropy model, which enhances rate-distortion performance by replacing traditional quantizers. It utilizes multi-scale convolutions and hybrid RWKV blocks to improve the representational capacity of both encoder and decoder. Experimental results demonstrate that the proposed method achieves significant improvements in bitrate savings and acoustic quality metrics compared to existing codecs. This research finding has important implications for addressing speech compression in real-time communication and provides new insights and directions for future research.",
     date: "2025-01-21",
@@ -8,12 +64,28 @@ const allProjects = [
     link: "https://arxiv.org/abs/2501.11999"
   },
   {
+    title: "Learnable Sparsification of Die-to-Die Communication via Spike-Based Encoding",
+    description: "The paper proposes SNAP, a hybrid neural network architecture that combines SNNs and ANNs. To evaluate SNAP, RWKV is integrated as a representative language model architecture. Experiments show that SNAP outperforms traditional SNNs and non-spiking models, achieving up to 5.3× energy efficiency improvements and 15.2× reductions in inference latency, highlighting its potential in large-scale AI systems.",
+    date: "2025-01-15",
+    tags: "General",
+    img: "images/papers-images/img-20250115-1.png",
+    link: "https://arxiv.org/abs/2501.08645"
+  },
+  {
     title: "RWKV-UNet: Improving UNet with Long-Range Cooperation for Effective Medical Image Segmentation",
     description: "The paper proposes RWKV-UNet, which integrates the RWKV structure into U-Net for medical image segmentation. The IR-RWKV module enhances the ability to capture long-range dependencies, and combined with the CCM module, it improves skip connections. Experiments show that it achieves SOTA performance on multiple datasets, and its variants balance performance and efficiency.",
     date: "2025-01-14",
     tags: "Image",
     img: "images/papers-images/img-20250114-1.png",
     link: "https://arxiv.org/abs/2501.08458"
+  },
+  {
+    title: "Explore Activation Sparsity in Recurrent LLMs for Energy-Efficient Neuromorphic Computing",
+    description: "The paper proposes a low - cost, training - free algorithm to sparsify Recurrent LLMs' activations for energy - efficient neuromorphic computing. It takes RWKV as an example to show the effectiveness of the method. By adding thresholding functions in RWKV, the average activation sparsity is increased. Hardware simulations show significant energy savings and latency improvements, and the method can also be extended to other models.",
+    date: "2025-01-09",
+    tags: "General",
+    img: "images/papers-images/img-20250109-1.png",
+    link: "https://arxiv.org/abs/2501.16337"
   },
   {
     title: "Reducing Cross-Sensor Domain Gaps in Tactile Sensing via Few-Sample-Driven Style-to-Content Unsupervised Domain Adaptation",
@@ -70,14 +142,6 @@ const allProjects = [
     tags: "Language",
     img: "images/papers-images/img-20241218-1.png",
     link: "https://www.preprints.org/manuscript/202412.1705/v1"
-  },
-  {
-    title: "RWKV-edge: Deeply Compressed RWKV for Resource-Constrained Devices",
-    description: "RWKV-edge, a solution for running RWKV models on resource-constrained devices. Using techniques like low-rank approximation, sparsity prediction, and clustered heads, it achieves 4.95-3.8x model compression with only 2.95pp accuracy loss. RWKV-edge provides an effective approach for deploying RWKV models on edge devices.",
-    date: "2024-12-14",
-    tags: "General",
-    img: "images/papers-images/img-20241214-1.png",
-    link: "https://arxiv.org/abs/2412.10856"
   },
   {
     title: "Linear Attention Based Channel Estimation Scheme for V2X Communications",
