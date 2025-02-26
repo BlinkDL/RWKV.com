@@ -144,14 +144,6 @@ const allProjects = [
     link: "https://www.preprints.org/manuscript/202412.1705/v1"
   },
   {
-    title: "RWKV-edge: Deeply Compressed RWKV for Resource-Constrained Devices",
-    description: "RWKV-edge, a solution for running RWKV models on resource-constrained devices. Using techniques like low-rank approximation, sparsity prediction, and clustered heads, it achieves 4.95-3.8x model compression with only 2.95pp accuracy loss. RWKV-edge provides an effective approach for deploying RWKV models on edge devices.",
-    date: "2024-12-14",
-    tags: "General",
-    img: "images/papers-images/img-20241214-1.png",
-    link: "https://arxiv.org/abs/2412.10856"
-  },
-  {
     title: "Linear Attention Based Channel Estimation Scheme for V2X Communications",
     description: "An innovative channel estimation scheme for V2X communications. Considering the doubly selective fading and limited pilots in IEEE 802.11p standard, it introduces the RWKV network with linear attention combined with DPA. The RWKV-DPA estimator enhances performance and reduces complexity compared to existing ones.",
     date: "2024-12-13",
