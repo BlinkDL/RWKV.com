@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "Rwkv-vg: visual grounding with RWKV-driven encoder-decoder framework",
+    description: "The paper proposes RWKV-VG, a novel visual grounding framework entirely built on the RWKV architecture. Unlike traditional CNN- or Transformer-based approaches, RWKV-VG leverages RWKV’s hybrid design, which combines RNN-like sequential processing and Transformer-like attention, to efficiently model intra-modal and cross-modal interactions. The framework employs RWKV-driven visual and linguistic encoders, a visual-linguistic decoder, and a learnable [REG] token for box regression. Evaluations on ReferItGame and RefCOCO benchmarks demonstrate state-of-the-art performance, surpassing Transformer-based methods like TransVG in accuracy and convergence speed. Ablation studies highlight the critical role of RWKV modules and the [REG] token placement. This work establishes RWKV as a competitive architecture for vision-language tasks, offering computational efficiency without sacrificing precision.",
+    date: "2025-02-21",
+    tags: "Image",
+    img: "images/papers-images/img-20250221-1.png",
+    link: "https://link.springer.com/article/10.1007/s00530-025-01720-w"
+  },
+  {
     title: "Substation equipment non-rigid defect detection via receptance weighted key value-based causality-aware networks",
     description: "The paper proposes a causal - aware equipment defect detection framework based on the RWKV architecture to address non - rigid defect detection and long - tailed distribution issues in substation equipment. The RWKV architecture, with its global receptive field, enhances defect feature extraction. It's integrated with other modules in the framework. Experiments show this framework outperforms baseline methods, validating its effectiveness.",
     date: "2025-02-13",
