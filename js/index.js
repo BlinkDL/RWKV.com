@@ -16,6 +16,14 @@ const allProjects = [
     link: "https://link.springer.com/article/10.1007/s11760-025-03852-y"
   },
   {
+    title: "Linear Attention Modeling for Learned Image Compression",
+    description: "The paper proposes LALIC, a linear attention-based learned image compression framework utilizing Bi-RWKV blocks for efficient feature extraction. By integrating bidirectional RWKV (BiWKV) attention and Omni-Shift modules, LALIC captures global dependencies and local context in 2D latent representations with linear complexity. A novel RWKV-based Spatial-Channel Context Model (RWKV-SCCTX) further enhances entropy modeling by exploiting spatial and channel redundancies. Experiments demonstrate that LALIC outperforms VTM-9.1 by up to -17.32% in BD-rate across Kodak, Tecnick, and CLIC datasets, achieving competitive rate-distortion performance with lower computational overhead compared to transformer-based methods. This work highlights RWKV's effectiveness in balancing efficiency and compression quality for high-resolution images.",
+    date: "2025-02-09",
+    tags: "Image",
+    img: "images/papers-images/img-20250209-2.png",
+    link: "https://arxiv.org/abs/2502.05741"
+  },
+  {
     title: "Training Language Models for Social Deduction with Multi-Agent Reinforcement Learning",
     description: "The paper proposes training language models for social deduction games using multi-agent reinforcement learning (MARL), focusing on natural language communication without human demonstrations. By integrating 'istening' (predicting imposters from discussions) and 'speaking' (rewarding messages that shift others' beliefs), the framework employs the RWKV model—a recurrent architecture with linear attention—to efficiently handle long gameplay sequences and reduce computational overhead. Results show RWKV-based agents outperform standard RL methods, doubling win rates and exhibiting human-like strategies such as evidence-based accusations. The choice of RWKV addresses challenges in scalability and context length, critical for real-time multi-agent interactions.",
     date: "2025-02-09",
