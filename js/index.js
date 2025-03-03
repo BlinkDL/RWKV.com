@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "TabulaTime: A Novel Multimodal Deep Learning Framework for Advancing Acute Coronary Syndrome Prediction through Environmental and Clinical Data Integration",
+    description: "The paper proposes TabulaTime, a novel multimodal deep learning framework integrating clinical and environmental time-series data to improve Acute Coronary Syndrome (ACS) prediction. Key innovations include the PatchRWKV module, which combines recurrent neural networks (RNNs) and attention mechanisms for efficient time-series feature extraction with linear computational complexity. This module outperforms state-of-the-art models (e.g., Transformers, LSTMs) in capturing temporal dependencies. Experimental results show a 20.5% accuracy improvement over traditional methods, highlighting the significance of integrating air pollution data. The framework enhances interpretability through attention mechanisms, identifying critical predictors like systolic blood pressure and PM₁₀.",
+    date: "2025-02-24",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250224-1.png",
+    link: "https://arxiv.org/abs/2502.17049v1"
+  },
+  {
     title: "Rwkv-vg: visual grounding with RWKV-driven encoder-decoder framework",
     description: "The paper proposes RWKV-VG, a novel visual grounding framework entirely built on the RWKV architecture. Unlike traditional CNN- or Transformer-based approaches, RWKV-VG leverages RWKV’s hybrid design, which combines RNN-like sequential processing and Transformer-like attention, to efficiently model intra-modal and cross-modal interactions. The framework employs RWKV-driven visual and linguistic encoders, a visual-linguistic decoder, and a learnable [REG] token for box regression. Evaluations on ReferItGame and RefCOCO benchmarks demonstrate state-of-the-art performance, surpassing Transformer-based methods like TransVG in accuracy and convergence speed. Ablation studies highlight the critical role of RWKV modules and the [REG] token placement. This work establishes RWKV as a competitive architecture for vision-language tasks, offering computational efficiency without sacrificing precision.",
     date: "2025-02-21",
@@ -94,6 +102,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20250114-1.png",
     link: "https://arxiv.org/abs/2501.08458"
+  },
+  {
+    title: "ChemRB: a novel generative model based on bidirectional molecular ring constraints",
+    description: "The paper proposes ChemRB, a novel generative model for molecular design in drug discovery, leveraging bidirectional molecular ring constraints to address limitations in existing unidirectional encoders. By integrating the RWKV mechanism, ChemRB combines the linear computational efficiency of RNNs with the contextual awareness of Transformers, effectively capturing long-range dependencies in SMILES sequences. The model introduces two pre-training tasks—ring-level feature prediction and global-span closure prediction—to enhance molecular validity, particularly for complex ring systems. Experimental results demonstrate ChemRB's superior performance in generating valid, unique, and novel molecules, outperforming state-of-the-art models on benchmark datasets. Additionally, its application to EGFR inhibitor redesign highlights practical utility, showcasing high binding affinity and structural fidelity.",
+    date: "2025-01-10",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250110-1.png",
+    link: "https://jsnu.magtech.com.cn/CN/10.15983/j.cnki.jsnu.2025005"
   },
   {
     title: "Explore Activation Sparsity in Recurrent LLMs for Energy-Efficient Neuromorphic Computing",
