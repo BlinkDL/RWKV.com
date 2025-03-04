@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "Delta-WKV: A Novel Meta-in-Context Learner for MRI Super-Resolution",
+    description: "The paper proposes Delta-WKV, a novel linear Transformer model for MRI super-resolution, integrating Meta-in-Context Learning (MiCL) and the Delta rule to dynamically adjust weights during inference for efficient local-global pattern recognition. Inspired by RWKV, Delta-WKV employs a quad-directional scanning mechanism and replaces traditional MLPs with a channel-mixing network, enhancing long-range dependency capture while preserving high-frequency details. Evaluated on IXI and fastMRI datasets, Delta-WKV achieves state-of-the-art PSNR/SSIM scores with 15% faster training and inference than SwinIR and MambaIR, demonstrating efficiency for clinical applications.",
+    date: "2025-02-28",
+    tags: "Image",
+    img: "images/papers-images/img-20250228-1.png",
+    link: "https://arxiv.org/abs/2502.20852"
+  },
+  {
     title: "TabulaTime: A Novel Multimodal Deep Learning Framework for Advancing Acute Coronary Syndrome Prediction through Environmental and Clinical Data Integration",
     description: "The paper proposes TabulaTime, a novel multimodal deep learning framework integrating clinical and environmental time-series data to improve Acute Coronary Syndrome (ACS) prediction. Key innovations include the PatchRWKV module, which combines recurrent neural networks (RNNs) and attention mechanisms for efficient time-series feature extraction with linear computational complexity. This module outperforms state-of-the-art models (e.g., Transformers, LSTMs) in capturing temporal dependencies. Experimental results show a 20.5% accuracy improvement over traditional methods, highlighting the significance of integrating air pollution data. The framework enhances interpretability through attention mechanisms, identifying critical predictors like systolic blood pressure and PM₁₀.",
     date: "2025-02-24",
