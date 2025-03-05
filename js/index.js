@@ -288,8 +288,8 @@ const allProjects = [
     link: "https://www.arxiv.org/abs/2409.19987"
   },
   {
-    title: "Bone: Block Affine Transformation as Parameter Efficient Fine-tuning Methods for Large Language Models",
-    description: "Bone, a new PEFT method. It divides LLM weights into subspaces and uses a shared matrix, differing from LoRA. It surpasses LoRA and its variants. The combination with Weight Guide and the development of Bat enhance its performance. Experiments on RWKV and other models confirm its efficacy.",
+    title: "DiSHA: Dimension-Sharding Adaptation of Large Language Models with Fast Convergence and Fast Computation",
+    description: "The paper proposes DiSHA, a dimension-sharding adaptation framework for efficient fine-tuning of large language models (LLMs), addressing LoRA's slow convergence by partitioning pre-trained weights into shards updated via a shared trainable matrix. DiSHA introduces Block Affine Efficient Computation (Bone) for high efficiency and Block Affine Transformation (Bat) to resolve collinear updates. Evaluations demonstrate DiSHA's superiority over LoRA variants in NLU and NLG tasks. Notably, Bone achieves higher performance on RWKV-7B and RWKV6-3B models with equal or fewer parameters, showcasing faster convergence and better generalization. The framework reduces memory and computational costs, enabling resource-efficient adaptation, particularly benefiting architectures like RWKV through optimized parameter sharing and nonlinear updates.",
     date: "2024-09-19",
     tags: "General",
     img: "images/papers-images/img-20240919-1.png",
