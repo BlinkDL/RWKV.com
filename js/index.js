@@ -1,11 +1,58 @@
 const allProjects = [
   {
+    title: "CMGN: Text GNN and RWKV MLP-mixer combined with cross-feature fusion for fake news detection",
+    description: "he paper proposes a novel cross-feature fusion network, CMGN, combining Text Graph Neural Networks (GNN) and RWKV MLP-mixer for fake news detection. The RWKV MLP-mixer processes news text by replacing self-attention with MLP layers to capture deep semantic features, while Text GNN models relationships among supplementary texts (e.g., titles, locations) as graph nodes. A cross-feature fusion mechanism integrates these features dynamically. Evaluated on LIAR, FA-KES, IFND, and CHEF datasets, CMGN outperforms existing methods, demonstrating enhanced accuracy. Focal loss addresses class imbalance, and ablation studies confirm RWKV's critical role in feature extraction. The model advances fake news detection by synergizing graph-based relational modeling and efficient text-sequence processing via RWKV.",
+    date: "2025-03-12",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250312-1.png",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S0925231225004837"
+  },  {
+    title: "PathRWKV: Enabling Whole Slide Prediction with Recurrent-Transformer",
+    description: "The paper proposes PathRWKV, a novel Recurrent-Transformer hybrid model for whole slide image (WSI) analysis in computational pathology. To address challenges in handling variable tile scales, model complexity, and training-inference trade-offs, PathRWKV integrates a dynamic recurrent structure for full-slide processing and adopts RWKV’s linear attention mechanism to reduce computational costs and mitigate overfitting. Multi-task learning jointly optimizes heterogeneous clinical indicators, improving training efficiency, while an asynchronous inference design enables sequential processing of all tiles during prediction. Evaluated across seven WSI datasets, PathRWKV achieves state-of-the-art performance in cancer subtyping, metastasis detection, and survival prediction, demonstrating superior generalization and scalability in pathology applications.",
+    date: "2025-03-05",
+    tags: "Image",
+    img: "images/papers-images/img-20250305-1.png",
+    link: "https://arxiv.org/abs/2503.03199"
+  },
+  {
+    title: "Delta-WKV: A Novel Meta-in-Context Learner for MRI Super-Resolution",
+    description: "The paper proposes Delta-WKV, a novel linear Transformer model for MRI super-resolution, integrating Meta-in-Context Learning (MiCL) and the Delta rule to dynamically adjust weights during inference for efficient local-global pattern recognition. Inspired by RWKV, Delta-WKV employs a quad-directional scanning mechanism and replaces traditional MLPs with a channel-mixing network, enhancing long-range dependency capture while preserving high-frequency details. Evaluated on IXI and fastMRI datasets, Delta-WKV achieves state-of-the-art PSNR/SSIM scores with 15% faster training and inference than SwinIR and MambaIR, demonstrating efficiency for clinical applications.",
+    date: "2025-02-28",
+    tags: "Image",
+    img: "images/papers-images/img-20250228-1.png",
+    link: "https://arxiv.org/abs/2502.20852"
+  },
+  {
+    title: "TabulaTime: A Novel Multimodal Deep Learning Framework for Advancing Acute Coronary Syndrome Prediction through Environmental and Clinical Data Integration",
+    description: "The paper proposes TabulaTime, a novel multimodal deep learning framework integrating clinical and environmental time-series data to improve Acute Coronary Syndrome (ACS) prediction. Key innovations include the PatchRWKV module, which combines recurrent neural networks (RNNs) and attention mechanisms for efficient time-series feature extraction with linear computational complexity. This module outperforms state-of-the-art models (e.g., Transformers, LSTMs) in capturing temporal dependencies. Experimental results show a 20.5% accuracy improvement over traditional methods, highlighting the significance of integrating air pollution data. The framework enhances interpretability through attention mechanisms, identifying critical predictors like systolic blood pressure and PM₁₀.",
+    date: "2025-02-24",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250224-1.png",
+    link: "https://arxiv.org/abs/2502.17049v1"
+  },
+  {
+    title: "Rwkv-vg: visual grounding with RWKV-driven encoder-decoder framework",
+    description: "The paper proposes RWKV-VG, a novel visual grounding framework entirely built on the RWKV architecture. Unlike traditional CNN- or Transformer-based approaches, RWKV-VG leverages RWKV’s hybrid design, which combines RNN-like sequential processing and Transformer-like attention, to efficiently model intra-modal and cross-modal interactions. The framework employs RWKV-driven visual and linguistic encoders, a visual-linguistic decoder, and a learnable [REG] token for box regression. Evaluations on ReferItGame and RefCOCO benchmarks demonstrate state-of-the-art performance, surpassing Transformer-based methods like TransVG in accuracy and convergence speed. Ablation studies highlight the critical role of RWKV modules and the [REG] token placement. This work establishes RWKV as a competitive architecture for vision-language tasks, offering computational efficiency without sacrificing precision.",
+    date: "2025-02-21",
+    tags: "Image",
+    img: "images/papers-images/img-20250221-1.png",
+    link: "https://link.springer.com/article/10.1007/s00530-025-01720-w"
+  },
+  {
     title: "Substation equipment non-rigid defect detection via receptance weighted key value-based causality-aware networks",
     description: "The paper proposes a causal - aware equipment defect detection framework based on the RWKV architecture to address non - rigid defect detection and long - tailed distribution issues in substation equipment. The RWKV architecture, with its global receptive field, enhances defect feature extraction. It's integrated with other modules in the framework. Experiments show this framework outperforms baseline methods, validating its effectiveness.",
     date: "2025-02-13",
     tags: "Image",
     img: "images/papers-images/img-20250213-1.png",
     link: "https://link.springer.com/article/10.1007/s11760-025-03852-y"
+  },
+  {
+    title: "Linear Attention Modeling for Learned Image Compression",
+    description: "The paper proposes LALIC, a linear attention-based learned image compression framework utilizing Bi-RWKV blocks for efficient feature extraction. By integrating bidirectional RWKV (BiWKV) attention and Omni-Shift modules, LALIC captures global dependencies and local context in 2D latent representations with linear complexity. A novel RWKV-based Spatial-Channel Context Model (RWKV-SCCTX) further enhances entropy modeling by exploiting spatial and channel redundancies. Experiments demonstrate that LALIC outperforms VTM-9.1 by up to -17.32% in BD-rate across Kodak, Tecnick, and CLIC datasets, achieving competitive rate-distortion performance with lower computational overhead compared to transformer-based methods. This work highlights RWKV's effectiveness in balancing efficiency and compression quality for high-resolution images.",
+    date: "2025-02-09",
+    tags: "Image",
+    img: "images/papers-images/img-20250209-2.png",
+    link: "https://arxiv.org/abs/2502.05741"
   },
   {
     title: "Training Language Models for Social Deduction with Multi-Agent Reinforcement Learning",
@@ -78,6 +125,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20250114-1.png",
     link: "https://arxiv.org/abs/2501.08458"
+  },
+  {
+    title: "ChemRB: a novel generative model based on bidirectional molecular ring constraints",
+    description: "The paper proposes ChemRB, a novel generative model for molecular design in drug discovery, leveraging bidirectional molecular ring constraints to address limitations in existing unidirectional encoders. By integrating the RWKV mechanism, ChemRB combines the linear computational efficiency of RNNs with the contextual awareness of Transformers, effectively capturing long-range dependencies in SMILES sequences. The model introduces two pre-training tasks—ring-level feature prediction and global-span closure prediction—to enhance molecular validity, particularly for complex ring systems. Experimental results demonstrate ChemRB's superior performance in generating valid, unique, and novel molecules, outperforming state-of-the-art models on benchmark datasets. Additionally, its application to EGFR inhibitor redesign highlights practical utility, showcasing high binding affinity and structural fidelity.",
+    date: "2025-01-10",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250110-1.png",
+    link: "https://jsnu.magtech.com.cn/CN/10.15983/j.cnki.jsnu.2025005"
   },
   {
     title: "Explore Activation Sparsity in Recurrent LLMs for Energy-Efficient Neuromorphic Computing",
@@ -248,8 +303,8 @@ const allProjects = [
     link: "https://www.arxiv.org/abs/2409.19987"
   },
   {
-    title: "Bone: Block Affine Transformation as Parameter Efficient Fine-tuning Methods for Large Language Models",
-    description: "Bone, a new PEFT method. It divides LLM weights into subspaces and uses a shared matrix, differing from LoRA. It surpasses LoRA and its variants. The combination with Weight Guide and the development of Bat enhance its performance. Experiments on RWKV and other models confirm its efficacy.",
+    title: "DiSHA: Dimension-Sharding Adaptation of Large Language Models with Fast Convergence and Fast Computation",
+    description: "The paper proposes DiSHA, a dimension-sharding adaptation framework for efficient fine-tuning of large language models (LLMs), addressing LoRA's slow convergence by partitioning pre-trained weights into shards updated via a shared trainable matrix. DiSHA introduces Block Affine Efficient Computation (Bone) for high efficiency and Block Affine Transformation (Bat) to resolve collinear updates. Evaluations demonstrate DiSHA's superiority over LoRA variants in NLU and NLG tasks. Notably, Bone achieves higher performance on RWKV-7B and RWKV6-3B models with equal or fewer parameters, showcasing faster convergence and better generalization. The framework reduces memory and computational costs, enabling resource-efficient adaptation, particularly benefiting architectures like RWKV through optimized parameter sharing and nonlinear updates.",
     date: "2024-09-19",
     tags: "General",
     img: "images/papers-images/img-20240919-1.png",
