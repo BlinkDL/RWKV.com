@@ -3,10 +3,11 @@ const allProjects = [
     title: "CMGN: Text GNN and RWKV MLP-mixer combined with cross-feature fusion for fake news detection",
     description: "he paper proposes a novel cross-feature fusion network, CMGN, combining Text Graph Neural Networks (GNN) and RWKV MLP-mixer for fake news detection. The RWKV MLP-mixer processes news text by replacing self-attention with MLP layers to capture deep semantic features, while Text GNN models relationships among supplementary texts (e.g., titles, locations) as graph nodes. A cross-feature fusion mechanism integrates these features dynamically. Evaluated on LIAR, FA-KES, IFND, and CHEF datasets, CMGN outperforms existing methods, demonstrating enhanced accuracy. Focal loss addresses class imbalance, and ablation studies confirm RWKV's critical role in feature extraction. The model advances fake news detection by synergizing graph-based relational modeling and efficient text-sequence processing via RWKV.",
     date: "2025-03-12",
-    tags: "Sequence",
+    tags: "Language",
     img: "images/papers-images/img-20250312-1.png",
     link: "https://www.sciencedirect.com/science/article/abs/pii/S0925231225004837"
-  },  {
+  },  
+  {
     title: "PathRWKV: Enabling Whole Slide Prediction with Recurrent-Transformer",
     description: "The paper proposes PathRWKV, a novel Recurrent-Transformer hybrid model for whole slide image (WSI) analysis in computational pathology. To address challenges in handling variable tile scales, model complexity, and training-inference trade-offs, PathRWKV integrates a dynamic recurrent structure for full-slide processing and adopts RWKV’s linear attention mechanism to reduce computational costs and mitigate overfitting. Multi-task learning jointly optimizes heterogeneous clinical indicators, improving training efficiency, while an asynchronous inference design enables sequential processing of all tiles during prediction. Evaluated across seven WSI datasets, PathRWKV achieves state-of-the-art performance in cancer subtyping, metastasis detection, and survival prediction, demonstrating superior generalization and scalability in pathology applications.",
     date: "2025-03-05",
