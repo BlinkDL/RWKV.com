@@ -8,6 +8,54 @@ const allProjects = [
     link: "https://www.sciencedirect.com/science/article/abs/pii/S0925231225004837"
   },  
   {
+    title: "Linear attention based spatiotemporal multi graph GCN for traffic flow prediction",
+    description: "The paper proposes LASTGCN, a deep learning model for traffic flow prediction, integrating a Multi-Factor Fusion Unit (MFF-unit) to dynamically merge meteorological data, a multi-graph convolutional network for spatial correlations, and the Receptance Weighted Key Value (RWKV) block. The RWKV mechanism replaces traditional Transformer attention with linear attention, reducing computational complexity while efficiently capturing long-term dependencies in traffic sequences. By combining RWKV's parallelizable training and RNN-like inference, the model achieves high efficiency for mid-term traffic management. Experiments on real-world datasets (PeMSD) demonstrate superior accuracy and robustness, especially for long-term predictions, outperforming state-of-the-art methods. External factors like weather integration further enhance performance.",
+    date: "2025-03-10",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250310-1.png",
+    link: "https://www.nature.com/articles/s41598-025-93179-y"
+  },
+  {
+    title: "Toward Comprehensive Semantic Prompt for Region Contrastive Learning Underwater Image Enhancement",
+    description: "The paper proposes SRCNet, an underwater image enhancement network integrating semantic guidance and region contrastive learning. The method introduces a semantic-aware RWKV block that leverages the global perception capability of RWKV architecture while incorporating semantic prompts to preserve regional color consistency and structural details. By combining RWKV's efficient attention mechanism with semantic-aware constraints, the network reduces interference from irrelevant pixels across different underwater regions. A novel region contrastive learning strategy further enhances degradation-sensitive feature learning through multi-perspective negative sample utilization. Experimental results demonstrate superior performance over state-of-the-art methods in restoring color accuracy and detail clarity for underwater images.",
+    date: "2025-03-07",
+    tags: "Image",
+    img: "images/papers-images/img-20250307-5.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/10888780"
+  },
+  {
+    title: "ID-RWKV: Image Deraining RWKV",
+    description: "The paper proposes ID-RWKV, a novel image deraining framework leveraging the Receptance Weighted Key Value (RWKV) architecture to address Transformer's quadratic complexity limitations. By replacing self-attention with linear-complexity RWKV blocks, the model efficiently captures local-global dependencies through LG-WKV mechanisms in U-shaped networks. It introduces a multi-stage progressive deraining strategy with Fourier enhancement modules and deep-shallow feature fusion (DSFFM) to preserve background details. Experiments show ID-RWKV outperforms state-of-the-art Transformer-based methods on synthetic and real datasets while using fewer parameters (12.38M) and lower computation (60.2G FLOPs), demonstrating RWKV's potential in 2D vision tasks.",
+    date: "2025-03-07",
+    tags: "Image",
+    img: "images/papers-images/img-20250307-3.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/10889384"
+  },
+  {
+    title: "HFE-RWKV: High-Frequency Enhanced RWKV Model for Efficient Left Ventricle Segmentation in Pediatric Echocardiograms",
+    description: "The paper proposes High-Frequency Enhanced RWKV (HFE-RWKV), a novel model integrating RWKV's efficient recurrent architecture with high-frequency feature enhancement for pediatric left ventricle segmentation in echocardiograms. By redesigning RWKV's spatial mixing module to explicitly amplify boundary-related high-frequency components and introducing space-frequency consistency loss, the model achieves superior shape-aware segmentation while maintaining computational efficiency. Compared to U-Mamba, HFE-RWKV improves Dice scores by 2% using only 67% parameters and 26% computational costs, demonstrating RWKV's adaptability for medical imaging tasks requiring both precision and resource efficiency.",
+    date: "2025-03-07",
+    tags: "Image",
+    img: "images/papers-images/img-20250307-2.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/10888300"
+  },
+  {
+    title: "RWKVMatch: Vision RWKV-based Multi-scale Feature Matching Network for Unsupervised Deformable Medical Image Registration",
+    description: "The paper proposes RWKVMatch, a Vision-RWKV-based deformable medical image registration framework combining global attention and cross-fusion mechanisms. By extending RWKV to 3D Vision-RWKV blocks, it effectively captures spatial features in volumetric medical images while maintaining linear computational complexity. The cross-fusion blocks enable inter-image feature integration, complemented by elastic transformation augmentation to improve robustness. Evaluated on brain MRI datasets (LPBA40/IXI), RWKVMatch achieves state-of-the-art performance with 0.704 DSC on LPBA40 and reduced foldings (0.154% negative Jacobian), demonstrating RWKV's superiority in balancing registration accuracy and efficiency compared to CNN/Transformer/Mamba-based methods.",
+    date: "2025-03-07",
+    tags: "Image",
+    img: "images/papers-images/img-20250307-4.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/10888484"
+  },
+  {
+    title: "Flare-Aware RWKV for Flare Removal",
+    description: "The paper proposes Flare-RWKV, a novel RWKV-based architecture for lens flare removal in images. By integrating a lightweight flare detection network with a restoration network built upon RWKV's efficient scanning mechanism (capturing global dependencies with linear complexity) and token shift mechanism (enhancing local context awareness), the method addresses flare-specific challenges. Key innovations include Flare-Aware Feature Selection (FAFS) that prioritizes background reconstruction using detected flare masks. Compared to UNet and transformer variants, Flare-RWKV demonstrates superior performance on synthetic and real-world datasets while maintaining parameter efficiency, establishing RWKV's effectiveness in flare removal tasks.",
+    date: "2025-03-07",
+    tags: "Image",
+    img: "images/papers-images/img-20250307-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/10888487"
+  },
+  {
     title: "PathRWKV: Enabling Whole Slide Prediction with Recurrent-Transformer",
     description: "The paper proposes PathRWKV, a novel Recurrent-Transformer hybrid model for whole slide image (WSI) analysis in computational pathology. To address challenges in handling variable tile scales, model complexity, and training-inference trade-offs, PathRWKV integrates a dynamic recurrent structure for full-slide processing and adopts RWKV’s linear attention mechanism to reduce computational costs and mitigate overfitting. Multi-task learning jointly optimizes heterogeneous clinical indicators, improving training efficiency, while an asynchronous inference design enables sequential processing of all tiles during prediction. Evaluated across seven WSI datasets, PathRWKV achieves state-of-the-art performance in cancer subtyping, metastasis detection, and survival prediction, demonstrating superior generalization and scalability in pathology applications.",
     date: "2025-03-05",
