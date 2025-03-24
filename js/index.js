@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "RWKV-7 \"Goose\" with Expressive Dynamic State Evolution",
+    description: "The paper proposes RWKV-7 \"Goose,\" a novel sequence modeling architecture that achieves state-of-the-art performance in multilingual tasks at the 3 billion parameter scale, matching top English models with significantly fewer training tokens. RWKV-7 requires only constant memory and computation per token during inference, enabling efficient state tracking and recognition of all regular languages. It surpasses Transformer capabilities under standard complexity conjectures and demonstrates strong performance on long-context tasks. The paper also releases a 3.1 trillion token multilingual corpus and pre-trained models ranging from 0.19B to 2.9B parameters, showcasing RWKV-7's scalability and efficiency.",
+    date: "2025-03-19",
+    tags: "General",
+    img: "images/papers-images/img-20250319-1.png",
+    link: "https://arxiv.org/abs/2503.14456"
+  }, 
+  {
     title: "CMGN: Text GNN and RWKV MLP-mixer combined with cross-feature fusion for fake news detection",
     description: "he paper proposes a novel cross-feature fusion network, CMGN, combining Text Graph Neural Networks (GNN) and RWKV MLP-mixer for fake news detection. The RWKV MLP-mixer processes news text by replacing self-attention with MLP layers to capture deep semantic features, while Text GNN models relationships among supplementary texts (e.g., titles, locations) as graph nodes. A cross-feature fusion mechanism integrates these features dynamically. Evaluated on LIAR, FA-KES, IFND, and CHEF datasets, CMGN outperforms existing methods, demonstrating enhanced accuracy. Focal loss addresses class imbalance, and ablation studies confirm RWKV's critical role in feature extraction. The model advances fake news detection by synergizing graph-based relational modeling and efficient text-sequence processing via RWKV.",
     date: "2025-03-12",
