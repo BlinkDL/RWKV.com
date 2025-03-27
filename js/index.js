@@ -24,6 +24,14 @@ const allProjects = [
     link: "https://www.nature.com/articles/s41598-025-93179-y"
   },
   {
+    title: "BlackGoose Rimer: Harnessing RWKV-7 as a Simple yet Superior Replacement for Transformers in Large-Scale Time Series Modeling",
+    description: "This paper introduces the integration of the RWKV-7 architecture into the Timer model for time series modeling. By leveraging its time mix and channel mix components, the proposed method achieves significant performance improvements of 1.13x to 43.3x with a 4.5x reduction in training time using only 1/23 of the original parameters.",
+    date: "2025-03-08",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250308-1.png",
+    link: "https://arxiv.org/abs/2503.06121"
+  },
+  {
     title: "Toward Comprehensive Semantic Prompt for Region Contrastive Learning Underwater Image Enhancement",
     description: "The paper proposes SRCNet, an underwater image enhancement network integrating semantic guidance and region contrastive learning. The method introduces a semantic-aware RWKV block that leverages the global perception capability of RWKV architecture while incorporating semantic prompts to preserve regional color consistency and structural details. By combining RWKV's efficient attention mechanism with semantic-aware constraints, the network reduces interference from irrelevant pixels across different underwater regions. A novel region contrastive learning strategy further enhances degradation-sensitive feature learning through multi-perspective negative sample utilization. Experimental results demonstrate superior performance over state-of-the-art methods in restoring color accuracy and detail clarity for underwater images.",
     date: "2025-03-07",
