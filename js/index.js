@@ -1,5 +1,29 @@
 const allProjects = [
   {
+    title: "DREMnet: An Interpretable Denoising Framework for Semi-Airborne Transient Electromagnetic Signal",
+    description:" The paper utilizes the RWKV architecture for data processing, introducing a context-WKV mechanism and implementing bidirectional signal modeling. By stacking embeddings, it preserves the powerful local perception capabilities of convolutional networks. Experimental results on test datasets demonstrate that the DREMnet method outperforms existing techniques, with processed field data more accurately reflecting theoretical signals and enhancing the ability to identify underground electrical structures.",
+    date: "2025-03-28",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250328-1.png",
+    link: "https://arxiv.org/abs/2503.22223"
+  }, 
+  {
+    title: "Geometry-Aware RWKV for Heterogeneous Light Field Spatial Super-Resolution",
+    description: " The paper designs a texture transfer module with channel correlation and a spatial angle correction module based on RWKV. Additionally, it employs a geometry-aware RWKV to capture the intrinsic collective structure of squares. Experimental results demonstrate that the proposed method outperforms state-of-the-art approaches in both quantitative and qualitative comparisons, while achieving greater efficiency in terms of inference time and memory usage.",
+    date: "2025-03-27",
+    tags: "Image",
+    img: "images/papers-images/img-20250327-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/10943155"
+  }, 
+  {
+    title: "RSRWKV: A Linear-Complexity 2D Attention Mechanism for Efficient Remote Sensing Vision Task",
+    description: "The paper proposes RSRWKV, which features a novel two-dimensional WKV scanning mechanism that connects sequence processing with two-dimensional spatial reasoning while maintaining linear complexity. It achieves multi-directional isotropic context aggregation. Experimental results demonstrate that RSRWKV outperforms convolutional neural networks and Transformer baselines on classification, detection, and segmentation tasks across various datasets, providing a scalable solution for high-resolution remote sensing analysis.",
+    date: "2025-03-26",
+    tags: "Image",
+    img: "images/papers-images/img-20250326-1.png",
+    link: "https://arxiv.org/abs/2503.20382"
+  }, 
+  {
     title: "RWKV-7 \"Goose\" with Expressive Dynamic State Evolution",
     description: "The paper proposes RWKV-7 \"Goose,\" a novel sequence modeling architecture that achieves state-of-the-art performance in multilingual tasks at the 3 billion parameter scale, matching top English models with significantly fewer training tokens. RWKV-7 requires only constant memory and computation per token during inference, enabling efficient state tracking and recognition of all regular languages. It surpasses Transformer capabilities under standard complexity conjectures and demonstrates strong performance on long-context tasks. The paper also releases a 3.1 trillion token multilingual corpus and pre-trained models ranging from 0.19B to 2.9B parameters, showcasing RWKV-7's scalability and efficiency.",
     date: "2025-03-19",
