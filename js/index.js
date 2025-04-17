@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "MolRWKV: Conditional Molecular Generation Model Using Local Enhancement and Graph Enhancement",
+    description:"This paper introduces MolRWKV, a conditional molecular generation model built upon the RWKV architecture. It leverages RWKV's efficient sequence processing capabilities (combining RNN efficiency and Transformer parallelism) for handling SMILES strings. To enhance performance for chemical tasks, MolRWKV integrates CNN for local sequence features and GCN for graph-based scaffold information. Experiments show this RWKV-based model achieves comparable or improved results versus baselines in generating molecules under specific conditions, demonstrating the potential of the RWKV architecture when adapted and enhanced for the molecular domain.",
+    date: "2025-04-10",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250410-1.png",
+    link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.70100"
+  }, 
+  {
     title: "DREMnet: An Interpretable Denoising Framework for Semi-Airborne Transient Electromagnetic Signal",
     description:" The paper utilizes the RWKV architecture for data processing, introducing a context-WKV mechanism and implementing bidirectional signal modeling. By stacking embeddings, it preserves the powerful local perception capabilities of convolutional networks. Experimental results on test datasets demonstrate that the DREMnet method outperforms existing techniques, with processed field data more accurately reflecting theoretical signals and enhancing the ability to identify underground electrical structures.",
     date: "2025-03-28",
