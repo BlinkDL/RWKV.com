@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "RGB-Event based Pedestrian Attribute Recognition: A Benchmark Dataset and An Asymmetric RWKV Fusion Framework",
+    description: "This paper introduces EventPAR, the first large-scale RGB-Event pedestrian attribute recognition dataset containing 100K aligned samples with 50 attributes spanning appearance and emotional dimensions. To address RGB camera limitations in challenging conditions, the authors propose an RWKV-based framework featuring asymmetric fusion of spatial RGB features and temporal event data through similarity-based token filtering. The method achieves state-of-the-art performance on three datasets, demonstrating improved robustness through multi-modal fusion while maintaining computational efficiency via linear attention mechanisms.",
+    date: "2025-04-14",
+    tags: "Image",
+    img: "images/papers-images/img-20250414-1.png",
+    link: "https://arxiv.org/abs/2504.10018"
+  },
+  {
     title: "MolRWKV: Conditional Molecular Generation Model Using Local Enhancement and Graph Enhancement",
     description:"This paper introduces MolRWKV, a conditional molecular generation model built upon the RWKV architecture. It leverages RWKV's efficient sequence processing capabilities (combining RNN efficiency and Transformer parallelism) for handling SMILES strings. To enhance performance for chemical tasks, MolRWKV integrates CNN for local sequence features and GCN for graph-based scaffold information. Experiments show this RWKV-based model achieves comparable or improved results versus baselines in generating molecules under specific conditions, demonstrating the potential of the RWKV architecture when adapted and enhanced for the molecular domain.",
     date: "2025-04-10",
@@ -7,6 +15,14 @@ const allProjects = [
     img: "images/papers-images/img-20250410-1.png",
     link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.70100"
   }, 
+  {
+    title: "Kinematic Modeling of a 7-DOF Tendon-Like-Driven Robot Based on Optimization and Deep Learning",
+    description: "This paper presents a 7-DOF tendon-driven redundant robot (TDR7) using a weighted inverse kinematics optimization algorithm (SWGPM-TDR7) and a deep learning fine-tuning model (RWKV-TDR7). The SWGPM-TDR7 integrates joint constraints, singularity avoidance, and energy minimization for efficient trajectory planning, while RWKV-TDR7 combines recurrent networks and self-attention mechanisms to reduce computational complexity in trajectory fitting. Experimental results demonstrate high accuracy in forward/inverse kinematics and trajectory tracking, offering solutions for medical and industrial robotic systems requiring flexible, stable motion control.",
+    date: "2025-04-07",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250407-1.png",
+    link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22544"
+  },
   {
     title: "DREMnet: An Interpretable Denoising Framework for Semi-Airborne Transient Electromagnetic Signal",
     description:" The paper utilizes the RWKV architecture for data processing, introducing a context-WKV mechanism and implementing bidirectional signal modeling. By stacking embeddings, it preserves the powerful local perception capabilities of convolutional networks. Experimental results on test datasets demonstrate that the DREMnet method outperforms existing techniques, with processed field data more accurately reflecting theoretical signals and enhancing the ability to identify underground electrical structures.",
