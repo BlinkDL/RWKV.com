@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "Zig-RiR: Zigzag RWKV-in-RWKV for Efficient Medical Image Segmentation",
+    description: "This paper proposes Zig-RiR, a nested RWKV architecture for efficient medical image segmentation. Addressing the quadratic complexity limitations of transformer-based methods, Zig-RiR combines Outer and Inner RWKV blocks to capture global and local features while maintaining spatial continuity through zigzag scanning. The method treats image patches as 'visual sentences' and sub-patches as 'visual words', enabling linear computational complexity. Experiments on 2D and 3D medical datasets demonstrate 14.4× faster inference and 89.5% reduced GPU memory usage compared to state-of-the-art methods while achieving superior segmentation accuracy.",
+    date: "2025-04-17",
+    tags: "Image",
+    img: "images/papers-images/img-20250417-1.png",
+    link: "https://ieeexplore.ieee.org/document/10969076"
+  },
+  {
     title: "RGB-Event based Pedestrian Attribute Recognition: A Benchmark Dataset and An Asymmetric RWKV Fusion Framework",
     description: "This paper introduces EventPAR, the first large-scale RGB-Event pedestrian attribute recognition dataset containing 100K aligned samples with 50 attributes spanning appearance and emotional dimensions. To address RGB camera limitations in challenging conditions, the authors propose an RWKV-based framework featuring asymmetric fusion of spatial RGB features and temporal event data through similarity-based token filtering. The method achieves state-of-the-art performance on three datasets, demonstrating improved robustness through multi-modal fusion while maintaining computational efficiency via linear attention mechanisms.",
     date: "2025-04-14",
