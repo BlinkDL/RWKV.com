@@ -8,6 +8,22 @@ const allProjects = [
     link: "https://arxiv.org/abs/2505.02705"
   },
   {
+    title: "Multiple Span Bidirectional RWKV Network for Infrared Image Super‑Resolution",
+    description: "This paper introduces MSB-RWKV, an efficient model for infrared image super-resolution that addresses the computational limitations of Transformers while maintaining global dependency modeling. The proposed method combines a Multiple Span Bidirectional WKV (MSB-WKV) attention mechanism with linear complexity for efficient 2D spatial correlation capture and a Wide Token Shift layer to enhance local context restoration. A prompt projection module further adapts to degradation diversity through learnable visual prompts. Experimental results demonstrate superior performance over state-of-the-art methods in both synthetic and real-world datasets, achieving enhanced detail reconstruction with reduced computational overhead.",
+    date: "2025-04-30",
+    tags: "Image",
+    img: "images/papers-images/img-20250430-2.png",
+    link: "https://link.springer.com/article/10.1007/s13042-025-02644-7"
+  },
+  {
+    title: "RWKV-X: A Linear Complexity Hybrid Language Model",
+    description: "RWKV-X introduces a hybrid architecture combining RWKV's efficiency for short-range modeling with a sparse attention mechanism for long-range context. It achieves linear-time training complexity and constant-time inference decoding while maintaining performance on both short and long-context tasks. The model demonstrates near-perfect accuracy on 64K-token passkey retrieval and outperforms prior RWKV variants in long-context benchmarks. RWKV-X enables stable decoding up to 1 million tokens, offering a scalable solution for general-purpose language modeling through optimized KV cache management and long-context continual pretraining strategies.",
+    date: "2025-04-30",
+    tags: "Language",
+    img: "images/papers-images/img-20250430-1.png",
+    link: "https://arxiv.org/abs/2504.21463"
+  },
+  {
     title: "Zig-RiR: Zigzag RWKV-in-RWKV for Efficient Medical Image Segmentation",
     description: "This paper proposes Zig-RiR, a nested RWKV architecture for efficient medical image segmentation. Addressing the quadratic complexity limitations of transformer-based methods, Zig-RiR combines Outer and Inner RWKV blocks to capture global and local features while maintaining spatial continuity through zigzag scanning. The method treats image patches as 'visual sentences' and sub-patches as 'visual words', enabling linear computational complexity. Experiments on 2D and 3D medical datasets demonstrate 14.4× faster inference and 89.5% reduced GPU memory usage compared to state-of-the-art methods while achieving superior segmentation accuracy.",
     date: "2025-04-17",
