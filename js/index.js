@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "Multi-View Learning with Context-Guided Receptance for Image Denoising",
+    description: "This paper introduces CRWKV, a novel model for real-world image denoising that combines multi-view feature integration with efficient sequence modeling. The proposed approach features a Context-guided Token Shift (CTS) mechanism to capture spatial noise correlations and a Frequency Mix (FMix) module for frequency-domain noise isolation. By implementing a Bidirectional WKV (BiWKV) mechanism, the model achieves full pixel-sequence interaction with linear computational complexity. Experimental results demonstrate superior performance over state-of-the-art methods across multiple datasets while reducing inference time by up to 40%, effectively preserving fine details in complex noise scenarios.",
+    date: "2025-05-05",
+    tags: "Image",
+    img: "images/papers-images/img-20250505-1.png",
+    link: "https://arxiv.org/abs/2505.02705"
+  },
+  {
     title: "Zig-RiR: Zigzag RWKV-in-RWKV for Efficient Medical Image Segmentation",
     description: "This paper proposes Zig-RiR, a nested RWKV architecture for efficient medical image segmentation. Addressing the quadratic complexity limitations of transformer-based methods, Zig-RiR combines Outer and Inner RWKV blocks to capture global and local features while maintaining spatial continuity through zigzag scanning. The method treats image patches as 'visual sentences' and sub-patches as 'visual words', enabling linear computational complexity. Experiments on 2D and 3D medical datasets demonstrate 14.4× faster inference and 89.5% reduced GPU memory usage compared to state-of-the-art methods while achieving superior segmentation accuracy.",
     date: "2025-04-17",
