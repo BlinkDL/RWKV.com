@@ -11,7 +11,7 @@ const allProjects = [
     title: "RADLADS: Rapid Attention Distillation to Linear Attention Decoders at Scale",
     description: "This paper introduces RADLADS, a method for efficiently converting softmax attention transformers into linear attention decoder models. The approach requires only 350-700M tokens (0.005% of original training data) and under $2,000 USD to convert large models up to 72B parameters while maintaining performance. The authors present new RWKV-variant architectures and demonstrate state-of-the-art results on language benchmarks through a three-step distillation process involving attention alignment, knowledge distillation, and context extension.",
     date: "2025-05-05",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/img-20250505-2.png",
     link: "https://arxiv.org/abs/2505.03005"
   },
@@ -19,7 +19,7 @@ const allProjects = [
     title: "RWKVQuant: Quantizing the RWKV Family with Proxy Guided Hybrid of Scalar and Vector Quantization",
     description: "This paper addresses the challenges of quantizing RWKV models, a modern RNN architecture with Transformer-like performance, for efficient deployment on resource-constrained devices. The authors identify key limitations in existing post-training quantization methods when applied to RWKV, including non-linear operator interference and uniform weight distribution issues. They propose RWKVQuant, a framework combining coarse-to-fine proxy guidance for adaptive scalar/vector quantization selection and codebook optimization for RWKV's unique element-wise multiplication operations. Experimental results demonstrate 3-bit quantization with <1% accuracy loss and 2.14× speedup on RWKV-6-14B, outperforming standalone quantization approaches across language and vision tasks.",
     date: "2025-05-02",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/img-20250502-1.png",
     link: "https://arxiv.org/abs/2505.03803"
   },
@@ -35,7 +35,7 @@ const allProjects = [
     title: "RWKV-X: A Linear Complexity Hybrid Language Model",
     description: "RWKV-X introduces a hybrid architecture combining RWKV's efficiency for short-range modeling with a sparse attention mechanism for long-range context. It achieves linear-time training complexity and constant-time inference decoding while maintaining performance on both short and long-context tasks. The model demonstrates near-perfect accuracy on 64K-token passkey retrieval and outperforms prior RWKV variants in long-context benchmarks. RWKV-X enables stable decoding up to 1 million tokens, offering a scalable solution for general-purpose language modeling through optimized KV cache management and long-context continual pretraining strategies.",
     date: "2025-04-30",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/img-20250430-1.png",
     link: "https://arxiv.org/abs/2504.21463"
   },
