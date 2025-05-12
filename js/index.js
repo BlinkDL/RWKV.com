@@ -8,6 +8,22 @@ const allProjects = [
     link: "https://arxiv.org/abs/2505.02705"
   },
   {
+    title: "RADLADS: Rapid Attention Distillation to Linear Attention Decoders at Scale",
+    description: "This paper introduces RADLADS, a method for efficiently converting softmax attention transformers into linear attention decoder models. The approach requires only 350-700M tokens (0.005% of original training data) and under $2,000 USD to convert large models up to 72B parameters while maintaining performance. The authors present new RWKV-variant architectures and demonstrate state-of-the-art results on language benchmarks through a three-step distillation process involving attention alignment, knowledge distillation, and context extension.",
+    date: "2025-05-05",
+    tags: "Language",
+    img: "images/papers-images/img-20250505-2.png",
+    link: "https://arxiv.org/abs/2505.03005"
+  },
+  {
+    title: "RWKVQuant: Quantizing the RWKV Family with Proxy Guided Hybrid of Scalar and Vector Quantization",
+    description: "This paper addresses the challenges of quantizing RWKV models, a modern RNN architecture with Transformer-like performance, for efficient deployment on resource-constrained devices. The authors identify key limitations in existing post-training quantization methods when applied to RWKV, including non-linear operator interference and uniform weight distribution issues. They propose RWKVQuant, a framework combining coarse-to-fine proxy guidance for adaptive scalar/vector quantization selection and codebook optimization for RWKV's unique element-wise multiplication operations. Experimental results demonstrate 3-bit quantization with <1% accuracy loss and 2.14× speedup on RWKV-6-14B, outperforming standalone quantization approaches across language and vision tasks.",
+    date: "2025-05-02",
+    tags: "Language",
+    img: "images/papers-images/img-20250502-1.png",
+    link: "https://arxiv.org/abs/2505.03803"
+  },
+  {
     title: "Multiple Span Bidirectional RWKV Network for Infrared Image Super‑Resolution",
     description: "This paper introduces MSB-RWKV, an efficient model for infrared image super-resolution that addresses the computational limitations of Transformers while maintaining global dependency modeling. The proposed method combines a Multiple Span Bidirectional WKV (MSB-WKV) attention mechanism with linear complexity for efficient 2D spatial correlation capture and a Wide Token Shift layer to enhance local context restoration. A prompt projection module further adapts to degradation diversity through learnable visual prompts. Experimental results demonstrate superior performance over state-of-the-art methods in both synthetic and real-world datasets, achieving enhanced detail reconstruction with reduced computational overhead.",
     date: "2025-04-30",
