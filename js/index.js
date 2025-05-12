@@ -1,5 +1,77 @@
 const allProjects = [
   {
+    title: "Multi-View Learning with Context-Guided Receptance for Image Denoising",
+    description: "This paper introduces CRWKV, a novel model for real-world image denoising that combines multi-view feature integration with efficient sequence modeling. The proposed approach features a Context-guided Token Shift (CTS) mechanism to capture spatial noise correlations and a Frequency Mix (FMix) module for frequency-domain noise isolation. By implementing a Bidirectional WKV (BiWKV) mechanism, the model achieves full pixel-sequence interaction with linear computational complexity. Experimental results demonstrate superior performance over state-of-the-art methods across multiple datasets while reducing inference time by up to 40%, effectively preserving fine details in complex noise scenarios.",
+    date: "2025-05-05",
+    tags: "Image",
+    img: "images/papers-images/img-20250505-1.png",
+    link: "https://arxiv.org/abs/2505.02705"
+  },
+  {
+    title: "RADLADS: Rapid Attention Distillation to Linear Attention Decoders at Scale",
+    description: "This paper introduces RADLADS, a method for efficiently converting softmax attention transformers into linear attention decoder models. The approach requires only 350-700M tokens (0.005% of original training data) and under $2,000 USD to convert large models up to 72B parameters while maintaining performance. The authors present new RWKV-variant architectures and demonstrate state-of-the-art results on language benchmarks through a three-step distillation process involving attention alignment, knowledge distillation, and context extension.",
+    date: "2025-05-05",
+    tags: "Language",
+    img: "images/papers-images/img-20250505-2.png",
+    link: "https://arxiv.org/abs/2505.03005"
+  },
+  {
+    title: "RWKVQuant: Quantizing the RWKV Family with Proxy Guided Hybrid of Scalar and Vector Quantization",
+    description: "This paper addresses the challenges of quantizing RWKV models, a modern RNN architecture with Transformer-like performance, for efficient deployment on resource-constrained devices. The authors identify key limitations in existing post-training quantization methods when applied to RWKV, including non-linear operator interference and uniform weight distribution issues. They propose RWKVQuant, a framework combining coarse-to-fine proxy guidance for adaptive scalar/vector quantization selection and codebook optimization for RWKV's unique element-wise multiplication operations. Experimental results demonstrate 3-bit quantization with <1% accuracy loss and 2.14× speedup on RWKV-6-14B, outperforming standalone quantization approaches across language and vision tasks.",
+    date: "2025-05-02",
+    tags: "Language",
+    img: "images/papers-images/img-20250502-1.png",
+    link: "https://arxiv.org/abs/2505.03803"
+  },
+  {
+    title: "Multiple Span Bidirectional RWKV Network for Infrared Image Super‑Resolution",
+    description: "This paper introduces MSB-RWKV, an efficient model for infrared image super-resolution that addresses the computational limitations of Transformers while maintaining global dependency modeling. The proposed method combines a Multiple Span Bidirectional WKV (MSB-WKV) attention mechanism with linear complexity for efficient 2D spatial correlation capture and a Wide Token Shift layer to enhance local context restoration. A prompt projection module further adapts to degradation diversity through learnable visual prompts. Experimental results demonstrate superior performance over state-of-the-art methods in both synthetic and real-world datasets, achieving enhanced detail reconstruction with reduced computational overhead.",
+    date: "2025-04-30",
+    tags: "Image",
+    img: "images/papers-images/img-20250430-2.png",
+    link: "https://link.springer.com/article/10.1007/s13042-025-02644-7"
+  },
+  {
+    title: "RWKV-X: A Linear Complexity Hybrid Language Model",
+    description: "RWKV-X introduces a hybrid architecture combining RWKV's efficiency for short-range modeling with a sparse attention mechanism for long-range context. It achieves linear-time training complexity and constant-time inference decoding while maintaining performance on both short and long-context tasks. The model demonstrates near-perfect accuracy on 64K-token passkey retrieval and outperforms prior RWKV variants in long-context benchmarks. RWKV-X enables stable decoding up to 1 million tokens, offering a scalable solution for general-purpose language modeling through optimized KV cache management and long-context continual pretraining strategies.",
+    date: "2025-04-30",
+    tags: "Language",
+    img: "images/papers-images/img-20250430-1.png",
+    link: "https://arxiv.org/abs/2504.21463"
+  },
+  {
+    title: "Zig-RiR: Zigzag RWKV-in-RWKV for Efficient Medical Image Segmentation",
+    description: "This paper proposes Zig-RiR, a nested RWKV architecture for efficient medical image segmentation. Addressing the quadratic complexity limitations of transformer-based methods, Zig-RiR combines Outer and Inner RWKV blocks to capture global and local features while maintaining spatial continuity through zigzag scanning. The method treats image patches as 'visual sentences' and sub-patches as 'visual words', enabling linear computational complexity. Experiments on 2D and 3D medical datasets demonstrate 14.4× faster inference and 89.5% reduced GPU memory usage compared to state-of-the-art methods while achieving superior segmentation accuracy.",
+    date: "2025-04-17",
+    tags: "Image",
+    img: "images/papers-images/img-20250417-1.png",
+    link: "https://ieeexplore.ieee.org/document/10969076"
+  },
+  {
+    title: "RGB-Event based Pedestrian Attribute Recognition: A Benchmark Dataset and An Asymmetric RWKV Fusion Framework",
+    description: "This paper introduces EventPAR, the first large-scale RGB-Event pedestrian attribute recognition dataset containing 100K aligned samples with 50 attributes spanning appearance and emotional dimensions. To address RGB camera limitations in challenging conditions, the authors propose an RWKV-based framework featuring asymmetric fusion of spatial RGB features and temporal event data through similarity-based token filtering. The method achieves state-of-the-art performance on three datasets, demonstrating improved robustness through multi-modal fusion while maintaining computational efficiency via linear attention mechanisms.",
+    date: "2025-04-14",
+    tags: "Image",
+    img: "images/papers-images/img-20250414-1.png",
+    link: "https://arxiv.org/abs/2504.10018"
+  },
+  {
+    title: "MolRWKV: Conditional Molecular Generation Model Using Local Enhancement and Graph Enhancement",
+    description:"This paper introduces MolRWKV, a conditional molecular generation model built upon the RWKV architecture. It leverages RWKV's efficient sequence processing capabilities (combining RNN efficiency and Transformer parallelism) for handling SMILES strings. To enhance performance for chemical tasks, MolRWKV integrates CNN for local sequence features and GCN for graph-based scaffold information. Experiments show this RWKV-based model achieves comparable or improved results versus baselines in generating molecules under specific conditions, demonstrating the potential of the RWKV architecture when adapted and enhanced for the molecular domain.",
+    date: "2025-04-10",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250410-1.png",
+    link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.70100"
+  }, 
+  {
+    title: "Kinematic Modeling of a 7-DOF Tendon-Like-Driven Robot Based on Optimization and Deep Learning",
+    description: "This paper presents a 7-DOF tendon-driven redundant robot (TDR7) using a weighted inverse kinematics optimization algorithm (SWGPM-TDR7) and a deep learning fine-tuning model (RWKV-TDR7). The SWGPM-TDR7 integrates joint constraints, singularity avoidance, and energy minimization for efficient trajectory planning, while RWKV-TDR7 combines recurrent networks and self-attention mechanisms to reduce computational complexity in trajectory fitting. Experimental results demonstrate high accuracy in forward/inverse kinematics and trajectory tracking, offering solutions for medical and industrial robotic systems requiring flexible, stable motion control.",
+    date: "2025-04-07",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250407-1.png",
+    link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22544"
+  },
+  {
     title: "DREMnet: An Interpretable Denoising Framework for Semi-Airborne Transient Electromagnetic Signal",
     description:" The paper utilizes the RWKV architecture for data processing, introducing a context-WKV mechanism and implementing bidirectional signal modeling. By stacking embeddings, it preserves the powerful local perception capabilities of convolutional networks. Experimental results on test datasets demonstrate that the DREMnet method outperforms existing techniques, with processed field data more accurately reflecting theoretical signals and enhancing the ability to identify underground electrical structures.",
     date: "2025-03-28",
