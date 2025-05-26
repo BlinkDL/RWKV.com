@@ -1,5 +1,37 @@
 const allProjects = [
   {
+    title: "RainRWKV: a deep RWKV model for video deraining",
+    description: "This paper introduces RainRWKV, a deep RWKV model tailored for video deraining, which enhances low-frequency features using a wavelet transform shift mechanism and captures high-frequency details through a tubelet embedding mechanism. The model achieves state-of-the-art performance on video deraining tasks.",
+    date: "2025-05-24",
+    tags: "Image",
+    img: "images/papers-images/img-20250524-1.png",
+    link: "https://link.springer.com/article/10.1007/s00371-025-03965-y"
+  },
+  {
+    title: "ModRWKV: Transformer Multimodality in Linear Time",
+    description: "This paper introduces ModRWKV, a multimodal framework based on the RWKV7 architecture, which achieves efficient multimodal information fusion through dynamically adaptable heterogeneous modality encoders. The framework leverages pretrained RWKV7 weights for initialization, demonstrating competitive performance and computational efficiency compared to traditional Transformer-based multimodal models.",
+    date: "2025-05-20",
+    tags: "General",
+    img: "images/papers-images/img-20250520-1.png",
+    link: "https://arxiv.org/abs/2505.14505"
+  },
+  {
+    title: "QUANTUM -ENHANCED CHANNEL MIXING IN RWKV M ODELS FOR TIMESERIES FORECASTING",
+    description: "This paper introduces QuantumRWKV, a hybrid quantum-classical extension of the RWKV model, replacing the feedforward network with a variational quantum circuit. Experiments on synthetic time-series tasks show quantum-enhanced performance in nonlinear or chaotic dynamics, while classical models excel in tasks with sharp discontinuities.",
+    date: "2025-05-18",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250518-1.png",
+    link: "https://arxiv.org/abs/2505.13524"
+  },
+  {
+    title: "Spatio-Temporal Weighted Graph Reason Learning for Multivariate Time-Series Anomaly Detection",
+    description: "This paper introduces the Spatio-Temporal Weighted Graph Reasoning Learning (STWGRL) framework for multivariate time-series anomaly detection in IoT systems. It proposes a D-RWKV module for efficient temporal feature modeling and a TaGAA module for adaptive graph aggregation, achieving high accuracy with low latency and reliability.",
+    date: "2025-05-12",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250512-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11002535"
+  },
+  {
     title: "Multi-View Learning with Context-Guided Receptance for Image Denoising",
     description: "This paper introduces CRWKV, a novel model for real-world image denoising that combines multi-view feature integration with efficient sequence modeling. The proposed approach features a Context-guided Token Shift (CTS) mechanism to capture spatial noise correlations and a Frequency Mix (FMix) module for frequency-domain noise isolation. By implementing a Bidirectional WKV (BiWKV) mechanism, the model achieves full pixel-sequence interaction with linear computational complexity. Experimental results demonstrate superior performance over state-of-the-art methods across multiple datasets while reducing inference time by up to 40%, effectively preserving fine details in complex noise scenarios.",
     date: "2025-05-05",
