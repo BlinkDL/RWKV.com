@@ -24,6 +24,14 @@ const allProjects = [
     link: "https://arxiv.org/abs/2505.13524"
   },
   {
+    title: "Maximizing Asynchronicity in Event-based Neural Networks",
+    description: "This paper introduces EVA, a novel asynchronous-to-synchronous (A2S) framework leveraging RWKV-6 architecture for event-based vision tasks. By adapting linear attention and self-supervised learning from NLP, EVA achieves highly expressive and generalizable event-by-event representations, outperforming prior A2S methods on recognition tasks and achieving 47.7 mAP on Gen1 detection tasks.",
+    date: "2025-05-16",
+    tags: "Image",
+    img: "images/papers-images/img-20250516-1.png",
+    link: "https://arxiv.org/abs/2505.11165"
+  },
+  {
     title: "Spatio-Temporal Weighted Graph Reason Learning for Multivariate Time-Series Anomaly Detection",
     description: "This paper introduces the Spatio-Temporal Weighted Graph Reasoning Learning (STWGRL) framework for multivariate time-series anomaly detection in IoT systems. It proposes a D-RWKV module for efficient temporal feature modeling and a TaGAA module for adaptive graph aggregation, achieving high accuracy with low latency and reliability.",
     date: "2025-05-12",
