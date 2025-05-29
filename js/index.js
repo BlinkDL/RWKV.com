@@ -8,6 +8,14 @@ const allProjects = [
     link: "https://link.springer.com/article/10.1007/s00371-025-03965-y"
   },
   {
+    title: "DualComp: End-to-End Learning of a Unified Dual-Modality Lossless Compressor",
+    description: "This paper proposes DualComp, the first unified and lightweight lossless compressor for both image and text data. Built on the RWKV-7 backbone, it introduces modality-unified tokenization, modality-switching contextual learning, and modality-routing mixture-of-experts to handle modality heterogeneity efficiently. DualComp achieves near real-time inference on desktop CPUs and matches or surpasses SOTA methods with fewer parameters.",
+    date: "2025-05-22",
+    tags: "General",
+    img: "images/papers-images/img-20250522-1.png",
+    link: "https://arxiv.org/abs/2505.16256"
+  },
+  {
     title: "ModRWKV: Transformer Multimodality in Linear Time",
     description: "This paper introduces ModRWKV, a multimodal framework based on the RWKV7 architecture, which achieves efficient multimodal information fusion through dynamically adaptable heterogeneous modality encoders. The framework leverages pretrained RWKV7 weights for initialization, demonstrating competitive performance and computational efficiency compared to traditional Transformer-based multimodal models.",
     date: "2025-05-20",
