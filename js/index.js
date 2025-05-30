@@ -1,5 +1,53 @@
 const allProjects = [
   {
+    title: "RainRWKV: a deep RWKV model for video deraining",
+    description: "This paper introduces RainRWKV, a deep RWKV model tailored for video deraining, which enhances low-frequency features using a wavelet transform shift mechanism and captures high-frequency details through a tubelet embedding mechanism. The model achieves state-of-the-art performance on video deraining tasks.",
+    date: "2025-05-24",
+    tags: "Image",
+    img: "images/papers-images/img-20250524-1.png",
+    link: "https://link.springer.com/article/10.1007/s00371-025-03965-y"
+  },
+  {
+    title: "DualComp: End-to-End Learning of a Unified Dual-Modality Lossless Compressor",
+    description: "This paper proposes DualComp, the first unified and lightweight lossless compressor for both image and text data. Built on the RWKV-7 backbone, it introduces modality-unified tokenization, modality-switching contextual learning, and modality-routing mixture-of-experts to handle modality heterogeneity efficiently. DualComp achieves near real-time inference on desktop CPUs and matches or surpasses SOTA methods with fewer parameters.",
+    date: "2025-05-22",
+    tags: "General",
+    img: "images/papers-images/img-20250522-1.png",
+    link: "https://arxiv.org/abs/2505.16256"
+  },
+  {
+    title: "ModRWKV: Transformer Multimodality in Linear Time",
+    description: "This paper introduces ModRWKV, a multimodal framework based on the RWKV7 architecture, which achieves efficient multimodal information fusion through dynamically adaptable heterogeneous modality encoders. The framework leverages pretrained RWKV7 weights for initialization, demonstrating competitive performance and computational efficiency compared to traditional Transformer-based multimodal models.",
+    date: "2025-05-20",
+    tags: "General",
+    img: "images/papers-images/img-20250520-1.png",
+    link: "https://arxiv.org/abs/2505.14505"
+  },
+  {
+    title: "QUANTUM -ENHANCED CHANNEL MIXING IN RWKV M ODELS FOR TIMESERIES FORECASTING",
+    description: "This paper introduces QuantumRWKV, a hybrid quantum-classical extension of the RWKV model, replacing the feedforward network with a variational quantum circuit. Experiments on synthetic time-series tasks show quantum-enhanced performance in nonlinear or chaotic dynamics, while classical models excel in tasks with sharp discontinuities.",
+    date: "2025-05-18",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250518-1.png",
+    link: "https://arxiv.org/abs/2505.13524"
+  },
+  {
+    title: "Maximizing Asynchronicity in Event-based Neural Networks",
+    description: "This paper introduces EVA, a novel asynchronous-to-synchronous (A2S) framework leveraging RWKV-6 architecture for event-based vision tasks. By adapting linear attention and self-supervised learning from NLP, EVA achieves highly expressive and generalizable event-by-event representations, outperforming prior A2S methods on recognition tasks and achieving 47.7 mAP on Gen1 detection tasks.",
+    date: "2025-05-16",
+    tags: "Image",
+    img: "images/papers-images/img-20250516-1.png",
+    link: "https://arxiv.org/abs/2505.11165"
+  },
+  {
+    title: "Spatio-Temporal Weighted Graph Reason Learning for Multivariate Time-Series Anomaly Detection",
+    description: "This paper introduces the Spatio-Temporal Weighted Graph Reasoning Learning (STWGRL) framework for multivariate time-series anomaly detection in IoT systems. It proposes a D-RWKV module for efficient temporal feature modeling and a TaGAA module for adaptive graph aggregation, achieving high accuracy with low latency and reliability.",
+    date: "2025-05-12",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250512-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11002535"
+  },
+  {
     title: "Multi-View Learning with Context-Guided Receptance for Image Denoising",
     description: "This paper introduces CRWKV, a novel model for real-world image denoising that combines multi-view feature integration with efficient sequence modeling. The proposed approach features a Context-guided Token Shift (CTS) mechanism to capture spatial noise correlations and a Frequency Mix (FMix) module for frequency-domain noise isolation. By implementing a Bidirectional WKV (BiWKV) mechanism, the model achieves full pixel-sequence interaction with linear computational complexity. Experimental results demonstrate superior performance over state-of-the-art methods across multiple datasets while reducing inference time by up to 40%, effectively preserving fine details in complex noise scenarios.",
     date: "2025-05-05",
@@ -11,7 +59,7 @@ const allProjects = [
     title: "RADLADS: Rapid Attention Distillation to Linear Attention Decoders at Scale",
     description: "This paper introduces RADLADS, a method for efficiently converting softmax attention transformers into linear attention decoder models. The approach requires only 350-700M tokens (0.005% of original training data) and under $2,000 USD to convert large models up to 72B parameters while maintaining performance. The authors present new RWKV-variant architectures and demonstrate state-of-the-art results on language benchmarks through a three-step distillation process involving attention alignment, knowledge distillation, and context extension.",
     date: "2025-05-05",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/img-20250505-2.png",
     link: "https://arxiv.org/abs/2505.03005"
   },
@@ -19,7 +67,7 @@ const allProjects = [
     title: "RWKVQuant: Quantizing the RWKV Family with Proxy Guided Hybrid of Scalar and Vector Quantization",
     description: "This paper addresses the challenges of quantizing RWKV models, a modern RNN architecture with Transformer-like performance, for efficient deployment on resource-constrained devices. The authors identify key limitations in existing post-training quantization methods when applied to RWKV, including non-linear operator interference and uniform weight distribution issues. They propose RWKVQuant, a framework combining coarse-to-fine proxy guidance for adaptive scalar/vector quantization selection and codebook optimization for RWKV's unique element-wise multiplication operations. Experimental results demonstrate 3-bit quantization with <1% accuracy loss and 2.14× speedup on RWKV-6-14B, outperforming standalone quantization approaches across language and vision tasks.",
     date: "2025-05-02",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/img-20250502-1.png",
     link: "https://arxiv.org/abs/2505.03803"
   },
@@ -35,7 +83,7 @@ const allProjects = [
     title: "RWKV-X: A Linear Complexity Hybrid Language Model",
     description: "RWKV-X introduces a hybrid architecture combining RWKV's efficiency for short-range modeling with a sparse attention mechanism for long-range context. It achieves linear-time training complexity and constant-time inference decoding while maintaining performance on both short and long-context tasks. The model demonstrates near-perfect accuracy on 64K-token passkey retrieval and outperforms prior RWKV variants in long-context benchmarks. RWKV-X enables stable decoding up to 1 million tokens, offering a scalable solution for general-purpose language modeling through optimized KV cache management and long-context continual pretraining strategies.",
     date: "2025-04-30",
-    tags: "Language",
+    tags: "General",
     img: "images/papers-images/img-20250430-1.png",
     link: "https://arxiv.org/abs/2504.21463"
   },
