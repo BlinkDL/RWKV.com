@@ -3,7 +3,7 @@ const allProjects = [
     title: "RainRWKV: a deep RWKV model for video deraining",
     description: "This paper introduces RainRWKV, a deep RWKV model tailored for video deraining, which enhances low-frequency features using a wavelet transform shift mechanism and captures high-frequency details through a tubelet embedding mechanism. The model achieves state-of-the-art performance on video deraining tasks.",
     date: "2025-05-24",
-    tags: "Image",
+    tags: "3D/4D",
     img: "images/papers-images/img-20250524-1.png",
     link: "https://link.springer.com/article/10.1007/s00371-025-03965-y"
   },
@@ -24,7 +24,7 @@ const allProjects = [
     link: "https://arxiv.org/abs/2505.14505"
   },
   {
-    title: "QUANTUM -ENHANCED CHANNEL MIXING IN RWKV M ODELS FOR TIMESERIES FORECASTING",
+    title: "Quantum-Enhanced Channel Mixing in RWKV Models for Time Series Forecasting",
     description: "This paper introduces QuantumRWKV, a hybrid quantum-classical extension of the RWKV model, replacing the feedforward network with a variational quantum circuit. Experiments on synthetic time-series tasks show quantum-enhanced performance in nonlinear or chaotic dynamics, while classical models excel in tasks with sharp discontinuities.",
     date: "2025-05-18",
     tags: "Sequence",
