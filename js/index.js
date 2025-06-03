@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "URWKV: Unified RWKV Model with Multi-state Perspective for Low-light Image Restoration",
+    description: "This paper, based on RWKV, introduces a Unified Receptance Weighted Key Value (URWKV) model for low-light image restoration, addressing dynamically coupled degradations through a multi-state perspective. The model customizes the RWKV block to perceive complex degradations using intra- and inter-stage states, featuring Luminance-adaptive Normalization (LAN) for scene-aware luminance modulation and a State-aware Selective Fusion (SSF) module for dynamic feature integration. URWKV outperforms state-of-the-art models with fewer parameters and computational resources.",
+    date: "2025-05-29",
+    tags: "Image",
+    img: "images/papers-images/img-20250529-1.png",
+    link: "https://arxiv.org/abs/2505.23068"
+  },
+  {
     title: "RainRWKV: a deep RWKV model for video deraining",
     description: "This paper introduces RainRWKV, a deep RWKV model tailored for video deraining, which enhances low-frequency features using a wavelet transform shift mechanism and captures high-frequency details through a tubelet embedding mechanism. The model achieves state-of-the-art performance on video deraining tasks.",
     date: "2025-05-24",
