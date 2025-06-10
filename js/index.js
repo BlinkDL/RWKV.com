@@ -1,5 +1,29 @@
 const allProjects = [
   {
+    title: "Vision-QRWKV: Exploring Quantum-Enhanced RWKV Models for Image Classification",
+    description: "This paper introduces Vision-QRWKV, a hybrid quantum-classical extension of the RWKV architecture, integrating a variational quantum circuit into its channel mixing component for image classification tasks. The quantum-enhanced model outperforms its classical counterpart on datasets with subtle or noisy class distinctions, demonstrating potential for lightweight and efficient vision tasks.",
+    date: "2025-06-07",
+    tags: "Image",
+    img: "images/papers-images/img-20250607-1.png",
+    link: "https://arxiv.org/abs/2506.06633"
+  },
+  {
+    title: "FEAT: Full-Dimensional Efficient Attention Transformer for Medical Video Generation",
+    description: "Based on the WKV attention mechanism within the RWKV model architecture, this paper introduces the FEAT model, which elegantly addresses the challenges of inadequate channel interaction, prohibitive computational complexity, and crude denoising guidance in medical video generation through a unified spatial-temporal-channel attention framework. FEAT employs a linear complexity attention design that seamlessly integrates global channel attention with residual value guidance modules, delivering efficient and superior-quality medical video generation across diverse datasets.",
+    date: "2025-06-05",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250605-1.png",
+    link: "https://arxiv.org/abs/2506.04956"
+  },
+  {
+    title: "Diet-Seg: Dynamic Hardness-Aware Learning for Enhanced Brain Tumor Segmentation",
+    description: "This paper introduces Diet-Seg, a novel brain tumor segmentation framework that integrates entropy-based pixel-wise hardness estimation with dynamic learning rate modulation. It employs an RWKV-based U-Net backbone to capture global spatial dependencies and an EdgeNet module to preserve tumor boundaries, achieving superior performance on BraTS datasets compared to state-of-the-art methods.",
+    date: "2025-06-03",
+    tags: "Image",
+    img: "images/papers-images/img-20250603-1.png",
+    link: "https://www.biorxiv.org/content/10.1101/2025.05.31.657149v1"
+  },
+  {
     title: "URWKV: Unified RWKV Model with Multi-state Perspective for Low-light Image Restoration",
     description: "This paper, based on RWKV, introduces a Unified Receptance Weighted Key Value (URWKV) model for low-light image restoration, addressing dynamically coupled degradations through a multi-state perspective. The model customizes the RWKV block to perceive complex degradations using intra- and inter-stage states, featuring Luminance-adaptive Normalization (LAN) for scene-aware luminance modulation and a State-aware Selective Fusion (SSF) module for dynamic feature integration. URWKV outperforms state-of-the-art models with fewer parameters and computational resources.",
     date: "2025-05-29",
