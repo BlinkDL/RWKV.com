@@ -16,6 +16,14 @@ const allProjects = [
     link: "https://arxiv.org/abs/2506.04956"
   },
   {
+    title: "Pan-Sharpening via Causal-Aware Feature Distribution Calibration",
+    description: "This paper addresses frequency imbalance in pan-sharpening by leveraging causal inference to identify optimizer momentum as a confounding factor. It proposes a novel RWKV-based architecture with global receptive fields to model long-tailed high-frequency distributions and employs counterfactual reasoning for feature calibration, achieving state-of-the-art performance across benchmark datasets.",
+    date: "2025-06-04",
+    tags: "Image",
+    img: "images/papers-images/img-20250604-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11023855"
+  },
+  {
     title: "Diet-Seg: Dynamic Hardness-Aware Learning for Enhanced Brain Tumor Segmentation",
     description: "This paper introduces Diet-Seg, a novel brain tumor segmentation framework that integrates entropy-based pixel-wise hardness estimation with dynamic learning rate modulation. It employs an RWKV-based U-Net backbone to capture global spatial dependencies and an EdgeNet module to preserve tumor boundaries, achieving superior performance on BraTS datasets compared to state-of-the-art methods.",
     date: "2025-06-03",
