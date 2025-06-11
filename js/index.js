@@ -8,6 +8,14 @@ const allProjects = [
     link: "https://arxiv.org/abs/2506.06633"
   },
   {
+    title: "VisualRWKV-HM: Enhancing linear visual-language models via hybrid mixing",
+    description: "This paper introduces VisualRWKV-HM, a linear complexity visual-language model that incorporates a hybrid mixing mechanism combining time mixing and cross state mixing. The model achieves state-of-the-art performance across single-image, multi-image, and multi-view benchmarks, demonstrating high computational efficiency and scalability. It significantly outperforms the vanilla VisualRWKV and other Transformer-based models in terms of speed and memory usage.",
+    date: "2025-06-06",
+    tags: "Language",
+    img: "images/papers-images/img-20250606-1.png",
+    link: "https://authors.elsevier.com/a/1lDfB5a7-G-6z3"
+  },
+  {
     title: "FEAT: Full-Dimensional Efficient Attention Transformer for Medical Video Generation",
     description: "Based on the WKV attention mechanism within the RWKV model architecture, this paper introduces the FEAT model, which elegantly addresses the challenges of inadequate channel interaction, prohibitive computational complexity, and crude denoising guidance in medical video generation through a unified spatial-temporal-channel attention framework. FEAT employs a linear complexity attention design that seamlessly integrates global channel attention with residual value guidance modules, delivering efficient and superior-quality medical video generation across diverse datasets.",
     date: "2025-06-05",
