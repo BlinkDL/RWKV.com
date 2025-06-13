@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "Med-URWKV: Pure RWKV With ImageNet Pre-training For Medical Image Segmentation",
+    description: "This paper introduces Med-URWKV, a pure RWKV-based architecture for medical image segmentation that incorporates ImageNet pre-training via a pre-trained VRWKV encoder. It demonstrates comparable or superior performance to existing RWKV models trained from scratch, validating the effectiveness of leveraging pre-trained RWKV models in medical segmentation tasks.",
+    date: "2025-06-12",
+    tags: "Image",
+    img: "images/papers-images/img-20250612-1.png",
+    link: "https://arxiv.org/abs/2506.10858"
+  },
+  {
     title: "Vision-QRWKV: Exploring Quantum-Enhanced RWKV Models for Image Classification",
     description: "This paper introduces Vision-QRWKV, a hybrid quantum-classical extension of the RWKV architecture, integrating a variational quantum circuit into its channel mixing component for image classification tasks. The quantum-enhanced model outperforms its classical counterpart on datasets with subtle or noisy class distinctions, demonstrating potential for lightweight and efficient vision tasks.",
     date: "2025-06-07",
@@ -38,6 +46,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20250603-1.png",
     link: "https://www.biorxiv.org/content/10.1101/2025.05.31.657149v1"
+  },
+  {
+    title: "Relational Context Modeling for Improved Knowledge Graph Completion",
+    description: "This paper proposes RCME, a hybrid model integrating RWKV for sequential modeling and dynamic embeddings with TuckER for robust relational decoding. The approach addresses limitations in existing knowledge graph completion methods by capturing contextual nuances and temporal dynamics, achieving superior performance on benchmark datasets.",
+    date: "2025-06-01",
+    tags: "Language",
+    img: "images/papers-images/img-20250601-1.png",
+    link: "https://www.engineeringletters.com/issues_v33/issue_6/EL_33_6_28.pdf"
   },
   {
     title: "URWKV: Unified RWKV Model with Multi-state Perspective for Low-light Image Restoration",
