@@ -1,5 +1,69 @@
 const allProjects = [
   {
+    title: "Med-URWKV: Pure RWKV With ImageNet Pre-training For Medical Image Segmentation",
+    description: "This paper introduces Med-URWKV, a pure RWKV-based architecture for medical image segmentation that incorporates ImageNet pre-training via a pre-trained VRWKV encoder. It demonstrates comparable or superior performance to existing RWKV models trained from scratch, validating the effectiveness of leveraging pre-trained RWKV models in medical segmentation tasks.",
+    date: "2025-06-12",
+    tags: "Image",
+    img: "images/papers-images/img-20250612-1.png",
+    link: "https://arxiv.org/abs/2506.10858"
+  },
+  {
+    title: "Vision-QRWKV: Exploring Quantum-Enhanced RWKV Models for Image Classification",
+    description: "This paper introduces Vision-QRWKV, a hybrid quantum-classical extension of the RWKV architecture, integrating a variational quantum circuit into its channel mixing component for image classification tasks. The quantum-enhanced model outperforms its classical counterpart on datasets with subtle or noisy class distinctions, demonstrating potential for lightweight and efficient vision tasks.",
+    date: "2025-06-07",
+    tags: "Image",
+    img: "images/papers-images/img-20250607-1.png",
+    link: "https://arxiv.org/abs/2506.06633"
+  },
+  {
+    title: "VisualRWKV-HM: Enhancing linear visual-language models via hybrid mixing",
+    description: "This paper introduces VisualRWKV-HM, a linear complexity visual-language model that incorporates a hybrid mixing mechanism combining time mixing and cross state mixing. The model achieves state-of-the-art performance across single-image, multi-image, and multi-view benchmarks, demonstrating high computational efficiency and scalability. It significantly outperforms the vanilla VisualRWKV and other Transformer-based models in terms of speed and memory usage.",
+    date: "2025-06-06",
+    tags: "Image",
+    img: "images/papers-images/img-20250606-1.png",
+    link: "https://authors.elsevier.com/a/1lDfB5a7-G-6z3"
+  },
+  {
+    title: "FEAT: Full-Dimensional Efficient Attention Transformer for Medical Video Generation",
+    description: "Based on the WKV attention mechanism within the RWKV model architecture, this paper introduces the FEAT model, which elegantly addresses the challenges of inadequate channel interaction, prohibitive computational complexity, and crude denoising guidance in medical video generation through a unified spatial-temporal-channel attention framework. FEAT employs a linear complexity attention design that seamlessly integrates global channel attention with residual value guidance modules, delivering efficient and superior-quality medical video generation across diverse datasets.",
+    date: "2025-06-05",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250605-1.png",
+    link: "https://arxiv.org/abs/2506.04956"
+  },
+  {
+    title: "Pan-Sharpening via Causal-Aware Feature Distribution Calibration",
+    description: "This paper addresses frequency imbalance in pan-sharpening by leveraging causal inference to identify optimizer momentum as a confounding factor. It proposes a novel RWKV-based architecture with global receptive fields to model long-tailed high-frequency distributions and employs counterfactual reasoning for feature calibration, achieving state-of-the-art performance across benchmark datasets.",
+    date: "2025-06-04",
+    tags: "Image",
+    img: "images/papers-images/img-20250604-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11023855"
+  },
+  {
+    title: "Diet-Seg: Dynamic Hardness-Aware Learning for Enhanced Brain Tumor Segmentation",
+    description: "This paper introduces Diet-Seg, a novel brain tumor segmentation framework that integrates entropy-based pixel-wise hardness estimation with dynamic learning rate modulation. It employs an RWKV-based U-Net backbone to capture global spatial dependencies and an EdgeNet module to preserve tumor boundaries, achieving superior performance on BraTS datasets compared to state-of-the-art methods.",
+    date: "2025-06-03",
+    tags: "Image",
+    img: "images/papers-images/img-20250603-1.png",
+    link: "https://www.biorxiv.org/content/10.1101/2025.05.31.657149v1"
+  },
+  {
+    title: "Relational Context Modeling for Improved Knowledge Graph Completion",
+    description: "This paper proposes RCME, a hybrid model integrating RWKV for sequential modeling and dynamic embeddings with TuckER for robust relational decoding. The approach addresses limitations in existing knowledge graph completion methods by capturing contextual nuances and temporal dynamics, achieving superior performance on benchmark datasets.",
+    date: "2025-06-01",
+    tags: "Language",
+    img: "images/papers-images/img-20250601-1.png",
+    link: "https://www.engineeringletters.com/issues_v33/issue_6/EL_33_6_28.pdf"
+  },
+  {
+    title: "URWKV: Unified RWKV Model with Multi-state Perspective for Low-light Image Restoration",
+    description: "This paper, based on RWKV, introduces a Unified Receptance Weighted Key Value (URWKV) model for low-light image restoration, addressing dynamically coupled degradations through a multi-state perspective. The model customizes the RWKV block to perceive complex degradations using intra- and inter-stage states, featuring Luminance-adaptive Normalization (LAN) for scene-aware luminance modulation and a State-aware Selective Fusion (SSF) module for dynamic feature integration. URWKV outperforms state-of-the-art models with fewer parameters and computational resources.",
+    date: "2025-05-29",
+    tags: "Image",
+    img: "images/papers-images/img-20250529-1.png",
+    link: "https://arxiv.org/abs/2505.23068"
+  },
+  {
     title: "RainRWKV: a deep RWKV model for video deraining",
     description: "This paper introduces RainRWKV, a deep RWKV model tailored for video deraining, which enhances low-frequency features using a wavelet transform shift mechanism and captures high-frequency details through a tubelet embedding mechanism. The model achieves state-of-the-art performance on video deraining tasks.",
     date: "2025-05-24",
