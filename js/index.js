@@ -1,5 +1,21 @@
 const allProjects = [
   {
+    title: "Exploring Diffusion with Test-Time Training on Efficient Image Restoration",
+    description: "This paper introduces DiffRWKVIR, a framework integrating Test-Time Training with efficient diffusion for image restoration. It extends RWKV's parameterization to 2D scanning for global context awareness, accelerates processing via chunk-wise parallelism, and extracts compact image priors for faster training/inference. The method outperforms existing models in super-resolution and inpainting tasks.",
+    date: "2025-06-17",
+    tags: "Image",
+    img: "images/papers-images/img-20250617-1.png",
+    link: "https://arxiv.org/abs/2506.13001"
+  },
+ {
+    title: "Personalizable Long-Context Symbolic Music Infilling with MIDI-RWKV",
+    description: "This paper introduces MIDI-RWKV, a novel model based on the RWKV-7 architecture, designed for personalizable, multi-track, long-context, and controllable symbolic music infilling. MIDI-RWKV enables efficient and coherent musical cocreation on edge devices and demonstrates effective finetuning for personalization in low-sample regimes. The model is evaluated on quantitative and qualitative metrics, showing superior performance in long-context infilling tasks compared to existing approaches.",
+    date: "2025-06-16",
+    tags: "Audio",
+    img: "images/papers-images/img-20250616-1.png",
+    link: "https://arxiv.org/abs/2506.14541"
+  },
+  {
     title: "Med-URWKV: Pure RWKV With ImageNet Pre-training For Medical Image Segmentation",
     description: "This paper introduces Med-URWKV, a pure RWKV-based architecture for medical image segmentation that incorporates ImageNet pre-training via a pre-trained VRWKV encoder. It demonstrates comparable or superior performance to existing RWKV models trained from scratch, validating the effectiveness of leveraging pre-trained RWKV models in medical segmentation tasks.",
     date: "2025-06-12",
