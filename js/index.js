@@ -16,6 +16,22 @@ const allProjects = [
     link: "https://arxiv.org/abs/2506.14541"
   },
   {
+    title: "A Parallel Processing Architecture for Long-Term Power Load Forecasting",
+    description: "This paper proposes MP-RWKV, an enhanced architecture based on RWKV-TS, addressing challenges in long-term power load forecasting through parallel processing paths for temporal modeling. The model demonstrates superior performance over state-of-the-art baselines, maintaining robust accuracy across short-term and long-term horizons.",
+    date: "2025-06-16",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250616-2.png",
+    link: "https://www.mdpi.com/2673-4591/97/1/26"
+  },
+  {
+    title: "RWKV-IF: Efficient and Controllable RNA Inverse Folding via Attention-Free Language Modeling",
+    description: "This paper introduces RWKV-IF, an attention-free RWKV language model-based framework for RNA inverse folding, treating structure-to-sequence generation as conditional language modeling. It employs Top-k sampling, temperature control, and G-C content biasing to generate accurate and biophysically meaningful sequences. The model demonstrates superior performance over traditional search-based methods, achieving higher accuracy and full match rates while reducing edit distance.",
+    date: "2025-06-14",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250614-1.png",
+    link: "https://www.biorxiv.org/content/10.1101/2025.06.13.659654v1"
+  },
+  {
     title: "Med-URWKV: Pure RWKV With ImageNet Pre-training For Medical Image Segmentation",
     description: "This paper introduces Med-URWKV, a pure RWKV-based architecture for medical image segmentation that incorporates ImageNet pre-training via a pre-trained VRWKV encoder. It demonstrates comparable or superior performance to existing RWKV models trained from scratch, validating the effectiveness of leveraging pre-trained RWKV models in medical segmentation tasks.",
     date: "2025-06-12",
