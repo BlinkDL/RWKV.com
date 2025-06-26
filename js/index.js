@@ -1,5 +1,21 @@
 const allProjects = [
   {
+    title: "Accurate, fast, cheap: Choose three. Replacing Multi-Head-Attention with Bidirectional Recurrent Attention for Long-Form ASR",
+    description: "This paper investigates replacing multi-head attention (MHA) with bidirectional recurrent attention (RA) layers, specifically RWKV and Mamba, in long-form automatic speech recognition (ASR) models. It demonstrates that bidirectional RA layers can match MHA accuracy while being more efficient, introduces Direction Dropout for improved accuracy/throughput trade-off, and presents a new alternating directions decoding mode.",
+    date: "2025-06-24",
+    tags: "Audio",
+    img: "images/papers-images/img-20250624-1.png",
+    link: "https://arxiv.org/abs/2506.19761"
+  },
+  {
+    title: "SMNet: A Semantic Guided Mamba Network for Remote Sensing Change Detection",
+    description: "This paper introduces SMNet, a remote sensing change detection model that integrates RWKV and Mamba architectures to enhance feature representation and global dependency capture. The model employs a Learnable Visual State Space (L-VSS) block, a multi-directional WKV (Mi-WKV) attention mechanism, and a Heterogeneous Pixel Fusion (HPF) module to improve semantic variation detection and feature circulation. Comprehensive evaluations on CD datasets demonstrate SMNet's superior performance compared to leading-edge techniques.",
+    date: "2025-06-18",
+    tags: "Image",
+    img: "images/papers-images/img-20250618-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11039697"
+  },
+  {
     title: "Exploring Diffusion with Test-Time Training on Efficient Image Restoration",
     description: "This paper introduces DiffRWKVIR, a framework integrating Test-Time Training with efficient diffusion for image restoration. It extends RWKV's parameterization to 2D scanning for global context awareness, accelerates processing via chunk-wise parallelism, and extracts compact image priors for faster training/inference. The method outperforms existing models in super-resolution and inpainting tasks.",
     date: "2025-06-17",
@@ -7,7 +23,15 @@ const allProjects = [
     img: "images/papers-images/img-20250617-1.png",
     link: "https://arxiv.org/abs/2506.13001"
   },
- {
+  {
+    title: "Blind Identification of Collective Motion Criticality using Sequence Model Predictive Entropy Variance",
+    description: "This paper proposes a parameter-agnostic method using the RWKV-7 sequence model to detect critical transitions in collective motion systems by analyzing single-agent trajectory data. The model's predictive entropy variance peaks near critical noise levels, demonstrating robustness across system sizes and aligning with finite-size scaling principles.",
+    date: "2025-06-16",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250616-3.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5297784"
+  },
+  {
     title: "Personalizable Long-Context Symbolic Music Infilling with MIDI-RWKV",
     description: "This paper introduces MIDI-RWKV, a novel model based on the RWKV-7 architecture, designed for personalizable, multi-track, long-context, and controllable symbolic music infilling. MIDI-RWKV enables efficient and coherent musical cocreation on edge devices and demonstrates effective finetuning for personalization in low-sample regimes. The model is evaluated on quantitative and qualitative metrics, showing superior performance in long-context infilling tasks compared to existing approaches.",
     date: "2025-06-16",
