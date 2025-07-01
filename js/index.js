@@ -1,5 +1,69 @@
 const allProjects = [
   {
+    title: "Out-of-Distribution Semantic Occupancy Prediction",
+    description: "This paper introduces OccOoD, a framework integrating out-of-distribution (OoD) detection into 3D semantic occupancy prediction for autonomous driving. It proposes a Synthetic Anomaly Integration Pipeline to create datasets (VAA-KITTI and VAA-KITTI-360) and leverages an RWKV-based branch in Voxel-BEV Progressive Fusion to enhance OoD detection. Experimental results demonstrate state-of-the-art OoD detection performance while maintaining competitive occupancy prediction accuracy.",
+    date: "2025-06-26",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250626-1.png",
+    link: "https://arxiv.org/abs/2506.21185"
+  },
+  {
+    title: "Accurate, fast, cheap: Choose three. Replacing Multi-Head-Attention with Bidirectional Recurrent Attention for Long-Form ASR",
+    description: "This paper investigates replacing multi-head attention (MHA) with bidirectional recurrent attention (RA) layers, specifically RWKV and Mamba, in long-form automatic speech recognition (ASR) models. It demonstrates that bidirectional RA layers can match MHA accuracy while being more efficient, introduces Direction Dropout for improved accuracy/throughput trade-off, and presents a new alternating directions decoding mode.",
+    date: "2025-06-24",
+    tags: "Audio",
+    img: "images/papers-images/img-20250624-1.png",
+    link: "https://arxiv.org/abs/2506.19761"
+  },
+  {
+    title: "SMNet: A Semantic Guided Mamba Network for Remote Sensing Change Detection",
+    description: "This paper introduces SMNet, a remote sensing change detection model that integrates RWKV and Mamba architectures to enhance feature representation and global dependency capture. The model employs a Learnable Visual State Space (L-VSS) block, a multi-directional WKV (Mi-WKV) attention mechanism, and a Heterogeneous Pixel Fusion (HPF) module to improve semantic variation detection and feature circulation. Comprehensive evaluations on CD datasets demonstrate SMNet's superior performance compared to leading-edge techniques.",
+    date: "2025-06-18",
+    tags: "Image",
+    img: "images/papers-images/img-20250618-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11039697"
+  },
+  {
+    title: "Exploring Diffusion with Test-Time Training on Efficient Image Restoration",
+    description: "This paper introduces DiffRWKVIR, a framework integrating Test-Time Training with efficient diffusion for image restoration. It extends RWKV's parameterization to 2D scanning for global context awareness, accelerates processing via chunk-wise parallelism, and extracts compact image priors for faster training/inference. The method outperforms existing models in super-resolution and inpainting tasks.",
+    date: "2025-06-17",
+    tags: "Image",
+    img: "images/papers-images/img-20250617-1.png",
+    link: "https://arxiv.org/abs/2506.13001"
+  },
+  {
+    title: "Blind Identification of Collective Motion Criticality using Sequence Model Predictive Entropy Variance",
+    description: "This paper proposes a parameter-agnostic method using the RWKV-7 sequence model to detect critical transitions in collective motion systems by analyzing single-agent trajectory data. The model's predictive entropy variance peaks near critical noise levels, demonstrating robustness across system sizes and aligning with finite-size scaling principles.",
+    date: "2025-06-16",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250616-3.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5297784"
+  },
+  {
+    title: "Personalizable Long-Context Symbolic Music Infilling with MIDI-RWKV",
+    description: "This paper introduces MIDI-RWKV, a novel model based on the RWKV-7 architecture, designed for personalizable, multi-track, long-context, and controllable symbolic music infilling. MIDI-RWKV enables efficient and coherent musical cocreation on edge devices and demonstrates effective finetuning for personalization in low-sample regimes. The model is evaluated on quantitative and qualitative metrics, showing superior performance in long-context infilling tasks compared to existing approaches.",
+    date: "2025-06-16",
+    tags: "Audio",
+    img: "images/papers-images/img-20250616-1.png",
+    link: "https://arxiv.org/abs/2506.14541"
+  },
+  {
+    title: "A Parallel Processing Architecture for Long-Term Power Load Forecasting",
+    description: "This paper proposes MP-RWKV, an enhanced architecture based on RWKV-TS, addressing challenges in long-term power load forecasting through parallel processing paths for temporal modeling. The model demonstrates superior performance over state-of-the-art baselines, maintaining robust accuracy across short-term and long-term horizons.",
+    date: "2025-06-16",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250616-2.png",
+    link: "https://www.mdpi.com/2673-4591/97/1/26"
+  },
+  {
+    title: "RWKV-IF: Efficient and Controllable RNA Inverse Folding via Attention-Free Language Modeling",
+    description: "This paper introduces RWKV-IF, an attention-free RWKV language model-based framework for RNA inverse folding, treating structure-to-sequence generation as conditional language modeling. It employs Top-k sampling, temperature control, and G-C content biasing to generate accurate and biophysically meaningful sequences. The model demonstrates superior performance over traditional search-based methods, achieving higher accuracy and full match rates while reducing edit distance.",
+    date: "2025-06-14",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250614-1.png",
+    link: "https://www.biorxiv.org/content/10.1101/2025.06.13.659654v1"
+  },
+  {
     title: "Med-URWKV: Pure RWKV With ImageNet Pre-training For Medical Image Segmentation",
     description: "This paper introduces Med-URWKV, a pure RWKV-based architecture for medical image segmentation that incorporates ImageNet pre-training via a pre-trained VRWKV encoder. It demonstrates comparable or superior performance to existing RWKV models trained from scratch, validating the effectiveness of leveraging pre-trained RWKV models in medical segmentation tasks.",
     date: "2025-06-12",
@@ -62,6 +126,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20250529-1.png",
     link: "https://arxiv.org/abs/2505.23068"
+  },
+  {
+    title: "Thyroid nodule segmentation method integrating receiving weighted key-value architecture and spherical geometric features",
+    description: "This paper proposes a thyroid nodule segmentation method integrating the receiving weighted key-value (RWKV) architecture and spherical geometry feature (SGF) sampling technology to address high computational complexity and image detail loss in ultrasound thyroid nodule segmentation. The method achieves precise segmentation through two-dimensional offset prediction and pixel-level sampling adjustments, and introduces a patch attention module (PAM) to optimize decoder feature maps, demonstrating superior performance on TN3K and DDTI datasets.",
+    date: "2025-05-29",
+    tags: "Image",
+    img: "images/papers-images/img-20250529-2.png",
+    link: "https://pubmed.ncbi.nlm.nih.gov/40566780/"
   },
   {
     title: "RainRWKV: a deep RWKV model for video deraining",
