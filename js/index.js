@@ -568,14 +568,6 @@ const allProjects = [
     link: "https://ieeexplore.ieee.org/abstract/document/10762107"
   },
   {
-    title: "Visualrwkv-Hm: Enhancing Linear Visual-Language Models Via Hybrid Mixing",
-    description: "This paper presents VisualRWKV-HM, a linear-complexity visual-language model. It integrates time and cross state mixing based on RWKV. Achieving SOTA on multiple benchmarks, it outperforms models like LLaVA-1.5 in efficiency at 24K context, showing strong scalability.",
-    date: "2024-11-21",
-    tags: "Image",
-    img: "images/papers-images/img-20241121-1.png",
-    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5028149"
-  },
-  {
     title: "DFT: A Dual-branch Framework of Fluctuation and Trend for Stock Price Prediction",
     description: "A Dual-branch Framework of Fluctuation and Trend (DFT) for stock price prediction. The RWKV model is used in the DFT to model time correlations in both the fluctuation and trend branches. It combines the power of RNN and Transformer, maintaining the time sequence of input features and satisfying the causality of the input. This helps in effectively capturing short-term fluctuations and trend information from stocks while explicitly modeling temporal variations and causal correlations, leading to improved performance compared to existing methods",
     date: "2024-11-09",
