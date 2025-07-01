@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "Out-of-Distribution Semantic Occupancy Prediction",
+    description: "This paper introduces OccOoD, a framework integrating out-of-distribution (OoD) detection into 3D semantic occupancy prediction for autonomous driving. It proposes a Synthetic Anomaly Integration Pipeline to create datasets (VAA-KITTI and VAA-KITTI-360) and leverages an RWKV-based branch in Voxel-BEV Progressive Fusion to enhance OoD detection. Experimental results demonstrate state-of-the-art OoD detection performance while maintaining competitive occupancy prediction accuracy.",
+    date: "2025-06-26",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250626-1.png",
+    link: "https://arxiv.org/abs/2506.21185"
+  },
+  {
     title: "Accurate, fast, cheap: Choose three. Replacing Multi-Head-Attention with Bidirectional Recurrent Attention for Long-Form ASR",
     description: "This paper investigates replacing multi-head attention (MHA) with bidirectional recurrent attention (RA) layers, specifically RWKV and Mamba, in long-form automatic speech recognition (ASR) models. It demonstrates that bidirectional RA layers can match MHA accuracy while being more efficient, introduces Direction Dropout for improved accuracy/throughput trade-off, and presents a new alternating directions decoding mode.",
     date: "2025-06-24",
@@ -118,6 +126,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20250529-1.png",
     link: "https://arxiv.org/abs/2505.23068"
+  },
+  {
+    title: "Thyroid nodule segmentation method integrating receiving weighted key-value architecture and spherical geometric features",
+    description: "This paper proposes a thyroid nodule segmentation method integrating the receiving weighted key-value (RWKV) architecture and spherical geometry feature (SGF) sampling technology to address high computational complexity and image detail loss in ultrasound thyroid nodule segmentation. The method achieves precise segmentation through two-dimensional offset prediction and pixel-level sampling adjustments, and introduces a patch attention module (PAM) to optimize decoder feature maps, demonstrating superior performance on TN3K and DDTI datasets.",
+    date: "2025-05-29",
+    tags: "Image",
+    img: "images/papers-images/img-20250529-2.png",
+    link: "https://pubmed.ncbi.nlm.nih.gov/40566780/"
   },
   {
     title: "RainRWKV: a deep RWKV model for video deraining",
