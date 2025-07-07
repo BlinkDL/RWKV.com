@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "Bringing RNNs Back to Efficient Open-Ended Video Understanding",
+    description: "This paper proposes AURORA LONG, a model that replaces the LLM component in MLLMs with a linear RNN language model (RWKV) to handle long video inputs efficiently. By combining visual token merging with linear RNN models and reordering tokens by size, the model achieves constant memory cost and high throughput. Despite having only 2B parameters and being trained on public data, AURORA LONG matches the performance of larger Transformer-based models on multiple video benchmarks, demonstrating the potential of linear RNNs for democratizing long video understanding.",
+    date: "2025-07-03",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250703-1.png",
+    link: "https://arxiv.org/abs/2507.02591"
+  },
+  {
     title: "Out-of-Distribution Semantic Occupancy Prediction",
     description: "This paper introduces OccOoD, a framework integrating out-of-distribution (OoD) detection into 3D semantic occupancy prediction for autonomous driving. It proposes a Synthetic Anomaly Integration Pipeline to create datasets (VAA-KITTI and VAA-KITTI-360) and leverages an RWKV-based branch in Voxel-BEV Progressive Fusion to enhance OoD detection. Experimental results demonstrate state-of-the-art OoD detection performance while maintaining competitive occupancy prediction accuracy.",
     date: "2025-06-26",
