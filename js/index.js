@@ -1,11 +1,27 @@
 const allProjects = [
   {
+    title: "Scaling Context Requires Rethinking Attention",
+    description: "This paper introduces power attention, an architectural layer derived from linear attention principles like those in RWKV, designed for efficient long-context sequence modeling. It addresses limitations of transformers and sub-quadratic architectures by enabling independent adjustment of state size via hyperparameter p, achieving balanced weight-state FLOP ratios. The authors develop optimized GPU kernels and demonstrate power attention's superiority in in-context learning and loss-per-FLOP over exponential and linear attention at long sequences.",
+    date: "2025-07-06",
+    tags: "General",
+    img: "images/papers-images/img-20250706-1.png",
+    link: "https://arxiv.org/abs/2507.04239"
+  },
+  {
     title: "Bringing RNNs Back to Efficient Open-Ended Video Understanding",
     description: "This paper proposes AURORA LONG, a model that replaces the LLM component in MLLMs with a linear RNN language model (RWKV) to handle long video inputs efficiently. By combining visual token merging with linear RNN models and reordering tokens by size, the model achieves constant memory cost and high throughput. Despite having only 2B parameters and being trained on public data, AURORA LONG matches the performance of larger Transformer-based models on multiple video benchmarks, demonstrating the potential of linear RNNs for democratizing long video understanding.",
     date: "2025-07-03",
     tags: "3D/4D",
     img: "images/papers-images/img-20250703-1.png",
     link: "https://arxiv.org/abs/2507.02591"
+  },
+  {
+    title: "EvRWKV: A RWKV Framework for Effective Event-guided Low-Light Image Enhancement",
+    description: "This paper, based on RWKV, introduces EvRWKV, a novel framework for event-guided low-light image enhancement. It leverages a Cross-RWKV module for fine-grained temporal and cross-modal fusion between event and image data, and an Event Image Spectral Fusion Enhancer (EISFE) module for adaptive noise suppression and spatial alignment in frequency and spatial domains. Extensive experiments on real-world datasets demonstrate state-of-the-art performance in suppressing noise and restoring details in challenging low-light conditions.",
+    date: "2025-07-01",
+    tags: "Image",
+    img: "images/papers-images/img-20250701-1.png",
+    link: "https://arxiv.org/abs/2507.03184"
   },
   {
     title: "Out-of-Distribution Semantic Occupancy Prediction",
