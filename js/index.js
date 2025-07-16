@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "U-RWKV: Lightweight medical image segmentation with direction-adaptive RWKV",
+    description: "This paper proposes U-RWKV, a lightweight medical image segmentation framework leveraging the RWKV architecture. It introduces the Direction-Adaptive RWKV Module (DARM) with Dual-RWKV and QuadScan mechanisms to efficiently capture long-range dependencies while mitigating directional bias, and the Stage-Adaptive Squeeze-and-Excitation Module (SASE) to dynamically adapt feature extraction across stages. Experiments demonstrate state-of-the-art segmentation performance with high computational efficiency, making it suitable for resource-constrained healthcare settings.",
+    date: "2025-07-15",
+    tags: "Image",
+    img: "images/papers-images/img-20250715-1.png",
+    link: "https://arxiv.org/abs/2507.11415"
+  },
+  {
     title: "Scaling Context Requires Rethinking Attention",
     description: "This paper introduces power attention, an architectural layer derived from linear attention principles like those in RWKV, designed for efficient long-context sequence modeling. It addresses limitations of transformers and sub-quadratic architectures by enabling independent adjustment of state size via hyperparameter p, achieving balanced weight-state FLOP ratios. The authors develop optimized GPU kernels and demonstrate power attention's superiority in in-context learning and loss-per-FLOP over exponential and linear attention at long sequences.",
     date: "2025-07-06",
