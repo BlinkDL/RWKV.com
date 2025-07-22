@@ -8,6 +8,14 @@ const allProjects = [
     link: "https://arxiv.org/abs/2507.11415"
   },
   {
+    title: "DEVR: Train an Efficient Vision-RWKV Model with Improved Knowledge Distillation",
+    description: "This paper, based on RWKV, introduces DEVR, an efficient Vision-RWKV model enhanced through knowledge distillation. The authors redesign the RWKV block for vision tasks by adding 1D convolutions and a reversed-input branch to capture spatial details and improve channel interactions. They propose a novel distillation loss combining contrastive learning and traditional knowledge distillation to align features with a CNN teacher model. Evaluations demonstrate DEVR outperforms vanilla Vision-RWKV and DeiT in image classification, detection, and segmentation tasks while reducing computational costs and accelerating inference.",
+    date: "2025-07-15",
+    tags: "Image",
+    img: "images/papers-images/img-20250715-2.png",
+    link: "https://link.springer.com/chapter/10.1007/978-981-96-9794-6_29"
+  },
+  {
     title: "Scaling Context Requires Rethinking Attention",
     description: "This paper introduces power attention, an architectural layer derived from linear attention principles like those in RWKV, designed for efficient long-context sequence modeling. It addresses limitations of transformers and sub-quadratic architectures by enabling independent adjustment of state size via hyperparameter p, achieving balanced weight-state FLOP ratios. The authors develop optimized GPU kernels and demonstrate power attention's superiority in in-context learning and loss-per-FLOP over exponential and linear attention at long sequences.",
     date: "2025-07-06",
@@ -16,7 +24,7 @@ const allProjects = [
     link: "https://arxiv.org/abs/2507.04239"
   },
   {
-    title: "Bringing RNNs Back to Efficient Open-Ended Video Understanding",
+    title: "AuroraLong: Bringing RNNs Back to Efficient Open-Ended Video Understanding",
     description: "This paper proposes AURORA LONG, a model that replaces the LLM component in MLLMs with a linear RNN language model (RWKV) to handle long video inputs efficiently. By combining visual token merging with linear RNN models and reordering tokens by size, the model achieves constant memory cost and high throughput. Despite having only 2B parameters and being trained on public data, AURORA LONG matches the performance of larger Transformer-based models on multiple video benchmarks, demonstrating the potential of linear RNNs for democratizing long video understanding.",
     date: "2025-07-03",
     tags: "3D/4D",
