@@ -1,5 +1,29 @@
 const allProjects = [
   {
+    title: "LowKeyEMG: Electromyographic typing with a reduced keyset",
+    description: "This paper leverages the RWKV recurrent transformer language model to develop LowKeyEMG, a real-time interface enabling efficient text entry via surface electromyography (sEMG) with only 7 gesture keys. The system reduces the alphabet to 4 keys plus controls, using RWKV for beam search to predict words from sparse inputs. Experiments show participants achieved 23.3 words per minute with 99.2% top-3 accuracy, demonstrating reliable typing for motor-impaired users and constrained-input scenarios.",
+    date: "2025-07-26",
+    tags: "Language",
+    img: "images/papers-images/img-20250726-1.png",
+    link: "https://arxiv.org/abs/2507.19736"
+  },
+  {
+    title: "DRWKV: Focusing on Object Edges for Low-Light Image Enhancement",
+    description: "This paper, based on RWKV, proposes the DRWKV model for low-light image enhancement, prioritizing object edge preservation. It integrates Global Edge Retinex theory to decouple illumination and edge structures, introduces Evolving WKV Attention for spatial continuity modeling, and employs a Bilateral Spectrum Aligner with MS²-Loss for color alignment. Extensive benchmarks demonstrate superior PSNR, SSIM, and NIQE performance with low computational complexity, while enhancing downstream object tracking tasks.",
+    date: "2025-07-24",
+    tags: "Image",
+    img: "images/papers-images/img-20250724-1.png",
+    link: "https://arxiv.org/abs/2507.18594"
+  },
+  {
+    title: "An Efficient Image Fusion Network Exploiting Unifying Language and Mask Guidance",
+    description: "This paper, based on RWKV, proposes an efficient image fusion framework leveraging language descriptions and semantic masks as guidance. It adapts RWKV into a bidirectional version using an efficient scanning strategy for image modality and introduces a multi-modal fusion module to integrate language and mask features. The lightweight network achieves state-of-the-art results across visible-infrared, multi-exposure, multi-focus, medical, hyperspectral-multispectral fusion, and pansharpening tasks.",
+    date: "2025-07-23",
+    tags: "Image",
+    img: "images/papers-images/img-20250723-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11091495"
+  },
+  {
     title: "U-RWKV: Lightweight medical image segmentation with direction-adaptive RWKV",
     description: "This paper proposes U-RWKV, a lightweight medical image segmentation framework leveraging the RWKV architecture. It introduces the Direction-Adaptive RWKV Module (DARM) with Dual-RWKV and QuadScan mechanisms to efficiently capture long-range dependencies while mitigating directional bias, and the Stage-Adaptive Squeeze-and-Excitation Module (SASE) to dynamically adapt feature extraction across stages. Experiments demonstrate state-of-the-art segmentation performance with high computational efficiency, making it suitable for resource-constrained healthcare settings.",
     date: "2025-07-15",
