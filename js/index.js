@@ -1,11 +1,35 @@
 const allProjects = [
   {
+    title: "Monthly Service Prediction for 4G/5G Systems: A Short Time Series Based Neural Network Solution",
+    description: "This paper, leveraging RWKV in its encoder, proposes a framework for monthly service prediction in 4G/5G networks. It introduces deep temporal clustering representation (DTCR) using RWKV-based encoding to cluster short time series data, followed by a decreasing time-difference network (DTD-Net) that crops input features block-wise to prevent overfitting. The solution achieves low prediction errors on real-world mobile network data, addressing challenges of limited data length and chaotic internal logic.",
+    date: "2025-07-30",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250730-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11104274"
+  },
+  {
+    title: "RWKV-Receptance Recurrent Key Value in the field of Speaker Diarization",
+    description: "This paper, based on RWKV, introduces a novel approach to speaker diarization by integrating the RWKV architecture with End-to-End Neural Diarization (EEND). RWKV combines recurrent and transformer-like components to enable linear-time processing and memory efficiency. By replacing attention modules in EEND with RWKV-based time-mixing and channel-mixing blocks, the proposed RWKV-EEND framework efficiently handles long audio contexts. Evaluations show reduced diarization error rates and faster inference, making it suitable for real-time and low-resource audio systems.",
+    date: "2025-07-29",
+    tags: "Audio",
+    img: "images/papers-images/img-20250729-1.png",
+    link: "https://openreview.net/forum?id=5WG3x1hgdN"
+  },
+  {
     title: "LowKeyEMG: Electromyographic typing with a reduced keyset",
     description: "This paper leverages the RWKV recurrent transformer language model to develop LowKeyEMG, a real-time interface enabling efficient text entry via surface electromyography (sEMG) with only 7 gesture keys. The system reduces the alphabet to 4 keys plus controls, using RWKV for beam search to predict words from sparse inputs. Experiments show participants achieved 23.3 words per minute with 99.2% top-3 accuracy, demonstrating reliable typing for motor-impaired users and constrained-input scenarios.",
     date: "2025-07-26",
     tags: "Language",
     img: "images/papers-images/img-20250726-1.png",
     link: "https://arxiv.org/abs/2507.19736"
+  },
+  {
+    title: "Smooth Reading: Bridging the Gap of Recurrent LLM to Self-Attention LLM on Long-Context Tasks",
+    description: "This paper, based on RWKV and other recurrent LLMs, proposes Smooth Reading—a chunk-wise inference method inspired by human reading strategies to address recurrent models' limitations in long-context tasks. By iteratively processing context in chunks and summarizing information, it reduces memory demands while preserving linear computational complexity. Experiments show RWKV and sliding-window LLMs with Smooth Reading match or exceed self-attention LLMs' performance on benchmarks like LongBench and NIAH, achieving 3× faster training and 2× faster inference at 64k context lengths.",
+    date: "2025-07-25",
+    tags: "General",
+    img: "images/papers-images/img-20250725-1.png",
+    link: "https://arxiv.org/abs/2507.19353"
   },
   {
     title: "DRWKV: Focusing on Object Edges for Low-Light Image Enhancement",
@@ -93,7 +117,7 @@ const allProjects = [
     date: "2025-06-17",
     tags: "Image",
     img: "images/papers-images/img-20250617-1.png",
-    link: "https://arxiv.org/abs/2506.13001"
+    link: "https://arxiv.org/abs/2506.14541"
   },
   {
     title: "Blind Identification of Collective Motion Criticality using Sequence Model Predictive Entropy Variance",
@@ -109,7 +133,7 @@ const allProjects = [
     date: "2025-06-16",
     tags: "Audio",
     img: "images/papers-images/img-20250616-1.png",
-    link: "https://arxiv.org/abs/2506.14541"
+    link: "https://arxiv.org/abs/2506.13001"
   },
   {
     title: "A Parallel Processing Architecture for Long-Term Power Load Forecasting",
