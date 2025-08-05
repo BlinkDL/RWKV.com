@@ -1,5 +1,93 @@
 const allProjects = [
   {
+    title: "Monthly Service Prediction for 4G/5G Systems: A Short Time Series Based Neural Network Solution",
+    description: "This paper, leveraging RWKV in its encoder, proposes a framework for monthly service prediction in 4G/5G networks. It introduces deep temporal clustering representation (DTCR) using RWKV-based encoding to cluster short time series data, followed by a decreasing time-difference network (DTD-Net) that crops input features block-wise to prevent overfitting. The solution achieves low prediction errors on real-world mobile network data, addressing challenges of limited data length and chaotic internal logic.",
+    date: "2025-07-30",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250730-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11104274"
+  },
+  {
+    title: "RWKV-Receptance Recurrent Key Value in the field of Speaker Diarization",
+    description: "This paper, based on RWKV, introduces a novel approach to speaker diarization by integrating the RWKV architecture with End-to-End Neural Diarization (EEND). RWKV combines recurrent and transformer-like components to enable linear-time processing and memory efficiency. By replacing attention modules in EEND with RWKV-based time-mixing and channel-mixing blocks, the proposed RWKV-EEND framework efficiently handles long audio contexts. Evaluations show reduced diarization error rates and faster inference, making it suitable for real-time and low-resource audio systems.",
+    date: "2025-07-29",
+    tags: "Audio",
+    img: "images/papers-images/img-20250729-1.png",
+    link: "https://openreview.net/forum?id=5WG3x1hgdN"
+  },
+  {
+    title: "LowKeyEMG: Electromyographic typing with a reduced keyset",
+    description: "This paper leverages the RWKV recurrent transformer language model to develop LowKeyEMG, a real-time interface enabling efficient text entry via surface electromyography (sEMG) with only 7 gesture keys. The system reduces the alphabet to 4 keys plus controls, using RWKV for beam search to predict words from sparse inputs. Experiments show participants achieved 23.3 words per minute with 99.2% top-3 accuracy, demonstrating reliable typing for motor-impaired users and constrained-input scenarios.",
+    date: "2025-07-26",
+    tags: "Language",
+    img: "images/papers-images/img-20250726-1.png",
+    link: "https://arxiv.org/abs/2507.19736"
+  },
+  {
+    title: "Smooth Reading: Bridging the Gap of Recurrent LLM to Self-Attention LLM on Long-Context Tasks",
+    description: "This paper, based on RWKV and other recurrent LLMs, proposes Smooth Reading—a chunk-wise inference method inspired by human reading strategies to address recurrent models' limitations in long-context tasks. By iteratively processing context in chunks and summarizing information, it reduces memory demands while preserving linear computational complexity. Experiments show RWKV and sliding-window LLMs with Smooth Reading match or exceed self-attention LLMs' performance on benchmarks like LongBench and NIAH, achieving 3× faster training and 2× faster inference at 64k context lengths.",
+    date: "2025-07-25",
+    tags: "General",
+    img: "images/papers-images/img-20250725-1.png",
+    link: "https://arxiv.org/abs/2507.19353"
+  },
+  {
+    title: "DRWKV: Focusing on Object Edges for Low-Light Image Enhancement",
+    description: "This paper, based on RWKV, proposes the DRWKV model for low-light image enhancement, prioritizing object edge preservation. It integrates Global Edge Retinex theory to decouple illumination and edge structures, introduces Evolving WKV Attention for spatial continuity modeling, and employs a Bilateral Spectrum Aligner with MS²-Loss for color alignment. Extensive benchmarks demonstrate superior PSNR, SSIM, and NIQE performance with low computational complexity, while enhancing downstream object tracking tasks.",
+    date: "2025-07-24",
+    tags: "Image",
+    img: "images/papers-images/img-20250724-1.png",
+    link: "https://arxiv.org/abs/2507.18594"
+  },
+  {
+    title: "An Efficient Image Fusion Network Exploiting Unifying Language and Mask Guidance",
+    description: "This paper, based on RWKV, proposes an efficient image fusion framework leveraging language descriptions and semantic masks as guidance. It adapts RWKV into a bidirectional version using an efficient scanning strategy for image modality and introduces a multi-modal fusion module to integrate language and mask features. The lightweight network achieves state-of-the-art results across visible-infrared, multi-exposure, multi-focus, medical, hyperspectral-multispectral fusion, and pansharpening tasks.",
+    date: "2025-07-23",
+    tags: "Image",
+    img: "images/papers-images/img-20250723-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11091495"
+  },
+  {
+    title: "U-RWKV: Lightweight medical image segmentation with direction-adaptive RWKV",
+    description: "This paper proposes U-RWKV, a lightweight medical image segmentation framework leveraging the RWKV architecture. It introduces the Direction-Adaptive RWKV Module (DARM) with Dual-RWKV and QuadScan mechanisms to efficiently capture long-range dependencies while mitigating directional bias, and the Stage-Adaptive Squeeze-and-Excitation Module (SASE) to dynamically adapt feature extraction across stages. Experiments demonstrate state-of-the-art segmentation performance with high computational efficiency, making it suitable for resource-constrained healthcare settings.",
+    date: "2025-07-15",
+    tags: "Image",
+    img: "images/papers-images/img-20250715-1.png",
+    link: "https://arxiv.org/abs/2507.11415"
+  },
+  {
+    title: "DEVR: Train an Efficient Vision-RWKV Model with Improved Knowledge Distillation",
+    description: "This paper, based on RWKV, introduces DEVR, an efficient Vision-RWKV model enhanced through knowledge distillation. The authors redesign the RWKV block for vision tasks by adding 1D convolutions and a reversed-input branch to capture spatial details and improve channel interactions. They propose a novel distillation loss combining contrastive learning and traditional knowledge distillation to align features with a CNN teacher model. Evaluations demonstrate DEVR outperforms vanilla Vision-RWKV and DeiT in image classification, detection, and segmentation tasks while reducing computational costs and accelerating inference.",
+    date: "2025-07-15",
+    tags: "Image",
+    img: "images/papers-images/img-20250715-2.png",
+    link: "https://link.springer.com/chapter/10.1007/978-981-96-9794-6_29"
+  },
+  {
+    title: "Scaling Context Requires Rethinking Attention",
+    description: "This paper introduces power attention, an architectural layer derived from linear attention principles like those in RWKV, designed for efficient long-context sequence modeling. It addresses limitations of transformers and sub-quadratic architectures by enabling independent adjustment of state size via hyperparameter p, achieving balanced weight-state FLOP ratios. The authors develop optimized GPU kernels and demonstrate power attention's superiority in in-context learning and loss-per-FLOP over exponential and linear attention at long sequences.",
+    date: "2025-07-06",
+    tags: "General",
+    img: "images/papers-images/img-20250706-1.png",
+    link: "https://arxiv.org/abs/2507.04239"
+  },
+  {
+    title: "AuroraLong: Bringing RNNs Back to Efficient Open-Ended Video Understanding",
+    description: "This paper proposes AURORA LONG, a model that replaces the LLM component in MLLMs with a linear RNN language model (RWKV) to handle long video inputs efficiently. By combining visual token merging with linear RNN models and reordering tokens by size, the model achieves constant memory cost and high throughput. Despite having only 2B parameters and being trained on public data, AURORA LONG matches the performance of larger Transformer-based models on multiple video benchmarks, demonstrating the potential of linear RNNs for democratizing long video understanding.",
+    date: "2025-07-03",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250703-1.png",
+    link: "https://arxiv.org/abs/2507.02591"
+  },
+  {
+    title: "EvRWKV: A RWKV Framework for Effective Event-guided Low-Light Image Enhancement",
+    description: "This paper, based on RWKV, introduces EvRWKV, a novel framework for event-guided low-light image enhancement. It leverages a Cross-RWKV module for fine-grained temporal and cross-modal fusion between event and image data, and an Event Image Spectral Fusion Enhancer (EISFE) module for adaptive noise suppression and spatial alignment in frequency and spatial domains. Extensive experiments on real-world datasets demonstrate state-of-the-art performance in suppressing noise and restoring details in challenging low-light conditions.",
+    date: "2025-07-01",
+    tags: "Image",
+    img: "images/papers-images/img-20250701-1.png",
+    link: "https://arxiv.org/abs/2507.03184"
+  },
+  {
     title: "Out-of-Distribution Semantic Occupancy Prediction",
     description: "This paper introduces OccOoD, a framework integrating out-of-distribution (OoD) detection into 3D semantic occupancy prediction for autonomous driving. It proposes a Synthetic Anomaly Integration Pipeline to create datasets (VAA-KITTI and VAA-KITTI-360) and leverages an RWKV-based branch in Voxel-BEV Progressive Fusion to enhance OoD detection. Experimental results demonstrate state-of-the-art OoD detection performance while maintaining competitive occupancy prediction accuracy.",
     date: "2025-06-26",
@@ -29,7 +117,7 @@ const allProjects = [
     date: "2025-06-17",
     tags: "Image",
     img: "images/papers-images/img-20250617-1.png",
-    link: "https://arxiv.org/abs/2506.13001"
+    link: "https://arxiv.org/abs/2506.14541"
   },
   {
     title: "Blind Identification of Collective Motion Criticality using Sequence Model Predictive Entropy Variance",
@@ -45,7 +133,7 @@ const allProjects = [
     date: "2025-06-16",
     tags: "Audio",
     img: "images/papers-images/img-20250616-1.png",
-    link: "https://arxiv.org/abs/2506.14541"
+    link: "https://arxiv.org/abs/2506.13001"
   },
   {
     title: "A Parallel Processing Architecture for Long-Term Power Load Forecasting",
