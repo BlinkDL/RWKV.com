@@ -40,6 +40,14 @@ const allProjects = [
     link: "https://arxiv.org/abs/2507.18594"
   },
   {
+    title: "MSFF-RWKV : Single-Structure Multi-stage Feature Fusion Lightweight Super-Resolution Network",
+    description: "This paper introduces MSFF-RWKV, a lightweight super-resolution network based on the RWKV architecture. It proposes a multi-stage feature fusion strategy using a single RWKV block that recursively integrates outputs with previous features to reduce parameters and computational costs. The model incorporates a Local Pixel Perception layer for adaptive pixel-level interactions and an ME-Shift module for multi-scale feature extraction. Experiments demonstrate state-of-the-art performance with a 0.14 dB PSNR gain and 26.6% parameter reduction.",
+    date: "2025-07-15",
+    tags: "Image",
+    img: "images/papers-images/img-20250715-3.png",
+    link: "https://link.springer.com/chapter/10.1007/978-981-96-9949-0_35"
+  },
+  {
     title: "An Efficient Image Fusion Network Exploiting Unifying Language and Mask Guidance",
     description: "This paper, based on RWKV, proposes an efficient image fusion framework leveraging language descriptions and semantic masks as guidance. It adapts RWKV into a bidirectional version using an efficient scanning strategy for image modality and introduces a multi-modal fusion module to integrate language and mask features. The lightweight network achieves state-of-the-art results across visible-infrared, multi-exposure, multi-focus, medical, hyperspectral-multispectral fusion, and pansharpening tasks.",
     date: "2025-07-23",
