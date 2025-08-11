@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "A Multimodal Bone Stick Matching Approach Based on Large-Scale Pre-Trained Models and Dynamic Cross-Modal Feature Fusion",
+    description: "This paper, based on RWKV-derived models (Vision-RWKV for images and RWKV for inscriptions), proposes a multimodal method for matching fragmented bone sticks. It integrates image, inscription, and archeological metadata using pre-trained models (Vision-RWKV, RWKV, BERT) and a dynamic cross-modal feature fusion mechanism. The approach achieves 94.73% matching accuracy at Rank-15 by effectively handling fractures, corrosion, and missing sections, outperforming traditional methods.",
+    date: "2025-08-05",
+    tags: "Image",
+    img: "images/papers-images/img-20250805-1.png",
+    link: "https://www.mdpi.com/journal/applsci"
+  },
+  {
     title: "Monthly Service Prediction for 4G/5G Systems: A Short Time Series Based Neural Network Solution",
     description: "This paper, leveraging RWKV in its encoder, proposes a framework for monthly service prediction in 4G/5G networks. It introduces deep temporal clustering representation (DTCR) using RWKV-based encoding to cluster short time series data, followed by a decreasing time-difference network (DTD-Net) that crops input features block-wise to prevent overfitting. The solution achieves low prediction errors on real-world mobile network data, addressing challenges of limited data length and chaotic internal logic.",
     date: "2025-07-30",
