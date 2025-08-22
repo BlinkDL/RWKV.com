@@ -1,11 +1,19 @@
 const allProjects = [
   {
+    title: "REB-former: RWKV-enhanced E-branchformer for Speech Recognition",
+    description: "This paper introduces REB-former, an RWKV-enhanced E-Branchformer, to address the quadratic complexity of Transformer-based ASR models. It interleaves E-Branchformer and RWKV layers, proposing the GroupBiRWKV module to enable efficient bidirectional contextual feature capture and overcome RWKV's inherent unidirectional limitation. The model also incorporates an RWKVDecoder to further enhance temporal modeling. Experimental results demonstrate that REB-former achieves state-of-the-art performance on the LibriSpeech 100h dataset, with improved computational efficiency and a significant reduction in word error rate.",
+    date: "2025-08-17",
+    tags: "Audio",
+    img: "images/papers-images/img-20250817-1.png",
+    link: "https://www.isca-archive.org/interspeech_2025/song25b_interspeech.html"
+  },
+  {
     title: "A Multimodal Bone Stick Matching Approach Based on Large-Scale Pre-Trained Models and Dynamic Cross-Modal Feature Fusion",
     description: "This paper, based on RWKV-derived models (Vision-RWKV for images and RWKV for inscriptions), proposes a multimodal method for matching fragmented bone sticks. It integrates image, inscription, and archeological metadata using pre-trained models (Vision-RWKV, RWKV, BERT) and a dynamic cross-modal feature fusion mechanism. The approach achieves 94.73% matching accuracy at Rank-15 by effectively handling fractures, corrosion, and missing sections, outperforming traditional methods.",
     date: "2025-08-05",
     tags: "Image",
     img: "images/papers-images/img-20250805-1.png",
-    link: "https://www.mdpi.com/journal/applsci"
+    link: "https://www.mdpi.com/2076-3417/15/15/8681"
   },
   {
     title: "Monthly Service Prediction for 4G/5G Systems: A Short Time Series Based Neural Network Solution",
