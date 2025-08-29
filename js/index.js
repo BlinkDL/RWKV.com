@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "PointDGRWKV: Generalizing RWKV-like Architecture to Unseen Domains for Point Cloud Classification",
+    description: "This paper introduces PointDGRWKV, the first RWKV-based framework specifically designed for Domain Generalization in Point Cloud Classification (DG PCC). It addresses challenges of applying RWKV to unstructured point clouds, such as spatial distortions from fixed token shifts and attention drift from exponential weighting. The proposed PointDGRWKV incorporates Adaptive Geometric Token Shift (AGT-Shift) for improved local geometric modeling and Cross-Domain Key Feature Distribution Alignment (CD-KDA) to enhance cross-domain robustness. Experiments demonstrate state-of-the-art performance on DG PCC benchmarks while maintaining RWKV's linear efficiency.",
+    date: "2025-08-28",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250828-1.png",
+    link: "https://arxiv.org/abs/2508.20835"
+  },
+  {
     title: "REB-former: RWKV-enhanced E-branchformer for Speech Recognition",
     description: "This paper introduces REB-former, an RWKV-enhanced E-Branchformer, to address the quadratic complexity of Transformer-based ASR models. It interleaves E-Branchformer and RWKV layers, proposing the GroupBiRWKV module to enable efficient bidirectional contextual feature capture and overcome RWKV's inherent unidirectional limitation. The model also incorporates an RWKVDecoder to further enhance temporal modeling. Experimental results demonstrate that REB-former achieves state-of-the-art performance on the LibriSpeech 100h dataset, with improved computational efficiency and a significant reduction in word error rate.",
     date: "2025-08-17",
