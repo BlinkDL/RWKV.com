@@ -1,11 +1,43 @@
 const allProjects = [
   {
+    title: "Hybrid CNN-RWKV with high-frequency enhancement for real-world chinese-english scene text image super-resolution",
+    description: "This paper proposes a Hybrid CNN-RWKV with High-Frequency Enhancement (HCR-HFE) model for real-world Scene Text Image Super-Resolution (STISR). Leveraging the RWKV architecture's capability for long-distance modeling with linear computational complexity, HCR-HFE addresses the limitations of existing methods on complex Chinese characters. The model integrates a recurrent bidirectional WKV attention to establish 2D image dependencies, a high-frequency enhancement module, a multi-scale large kernel convolutional block, and multi-frequency channel attention. Extensive experiments on the Real-CE dataset demonstrate HCR-HFE's superior performance in text legibility, image fidelity, and perceptual quality, also showing broad applicability to general SR tasks.",
+    date: "2025-08-30",
+    tags: "Image",
+    img: "images/papers-images/img-20250830-1.png",
+    link: "https://link.springer.com/article/10.1007/s10489-025-06785-8"
+  },
+  {
+    title: "Finch-LIC: Learned Image Compression with Gated Multihead Linear Attention",
+    description: "This paper introduces FinchLIC, a novel linear attention-based learned image compression architecture that builds upon RWKV-like mechanisms. It proposes Multihead Bi-RWKV blocks to enhance feature extraction by expanding the scale of internal states, analogous to multi-head attention. Furthermore, a K-Manhattan distance token shift (KMshift) method is introduced to effectively model neighboring context and expand the receptive field. FinchLIC achieves competitive rate-distortion performance while maintaining linear computational complexity and lower GPU memory usage, demonstrating efficiency and effectiveness for high-resolution image compression.",
+    date: "2025-08-28",
+    tags: "Image",
+    img: "images/papers-images/img-20250828-3.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5413219"
+  },
+  {
+    title: "DSM-Seg: A CNN-RWKV Hybrid Framework for Forward-Looking Sonar Image Segmentation in Deep-Sea Mining",
+    description: "This paper introduces DSM-Seg, a novel CNN-RWKV hybrid framework for semantic segmentation of forward-looking sonar (FLS) images in deep-sea mining. Addressing challenges like noise and blurred boundaries, DSM-Seg integrates a Physical Prior-Based Semantic Guidance Module (PSGM) leveraging sonar-specific priors for boundary enhancement. Additionally, an RWKV-Based Global Fusion with Semantic Constraints (RGFSC) module is introduced to manage long-range dependencies and fuse local/global semantic information. Experiments on deep-sea terrain and marine debris datasets demonstrate significant improvements in segmentation accuracy and real-time performance, crucial for deep-sea mining vehicles.",
+    date: "2025-08-28",
+    tags: "Image",
+    img: "images/papers-images/img-20250828-2.png",
+    link: "https://www.mdpi.com/2072-4292/17/17/2997"
+  },
+  {
     title: "PointDGRWKV: Generalizing RWKV-like Architecture to Unseen Domains for Point Cloud Classification",
     description: "This paper introduces PointDGRWKV, the first RWKV-based framework specifically designed for Domain Generalization in Point Cloud Classification (DG PCC). It addresses challenges of applying RWKV to unstructured point clouds, such as spatial distortions from fixed token shifts and attention drift from exponential weighting. The proposed PointDGRWKV incorporates Adaptive Geometric Token Shift (AGT-Shift) for improved local geometric modeling and Cross-Domain Key Feature Distribution Alignment (CD-KDA) to enhance cross-domain robustness. Experiments demonstrate state-of-the-art performance on DG PCC benchmarks while maintaining RWKV's linear efficiency.",
     date: "2025-08-28",
     tags: "3D/4D",
     img: "images/papers-images/img-20250828-1.png",
     link: "https://arxiv.org/abs/2508.20835"
+  },
+  {
+    title: "VAFTrack: asynchronous feature fusion via visual receptive weighted key-value perceptual for visual tracking",
+    description: "This paper, based on the Receptance Weighted Key-Value (RWKV) model, introduces VAFTrack, an Asynchronous Fusion Tracking Model for Visual Object Tracking. It addresses challenges of insufficient feature fusion and redundancy by proposing a Visual Receptive Weighted Key-Value Perceptual Fusion Module (VPFM). VPFM integrates Contextual Spatial and Channel Perception Modules, employing a bidirectional attention mechanism and Quad-Directional Token Shift, alongside Spatial and Channel Optimization Enhancement Modules. VAFTrack achieves state-of-the-art results, enhancing tracking accuracy and robustness on datasets like TrackingNet, LaSOT, and GOT-10k by improving target awareness and adaptability to scene variations.",
+    date: "2025-08-21",
+    tags: "Image",
+    img: "images/papers-images/img-20250821-1.png",
+    link: "https://link.springer.com/article/10.1007/s00530-025-01913-3"
   },
   {
     title: "REB-former: RWKV-enhanced E-branchformer for Speech Recognition",
