@@ -1,5 +1,61 @@
 const allProjects = [
   {
+    title: "Hybrid CNN-RWKV with high-frequency enhancement for real-world chinese-english scene text image super-resolution",
+    description: "This paper proposes a Hybrid CNN-RWKV with High-Frequency Enhancement (HCR-HFE) model for real-world Scene Text Image Super-Resolution (STISR). Leveraging the RWKV architecture's capability for long-distance modeling with linear computational complexity, HCR-HFE addresses the limitations of existing methods on complex Chinese characters. The model integrates a recurrent bidirectional WKV attention to establish 2D image dependencies, a high-frequency enhancement module, a multi-scale large kernel convolutional block, and multi-frequency channel attention. Extensive experiments on the Real-CE dataset demonstrate HCR-HFE's superior performance in text legibility, image fidelity, and perceptual quality, also showing broad applicability to general SR tasks.",
+    date: "2025-08-30",
+    tags: "Image",
+    img: "images/papers-images/img-20250830-1.png",
+    link: "https://link.springer.com/article/10.1007/s10489-025-06785-8"
+  },
+  {
+    title: "Finch-LIC: Learned Image Compression with Gated Multihead Linear Attention",
+    description: "This paper introduces FinchLIC, a novel linear attention-based learned image compression architecture that builds upon RWKV-like mechanisms. It proposes Multihead Bi-RWKV blocks to enhance feature extraction by expanding the scale of internal states, analogous to multi-head attention. Furthermore, a K-Manhattan distance token shift (KMshift) method is introduced to effectively model neighboring context and expand the receptive field. FinchLIC achieves competitive rate-distortion performance while maintaining linear computational complexity and lower GPU memory usage, demonstrating efficiency and effectiveness for high-resolution image compression.",
+    date: "2025-08-28",
+    tags: "Image",
+    img: "images/papers-images/img-20250828-3.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5413219"
+  },
+  {
+    title: "DSM-Seg: A CNN-RWKV Hybrid Framework for Forward-Looking Sonar Image Segmentation in Deep-Sea Mining",
+    description: "This paper introduces DSM-Seg, a novel CNN-RWKV hybrid framework for semantic segmentation of forward-looking sonar (FLS) images in deep-sea mining. Addressing challenges like noise and blurred boundaries, DSM-Seg integrates a Physical Prior-Based Semantic Guidance Module (PSGM) leveraging sonar-specific priors for boundary enhancement. Additionally, an RWKV-Based Global Fusion with Semantic Constraints (RGFSC) module is introduced to manage long-range dependencies and fuse local/global semantic information. Experiments on deep-sea terrain and marine debris datasets demonstrate significant improvements in segmentation accuracy and real-time performance, crucial for deep-sea mining vehicles.",
+    date: "2025-08-28",
+    tags: "Image",
+    img: "images/papers-images/img-20250828-2.png",
+    link: "https://www.mdpi.com/2072-4292/17/17/2997"
+  },
+  {
+    title: "PointDGRWKV: Generalizing RWKV-like Architecture to Unseen Domains for Point Cloud Classification",
+    description: "This paper introduces PointDGRWKV, the first RWKV-based framework specifically designed for Domain Generalization in Point Cloud Classification (DG PCC). It addresses challenges of applying RWKV to unstructured point clouds, such as spatial distortions from fixed token shifts and attention drift from exponential weighting. The proposed PointDGRWKV incorporates Adaptive Geometric Token Shift (AGT-Shift) for improved local geometric modeling and Cross-Domain Key Feature Distribution Alignment (CD-KDA) to enhance cross-domain robustness. Experiments demonstrate state-of-the-art performance on DG PCC benchmarks while maintaining RWKV's linear efficiency.",
+    date: "2025-08-28",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250828-1.png",
+    link: "https://arxiv.org/abs/2508.20835"
+  },
+  {
+    title: "VAFTrack: asynchronous feature fusion via visual receptive weighted key-value perceptual for visual tracking",
+    description: "This paper, based on the Receptance Weighted Key-Value (RWKV) model, introduces VAFTrack, an Asynchronous Fusion Tracking Model for Visual Object Tracking. It addresses challenges of insufficient feature fusion and redundancy by proposing a Visual Receptive Weighted Key-Value Perceptual Fusion Module (VPFM). VPFM integrates Contextual Spatial and Channel Perception Modules, employing a bidirectional attention mechanism and Quad-Directional Token Shift, alongside Spatial and Channel Optimization Enhancement Modules. VAFTrack achieves state-of-the-art results, enhancing tracking accuracy and robustness on datasets like TrackingNet, LaSOT, and GOT-10k by improving target awareness and adaptability to scene variations.",
+    date: "2025-08-21",
+    tags: "Image",
+    img: "images/papers-images/img-20250821-1.png",
+    link: "https://link.springer.com/article/10.1007/s00530-025-01913-3"
+  },
+  {
+    title: "REB-former: RWKV-enhanced E-branchformer for Speech Recognition",
+    description: "This paper introduces REB-former, an RWKV-enhanced E-Branchformer, to address the quadratic complexity of Transformer-based ASR models. It interleaves E-Branchformer and RWKV layers, proposing the GroupBiRWKV module to enable efficient bidirectional contextual feature capture and overcome RWKV's inherent unidirectional limitation. The model also incorporates an RWKVDecoder to further enhance temporal modeling. Experimental results demonstrate that REB-former achieves state-of-the-art performance on the LibriSpeech 100h dataset, with improved computational efficiency and a significant reduction in word error rate.",
+    date: "2025-08-17",
+    tags: "Audio",
+    img: "images/papers-images/img-20250817-1.png",
+    link: "https://www.isca-archive.org/interspeech_2025/song25b_interspeech.html"
+  },
+  {
+    title: "A Multimodal Bone Stick Matching Approach Based on Large-Scale Pre-Trained Models and Dynamic Cross-Modal Feature Fusion",
+    description: "This paper, based on RWKV-derived models (Vision-RWKV for images and RWKV for inscriptions), proposes a multimodal method for matching fragmented bone sticks. It integrates image, inscription, and archeological metadata using pre-trained models (Vision-RWKV, RWKV, BERT) and a dynamic cross-modal feature fusion mechanism. The approach achieves 94.73% matching accuracy at Rank-15 by effectively handling fractures, corrosion, and missing sections, outperforming traditional methods.",
+    date: "2025-08-05",
+    tags: "Image",
+    img: "images/papers-images/img-20250805-1.png",
+    link: "https://www.mdpi.com/2076-3417/15/15/8681"
+  },
+  {
     title: "Monthly Service Prediction for 4G/5G Systems: A Short Time Series Based Neural Network Solution",
     description: "This paper, leveraging RWKV in its encoder, proposes a framework for monthly service prediction in 4G/5G networks. It introduces deep temporal clustering representation (DTCR) using RWKV-based encoding to cluster short time series data, followed by a decreasing time-difference network (DTD-Net) that crops input features block-wise to prevent overfitting. The solution achieves low prediction errors on real-world mobile network data, addressing challenges of limited data length and chaotic internal logic.",
     date: "2025-07-30",
@@ -38,6 +94,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20250724-1.png",
     link: "https://arxiv.org/abs/2507.18594"
+  },
+  {
+    title: "MSFF-RWKV : Single-Structure Multi-stage Feature Fusion Lightweight Super-Resolution Network",
+    description: "This paper introduces MSFF-RWKV, a lightweight super-resolution network based on the RWKV architecture. It proposes a multi-stage feature fusion strategy using a single RWKV block that recursively integrates outputs with previous features to reduce parameters and computational costs. The model incorporates a Local Pixel Perception layer for adaptive pixel-level interactions and an ME-Shift module for multi-scale feature extraction. Experiments demonstrate state-of-the-art performance with a 0.14 dB PSNR gain and 26.6% parameter reduction.",
+    date: "2025-07-15",
+    tags: "Image",
+    img: "images/papers-images/img-20250715-3.png",
+    link: "https://link.springer.com/chapter/10.1007/978-981-96-9949-0_35"
   },
   {
     title: "An Efficient Image Fusion Network Exploiting Unifying Language and Mask Guidance",
