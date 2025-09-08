@@ -1,6 +1,6 @@
 const allProjects = [
   {
-    title: "AUDIORWKV: EFFICIENT AND STABLE BIDIRECTIONAL RWKV FOR AUDIO PATTERN RECOGNITION",
+    title: "AudioRWKV: Efficient and Stable Bidirectional RWKV for Audio Pattern Recognition",
     description: "This paper, based on RWKV7, proposes AudioRWKV (A-RWKV), an efficient and stable architecture for audio modeling. It addresses the O(L2) complexity of Transformers and the instability of Mamba models for long audio sequences. A-RWKV inherits RWKV7's recurrent formulation, replacing its 1D token-shift with a 2D depthwise separable convolution to capture local spectro-temporal patterns. Furthermore, it introduces a bidirectional WKV (Bi-WKV) kernel for global context modeling with linear complexity. Experiments show A-RWKV achieves performance parity with larger models while offering superior stability and speedup for long-form audio.",
     date: "2025-09-02",
     tags: "Audio",
