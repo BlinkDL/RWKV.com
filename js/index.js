@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "AUDIORWKV: EFFICIENT AND STABLE BIDIRECTIONAL RWKV FOR AUDIO PATTERN RECOGNITION",
+    description: "This paper, based on RWKV7, proposes AudioRWKV (A-RWKV), an efficient and stable architecture for audio modeling. It addresses the O(L2) complexity of Transformers and the instability of Mamba models for long audio sequences. A-RWKV inherits RWKV7's recurrent formulation, replacing its 1D token-shift with a 2D depthwise separable convolution to capture local spectro-temporal patterns. Furthermore, it introduces a bidirectional WKV (Bi-WKV) kernel for global context modeling with linear complexity. Experiments show A-RWKV achieves performance parity with larger models while offering superior stability and speedup for long-form audio.",
+    date: "2025-09-02",
+    tags: "Audio",
+    img: "images/papers-images/img-20250902-1.png",
+    link: "https://arxiv.org/abs/2509.02167"
+  },
+  {
     title: "Hybrid CNN-RWKV with high-frequency enhancement for real-world chinese-english scene text image super-resolution",
     description: "This paper proposes a Hybrid CNN-RWKV with High-Frequency Enhancement (HCR-HFE) model for real-world Scene Text Image Super-Resolution (STISR). Leveraging the RWKV architecture's capability for long-distance modeling with linear computational complexity, HCR-HFE addresses the limitations of existing methods on complex Chinese characters. The model integrates a recurrent bidirectional WKV attention to establish 2D image dependencies, a high-frequency enhancement module, a multi-scale large kernel convolutional block, and multi-frequency channel attention. Extensive experiments on the Real-CE dataset demonstrate HCR-HFE's superior performance in text legibility, image fidelity, and perceptual quality, also showing broad applicability to general SR tasks.",
     date: "2025-08-30",
