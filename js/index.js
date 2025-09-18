@@ -3,9 +3,17 @@ const allProjects = [
     title: "RWKV-VIO: An Efficient and Low-Drift Visual–Inertial Odometry Using an End-to-End Deep Network",
     description: "This paper introduces RWKV-VIO, a novel Visual–Inertial Odometry (VIO) framework based on the RWKV architecture. It addresses challenges in existing deep learning VIO methods, such as temporal modeling and computational efficiency, by leveraging RWKV's lightweight structure and linear computational complexity. The framework also integrates a new Res-Encoder and a parallel encoding strategy for IMU data to enhance feature extraction. Experimental results demonstrate that RWKV-VIO achieves competitive localization accuracy while significantly reducing model size and inference time compared to state-of-the-art approaches.",
     date: "2025-09-15",
-    tags: "General",
+    tags: "3D/4D",
     img: "images/papers-images/img-20250915-1.png",
     link: "https://www.mdpi.com/1424-8220/25/18/5737"
+  },
+  {
+    title: "A TRADITIONAL APPROACH TO SYMBOLIC PIANO CONTINUATION",
+    description: "This paper, based on the RWKV-7 architecture, proposes a simple yet effective method for symbolic piano music continuation. Contesting the trend of large foundation models, the authors train a small, 20-million-parameter RWKV model on the Aria-MIDI dataset using a standard next-token prediction objective. Results from the MIREX 2025 challenge show their specialized model performed on par with a much larger Transformer baseline. The work demonstrates that smaller, task-specific models remain highly competitive for constrained generative music tasks when built on strong fundamentals like quality data and an efficient architecture.",
+    date: "2025-09-13",
+    tags: "Audio",
+    img: "images/papers-images/img-20250913-1.png",
+    link: "https://arxiv.org/abs/2509.12267"
   },
   {
     title: "ITC-RWKV: Interactive Tissue–Cell Modeling with Recurrent Key-Value Aggregation for Histopathological Subtyping",
