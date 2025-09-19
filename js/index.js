@@ -1,4 +1,60 @@
 const allProjects = [
+    {
+    title: "RWKV-VIO: An Efficient and Low-Drift Visual–Inertial Odometry Using an End-to-End Deep Network",
+    description: "This paper introduces RWKV-VIO, a novel Visual–Inertial Odometry (VIO) framework based on the RWKV architecture. It addresses challenges in existing deep learning VIO methods, such as temporal modeling and computational efficiency, by leveraging RWKV's lightweight structure and linear computational complexity. The framework also integrates a new Res-Encoder and a parallel encoding strategy for IMU data to enhance feature extraction. Experimental results demonstrate that RWKV-VIO achieves competitive localization accuracy while significantly reducing model size and inference time compared to state-of-the-art approaches.",
+    date: "2025-09-15",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250915-1.png",
+    link: "https://www.mdpi.com/1424-8220/25/18/5737"
+  },
+  {
+    title: "Enhanced Traffic Sign Recognition via RWKV with Deformable Attention",
+    description: "This paper proposes a novel vision encoder, RWKV with Deformable Attention (RWKV-DA), to improve traffic sign recognition. The architecture integrates the linear computational efficiency of RWKV with the adaptive focus of deformable attention, enabling it to handle diverse input features and image deformations effectively. Tested on the German Traffic Sign Recognition Benchmark (GTSRB), the model achieves state-of-the-art accuracy and shows superior computational efficiency, outperforming Vision Transformers by up to 12 times on high-resolution images, making it suitable for real-time autonomous systems.",
+    date: "2025-09-15",
+    tags: "Image",
+    img: "images/papers-images/img-20250915-2.png",
+    link: "https://dl.acm.org/doi/10.1145/3757749.3757779"
+  },
+  {
+    title: "A Traditional Approach to Symbolic Piano Continuation",
+    description: "This paper, based on the RWKV-7 architecture, proposes a simple yet effective method for symbolic piano music continuation. Contesting the trend of large foundation models, the authors train a small, 20-million-parameter RWKV model on the Aria-MIDI dataset using a standard next-token prediction objective. Results from the MIREX 2025 challenge show their specialized model performed on par with a much larger Transformer baseline. The work demonstrates that smaller, task-specific models remain highly competitive for constrained generative music tasks when built on strong fundamentals like quality data and an efficient architecture.",
+    date: "2025-09-13",
+    tags: "Audio",
+    img: "images/papers-images/img-20250913-1.png",
+    link: "https://arxiv.org/abs/2509.12267"
+  },
+  {
+    title: "ITC-RWKV: Interactive Tissue–Cell Modeling with Recurrent Key-Value Aggregation for Histopathological Subtyping",
+    description: "This paper introduces ITC-RWKV, an approach that adapts the Receptance Weighted Key-Value (RWKV) architecture for efficient cell-level feature aggregation in histopathological image analysis. ITC-RWKV proposes a novel dual-stream framework to address limitations of existing models in fine-grained tasks like cancer subtype classification. It combines a macroscale tissue feature pathway with a dedicated cell pathway featuring an Aggr-RWKV module for linear-complexity aggregation of cellular representations. A bidirectional tissue-cell interaction module further refines cross-scale information. The method outperforms state-of-the-art models on four benchmarks, demonstrating the critical role of its RWKV-based aggregation and tissue-cell interaction for accurate computational pathology.",
+    date: "2025-09-12",
+    tags: "Image",
+    img: "images/papers-images/img-20250912-1.png",
+    link: "https://research.manchester.ac.uk/en/publications/itc-rwkv-interactive-tissuecell-modeling-with-recurrent-key-value"
+  },
+    {
+    title: "EfficientIML: Efficient High-Resolution Image Manipulation Localization",
+    description: "This paper proposes EfficientIML, an efficient framework for high-resolution image manipulation localization, addressing challenges posed by emerging diffusion-based forgeries and computational constraints. It introduces SIF, the first ultra-high-resolution semantic inpainting forgery dataset (1200+ images > 1024x1024). The core of EfficientIML is a lightweight, three-stage EfficientRWKV backbone, a hybrid state-space and attention network derived from Vision-RWKV, which captures global context and local details with linear computational complexity. Coupled with a multi-scale supervision strategy, EfficientIML significantly outperforms state-of-the-art baselines in localization performance, FLOPs, and inference speed.",
+    date: "2025-09-10",
+    tags: "Image",
+    img: "images/papers-images/img-20250910-1.png",
+    link: "https://arxiv.org/abs/2509.08583"
+  },
+  {
+    title: "Spectral Channel Mixing Transformer with Spectral-Center Attention for Hyperspectral Image Classification",
+    description: "This paper proposes TC-Former, a novel framework for hyperspectral image (HSI) classification that integrates RWKV linear attention with Transformer architecture to address high computational complexity in long sequence tasks. The TC-Former combines TimeMixFormer and HyperMixFormer modules. TimeMixFormer optimizes processing efficiency for long sequences using time decay weights, while HyperMixFormer enhances cross-channel interaction with a gated WKV mechanism. This innovative integration significantly improves HSI classification accuracy and reduces computational complexity, outperforming state-of-the-art algorithms on public datasets.",
+    date: "2025-09-05",
+    tags: "Image",
+    img: "images/papers-images/img-20250905-1.png",
+    link: "https://www.mdpi.com/2072-4292/17/17/3100"
+  },
+  {
+    title: "AudioRWKV: Efficient and Stable Bidirectional RWKV for Audio Pattern Recognition",
+    description: "This paper, based on RWKV7, proposes AudioRWKV (A-RWKV), an efficient and stable architecture for audio modeling. It addresses the O(L2) complexity of Transformers and the instability of Mamba models for long audio sequences. A-RWKV inherits RWKV7's recurrent formulation, replacing its 1D token-shift with a 2D depthwise separable convolution to capture local spectro-temporal patterns. Furthermore, it introduces a bidirectional WKV (Bi-WKV) kernel for global context modeling with linear complexity. Experiments show A-RWKV achieves performance parity with larger models while offering superior stability and speedup for long-form audio.",
+    date: "2025-09-02",
+    tags: "Audio",
+    img: "images/papers-images/img-20250902-1.png",
+    link: "https://arxiv.org/abs/2509.02167"
+  },
   {
     title: "Hybrid CNN-RWKV with high-frequency enhancement for real-world chinese-english scene text image super-resolution",
     description: "This paper proposes a Hybrid CNN-RWKV with High-Frequency Enhancement (HCR-HFE) model for real-world Scene Text Image Super-Resolution (STISR). Leveraging the RWKV architecture's capability for long-distance modeling with linear computational complexity, HCR-HFE addresses the limitations of existing methods on complex Chinese characters. The model integrates a recurrent bidirectional WKV attention to establish 2D image dependencies, a high-frequency enhancement module, a multi-scale large kernel convolutional block, and multi-frequency channel attention. Extensive experiments on the Real-CE dataset demonstrate HCR-HFE's superior performance in text legibility, image fidelity, and perceptual quality, also showing broad applicability to general SR tasks.",
