@@ -8,6 +8,14 @@ const allProjects = [
     link: "https://www.mdpi.com/1424-8220/25/18/5737"
   },
   {
+    title: "Enhanced Traffic Sign Recognition via RWKV with Deformable Attention",
+    description: "This paper proposes a novel vision encoder, RWKV with Deformable Attention (RWKV-DA), to improve traffic sign recognition. The architecture integrates the linear computational efficiency of RWKV with the adaptive focus of deformable attention, enabling it to handle diverse input features and image deformations effectively. Tested on the German Traffic Sign Recognition Benchmark (GTSRB), the model achieves state-of-the-art accuracy and shows superior computational efficiency, outperforming Vision Transformers by up to 12 times on high-resolution images, making it suitable for real-time autonomous systems.",
+    date: "2025-09-15",
+    tags: "Image",
+    img: "images/papers-images/img-20250915-2.png",
+    link: "https://dl.acm.org/doi/10.1145/3757749.3757779"
+  },
+  {
     title: "A Traditional Approach to Symbolic Piano Continuation",
     description: "This paper, based on the RWKV-7 architecture, proposes a simple yet effective method for symbolic piano music continuation. Contesting the trend of large foundation models, the authors train a small, 20-million-parameter RWKV model on the Aria-MIDI dataset using a standard next-token prediction objective. Results from the MIREX 2025 challenge show their specialized model performed on par with a much larger Transformer baseline. The work demonstrates that smaller, task-specific models remain highly competitive for constrained generative music tasks when built on strong fundamentals like quality data and an efficient architecture.",
     date: "2025-09-13",
