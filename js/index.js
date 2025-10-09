@@ -1,5 +1,37 @@
 const allProjects = [
-    {
+  {
+    title: "VRWKV-Editor: Reducing quadratic complexity in transformer-based video editing",
+    description: "This paper introduces VRWKV-Editor, a novel video editing framework based on the RWKV architecture designed to overcome the quadratic computational complexity of traditional attention mechanisms. By integrating a linear spatio-temporal aggregation module from VRWKV into a video diffusion model, the proposed method significantly reduces computational and memory costs. Experiments demonstrate that VRWKV-Editor achieves up to a 3.7x speedup and 60% lower memory usage compared to state-of-the-art methods. This efficiency is gained without sacrificing performance, maintaining competitive frame consistency and text alignment, especially for long, high-resolution videos.",
+    date: "2025-09-30",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20250930-1.png",
+    link: "https://arxiv.org/abs/2509.25998v2"
+  },
+  {
+    title: "C3-OWD: A Curriculum Cross-modal Contrastive Learning Framework for Open-World Detection",
+    description: "Leveraging RWKV for efficient multimodal fusion, this paper proposes C3-OWD, a framework to address the trade-off between robustness in adverse conditions and generalization to unseen categories in object detection. It uses a two-stage curriculum learning approach: Stage 1 pre-trains on visible-infrared (RGBT) data for robustness, while Stage 2 performs vision-language alignment for open-vocabulary capabilities. An Exponential Moving Average (EMA) mechanism is introduced to prevent catastrophic forgetting between stages. The model demonstrates competitive performance on both robustness (FLIR) and open-world detection (OV-COCO, OV-LVIS) benchmarks.",
+    date: "2025-09-27",
+    tags: "Image",
+    img: "images/papers-images/img-20250927-1.png",
+    link: "https://arxiv.org/abs/2509.23316"
+  },
+  {
+    title: "DPC-QA Net: A No-Reference Dual-Stream Perceptual and Cellular Quality Assessment Network for Histopathology Images",
+    description: "This paper introduces DPC-QA Net, a dual-stream network for no-reference quality assessment of histopathology images, which utilizes an Aggr-RWKV module to aggregate cellular-level embeddings. The model combines a global perceptual stream using wavelet features with a cellular quality stream assessing nuclear and membrane fidelity. Fusing these streams via cross-attention, the network accurately detects staining, membrane, and nuclear issues, achieving high performance on pathology and general image quality datasets. The model’s quality scores strongly correlate with the success of downstream cell recognition tasks, enabling practical pre-screening for computational pathology.",
+    date: "2025-09-19",
+    tags: "Image",
+    img: "images/papers-images/img-20250919-1.png",
+    link: "https://arxiv.org/abs/2509.15802"
+  },
+  {
+    title: "Mastering Air Combat through Model-Based Reinforcement Learning",
+    description: "Based on an RWKV-style linear attention module in its world model, this paper introduces a model-based reinforcement learning agent for Within-Visual-Range air combat. The agent enhances the Dreamer framework with safety-aware objectives, contrastive predictive coding for long-range dependencies, and Dyna-style actor-critic updates. Trained through a population-based self-play pipeline with curriculum initialization, the agent achieves superior zero-shot performance, higher sample efficiency than model-free baselines, and rapid adaptation against novel opponents in a high-fidelity simulation, demonstrating a viable approach for deployable autonomous combat systems.",
+    date: "2025-09-17",
+    tags: "Sequence",
+    img: "images/papers-images/img-20250917-1.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5499593"
+  },
+  {
     title: "RWKV-VIO: An Efficient and Low-Drift Visual–Inertial Odometry Using an End-to-End Deep Network",
     description: "This paper introduces RWKV-VIO, a novel Visual–Inertial Odometry (VIO) framework based on the RWKV architecture. It addresses challenges in existing deep learning VIO methods, such as temporal modeling and computational efficiency, by leveraging RWKV's lightweight structure and linear computational complexity. The framework also integrates a new Res-Encoder and a parallel encoding strategy for IMU data to enhance feature extraction. Experimental results demonstrate that RWKV-VIO achieves competitive localization accuracy while significantly reducing model size and inference time compared to state-of-the-art approaches.",
     date: "2025-09-15",
@@ -14,6 +46,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20250915-2.png",
     link: "https://dl.acm.org/doi/10.1145/3757749.3757779"
+  },
+  {
+    title: "Multi-modal dynamic brain graph representation learning for brain disorder diagnosis via temporal sequence model",
+    description: "Inspired by the RWKV large language model architecture, this paper proposes an efficient temporal multi-modal graph neural network (ET_MGNN) for diagnosing brain disorders. The model integrates dynamic functional connectivity (DFC) and structural connectivity (SC) into a unified brain network representation. By leveraging an RWKV block to capture complex short- and long-term temporal dependencies in dynamic brain graph sequences, ET_MGNN demonstrates significantly improved classification accuracy for conditions like autism and Alzheimer's disease across three datasets, outperforming several strong baselines.",
+    date: "2025-09-13",
+    tags: "Image",
+    img: "images/papers-images/img-20250913-2.png",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S0925231225021812"
   },
   {
     title: "A Traditional Approach to Symbolic Piano Continuation",
@@ -126,6 +166,14 @@ const allProjects = [
     tags: "Audio",
     img: "images/papers-images/img-20250729-1.png",
     link: "https://openreview.net/forum?id=5WG3x1hgdN"
+  },
+  {
+    title: "SpikeRWKV:Energy-efficient Large Language Model with Spiking Neural Network",
+    description: "This paper introduces SpikeRWKV, an energy-efficient language model based on the RWKV architecture that integrates Spiking Neural Networks (SNNs). To address the performance and energy trade-offs in traditional SNNs, the authors propose a novel Multi-head Spike Encoding scheme. This method enables parallel processing and hierarchical decomposition of spikes to enhance computational efficiency and fidelity. Experiments show SpikeRWKV significantly reduces energy consumption compared to the non-spiking RWKV model while achieving superior performance on natural language understanding tasks, including lower perplexity and improved bits-per-character scores.",
+    date: "2025-07-27",
+    tags: "Language",
+    img: "images/papers-images/img-20250727-1.png",
+    link: "http://poster-openaccess.com/files/ICIC2025/4202.pdf"
   },
   {
     title: "LowKeyEMG: Electromyographic typing with a reduced keyset",
