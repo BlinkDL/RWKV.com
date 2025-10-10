@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "GDSR: Global-Detail Integration through Dual-Branch Network with Wavelet Losses for Remote Sensing Image Super-Resolution",
+    description: "Introducing the Receptance Weighted Key Value (RWKV) model to remote sensing image super-resolution, this paper proposes GDSR, a dual-branch network designed to capture both global and local features simultaneously. One branch leverages RWKV to model long-range dependencies with linear complexity, while a parallel convolutional branch extracts fine details. A Global-Detail Reconstruction Module fuses these features, and a novel Dual-Group Multi-Scale Wavelet Loss enhances reconstruction fidelity. The proposed method outperforms state-of-the-art models in performance and computational efficiency on several remote sensing benchmarks.",
+    date: "2025-10-06",
+    tags: "Image",
+    img: "images/papers-images/img-20251006-1.png",
+    link: "https://ieeexplore.ieee.org/document/11192566"
+  },
+  {
     title: "VRWKV-Editor: Reducing quadratic complexity in transformer-based video editing",
     description: "This paper introduces VRWKV-Editor, a novel video editing framework based on the RWKV architecture designed to overcome the quadratic computational complexity of traditional attention mechanisms. By integrating a linear spatio-temporal aggregation module from VRWKV into a video diffusion model, the proposed method significantly reduces computational and memory costs. Experiments demonstrate that VRWKV-Editor achieves up to a 3.7x speedup and 60% lower memory usage compared to state-of-the-art methods. This efficiency is gained without sacrificing performance, maintaining competitive frame consistency and text alignment, especially for long, high-resolution videos.",
     date: "2025-09-30",
@@ -670,14 +678,6 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20250206-1.png",
     link: "https://arxiv.org/abs/2502.03971"
-  },
-  {
-    title: "Multi-Modal Dynamic Brain Graph Representation Learning for Brain Disorder Diagnosis Via Temporal Sequence Model",
-    description: "The paper proposes the ET_MGNN model for brain disorder diagnosis. It integrates multimodal brain network information and uses RWKV for dynamic sequence modeling. By fusing structural and functional connectivity, the model can capture complex brain network features. Experiments on datasets like ABIDE II and ADNI show that ET_MGNN outperforms other methods, and RWKV plays a crucial role in improving performance.",
-    date: "2025-02-05",
-    tags: "Sequence",
-    img: "images/papers-images/img-20250205-1.png",
-    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5114041"
   },
   {
     title: "Exploring Linear Attention Alternative for Single Image Super-Resolution",
