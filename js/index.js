@@ -1,5 +1,21 @@
 const allProjects = [
   {
+    title: "RS3-RWKV: Leveraging RWKV for Efficient Remote Sensing Semantic Segmentation",
+    description: "This paper introduces RS3-RWKV, a novel framework based on the RWKV architecture for efficient semantic segmentation of high-resolution remote sensing images. To address challenges like multi-scale targets and complex spatial dependencies, the authors propose a proximity-sensitive WKV attention mechanism (PS-WKV) with a spiral scan and a scale-adaptive shift mechanism (SA-Shift). These innovations enhance the model's ability to capture global context and adapt to varying object sizes. Experiments on the LoveDA and ISPRS Potsdam datasets show that RS3-RWKV achieves a superior balance of accuracy and computational efficiency compared to CNN, Transformer, and Mamba models.",
+    date: "2025-10-22",
+    tags: "Image",
+    img: "images/papers-images/img-20251022-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11214221"
+  },
+  {
+    title: "FS-RWKV: Leveraging Frequency Spatial-Aware RWKV for 3T-to-7T MRI Translation",
+    description: "This paper introduces FS-RWKV, an RWKV-based framework for synthesizing high-quality 7T MRI images from more accessible 3T scans. The model features two novel components: a Frequency Spatial Omnidirectional-Shift (FSO-Shift) module that uses wavelet decomposition to enhance global context while preserving high-frequency details, and a Structural Fidelity Enhancement Block (SFEB) for adaptive feature fusion. Comprehensive experiments show that FS-RWKV outperforms existing CNN, Transformer, GAN, and RWKV-based methods in 3T-to-7T translation, achieving superior anatomical fidelity and perceptual quality on medical imaging datasets.",
+    date: "2025-10-10",
+    tags: "Image",
+    img: "images/papers-images/img-20251010-1.png",
+    link: "https://arxiv.org/abs/2510.08951"
+  },
+  {
     title: "GDSR: Global-Detail Integration through Dual-Branch Network with Wavelet Losses for Remote Sensing Image Super-Resolution",
     description: "Introducing the Receptance Weighted Key Value (RWKV) model to remote sensing image super-resolution, this paper proposes GDSR, a dual-branch network designed to capture both global and local features simultaneously. One branch leverages RWKV to model long-range dependencies with linear complexity, while a parallel convolutional branch extracts fine details. A Global-Detail Reconstruction Module fuses these features, and a novel Dual-Group Multi-Scale Wavelet Loss enhances reconstruction fidelity. The proposed method outperforms state-of-the-art models in performance and computational efficiency on several remote sensing benchmarks.",
     date: "2025-10-06",
