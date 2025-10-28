@@ -1,5 +1,37 @@
 const allProjects = [
   {
+    title: "Freq-RWKV: Granularity-Aware Spatial-Frequency Synergy via Dual-Domain Recurrent Scanning for Pan-sharpening",
+    description: "This paper introduces Freq-RWKV, a novel spatial-frequency adaptive RWKV framework designed for pan-sharpening. To address the challenge of reconstructing high-frequency details, it proposes a dual-domain scanning mechanism guided by wavelet analysis within a U-shaped, coarse-to-fine fusion network. The architecture uses specialized modules to coordinate granularity-aware scanning across spatial and frequency domains, enabling the model to effectively improve the spatial resolution of multispectral images by integrating textural information from corresponding panchromatic images. Experimental results on multiple satellite datasets validate the method's superior performance.",
+    date: "2025-10-27",
+    tags: "Image",
+    img: "images/papers-images/img-20251027-1.png",
+    link: "https://dl.acm.org/doi/abs/10.1145/3746027.3755521"
+  },
+  {
+    title: "Learning Structural Priors via Laplacian RWKV Diffusion with Light-Effect Dataset for Nighttime Visibility Enhancement",
+    description: "This paper, based on the RWKV architecture, addresses joint nighttime visibility enhancement by tackling both low-light conditions and light-effect suppression. It introduces a new paired dataset, NightLight, for supervised training. The proposed method is a two-stage diffusion model that utilizes a novel Dual-Loop Laplacian RWKV (Lap-RWKV) to extract structural priors from the image. These priors guide the diffusion process to accurately remove light artifacts and enhance dark regions, outperforming state-of-the-art methods in joint light-effect suppression and low-light image enhancement tasks.",
+    date: "2025-10-27",
+    tags: "Image",
+    img: "images/papers-images/img-20251027-2.png",
+    link: "https://dl.acm.org/doi/abs/10.1145/3746027.3755510"
+  },
+  {
+    title: "RWKV-PCSSC: Exploring RWKV Model for Point Cloud Semantic Scene Completion",
+    description: "This paper proposes RWKV-PCSSC, a lightweight network for point cloud semantic scene completion inspired by the Receptance Weighted Key Value (RWKV) mechanism. To address the high complexity of existing methods, it introduces an RWKV Seed Generator (RWKV-SG) to produce a coarse scene representation and RWKV Point Deconvolution (RWKV-PD) modules for progressive refinement. This novel architecture significantly reduces model parameters and memory usage while achieving state-of-the-art performance on various indoor and outdoor datasets, demonstrating an efficient approach to generating complete semantic scenes from partial point cloud inputs.",
+    date: "2025-10-27",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20251027-3.png",
+    link: "https://dl.acm.org/doi/abs/10.1145/3746027.3754908"
+  },
+  {
+    title: "RWKV3D: An RWKV-Based Model with Multiple Training Strategies for Point Cloud Analysis",
+    description: "This paper introduces RWKV3D, a novel computational framework based on the RWKV architecture, specifically tailored for point cloud analysis. To adapt RWKV for unordered 3D data, the model replaces the standard MLP layer with a Local Feature Mixer (LFM) for enhanced fine-grained feature extraction and introduces a Bidirectional Multi-head Shift (BMS) mechanism to expand the receptive field. The framework is adaptable to multiple training strategies, and experimental results show that RWKV3D outperforms Transformer and Mamba-based methods on benchmarks like ModelNet40 and ScanObjectNN while maintaining lower computational costs.",
+    date: "2025-10-27",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20251027-4.png",
+    link: "https://dl.acm.org/doi/abs/10.1145/3746027.3755658"
+  },
+  {
     title: "RS3-RWKV: Leveraging RWKV for Efficient Remote Sensing Semantic Segmentation",
     description: "This paper introduces RS3-RWKV, a novel framework based on the RWKV architecture for efficient semantic segmentation of high-resolution remote sensing images. To address challenges like multi-scale targets and complex spatial dependencies, the authors propose a proximity-sensitive WKV attention mechanism (PS-WKV) with a spiral scan and a scale-adaptive shift mechanism (SA-Shift). These innovations enhance the model's ability to capture global context and adapt to varying object sizes. Experiments on the LoveDA and ISPRS Potsdam datasets show that RS3-RWKV achieves a superior balance of accuracy and computational efficiency compared to CNN, Transformer, and Mamba models.",
     date: "2025-10-22",
