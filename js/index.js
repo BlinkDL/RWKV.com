@@ -1,5 +1,21 @@
 const allProjects = [
   {
+    title: "SleepRWKVNet: A multimodal sleep staging network integrating bidirectional interactive RWKV and physiological prior-driven sequence-aware loss",
+    description: "This paper proposes SleepRWKVNet, a novel multimodal sleep staging network built upon a bidirectional interactive RWKV module (Bi-IFM). It addresses inconsistent modality contributions and inefficient long-sequence modeling by effectively fusing features from EEG, EOG, and EMG signals. The network also introduces a physiological prior-driven sequence-aware loss (PS-Loss), which incorporates subject-specific Markov transition probabilities to mitigate class imbalance and improve modeling of sleep stage transitions. Experiments on three public datasets demonstrate superior performance over existing methods, offering a robust solution for accurate automated sleep staging.",
+    date: "2025-10-30",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251030-1.png",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S1746809425012248"
+  },
+  {
+    title: "WKV-sharing embraced random shuffle RWKV high-order modeling for pan-sharpening",
+    description: "This paper, based on the RWKV architecture, proposes a novel model for image pan-sharpening. It introduces a Random Shuffle scanning strategy to eliminate biases from fixed-sequence scanning in the spatial mixer. The model also incorporates a WKV-sharing mechanism to transfer activations across layers, reducing latency and enabling high-order interactions in the channel mixer. A random weight manifold loss is used to regularize the optimization space. This approach, named RS-RWKV, is shown to outperform state-of-the-art methods on pan-sharpening benchmarks, demonstrating superior multi-modal synergy and efficiency.",
+    date: "2025-10-29",
+    tags: "Image",
+    img: "images/papers-images/img-20251029-1.png",
+    link: "https://openreview.net/forum?id=gqfQfqDQhx"
+  },
+  {
     title: "Freq-RWKV: Granularity-Aware Spatial-Frequency Synergy via Dual-Domain Recurrent Scanning for Pan-sharpening",
     description: "This paper introduces Freq-RWKV, a novel spatial-frequency adaptive RWKV framework designed for pan-sharpening. To address the challenge of reconstructing high-frequency details, it proposes a dual-domain scanning mechanism guided by wavelet analysis within a U-shaped, coarse-to-fine fusion network. The architecture uses specialized modules to coordinate granularity-aware scanning across spatial and frequency domains, enabling the model to effectively improve the spatial resolution of multispectral images by integrating textural information from corresponding panchromatic images. Experimental results on multiple satellite datasets validate the method's superior performance.",
     date: "2025-10-27",
@@ -46,6 +62,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20251010-1.png",
     link: "https://arxiv.org/abs/2510.08951"
+  },
+  {
+    title: "Bridging Transformers and RWKV: Towards Efficient Multimodal Video Understanding",
+    description: "This paper proposes a hybrid RWKV-Transformer architecture to address the prohibitive computational cost of processing long videos in Multimodal Large Language Models (MLLMs). It replaces some Transformer layers with efficient RWKV modules, initializing their weights from pre-trained attention projections and using a progressive distillation strategy. To combat RWKV's history decay, cross-attention with global scene tokens is incorporated. This hybrid model significantly boosts throughput—by 20% when replacing 25% of layers—while matching or exceeding the performance of the original Transformer on multiple video understanding benchmarks.",
+    date: "2025-10-08",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20251008-1.png",
+    link: "https://openreview.net/forum?id=kmNqnwA4aV"
   },
   {
     title: "GDSR: Global-Detail Integration through Dual-Branch Network with Wavelet Losses for Remote Sensing Image Super-Resolution",
