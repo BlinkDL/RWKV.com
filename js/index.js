@@ -1,5 +1,21 @@
 const allProjects = [
   {
+    title: "Otter: Mitigating Background Distractions of Wide-Angle Few-Shot Action Recognition with Enhanced RWKV",
+    description: "This paper, based on an enhanced Receptance Weighted Key Value (RWKV) architecture, introduces Otter to address background distractions in wide-angle few-shot action recognition (FSAR). The proposed model features two key components: the Compound Segmentation Module (CSM), which highlights subjects by segmenting frames and learning patch weights, and the Temporal Reconstruction Module (TRM), which reconstructs degraded temporal relations using bidirectional scanning. Otter combines these modules to simultaneously emphasize subjects and improve temporal modeling, achieving state-of-the-art results on challenging wide-angle video benchmarks.",
+    date: "2025-11-11",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251111-1.png",
+    link: "https://arxiv.org/abs/2511.06741"
+  },
+  {
+    title: "MRT: Learning Compact Representations with Mixed RWKV-Transformer for Extreme Image Compression",
+    description: "This paper proposes a Mixed RWKV-Transformer (MRT) architecture for extreme image compression, addressing the spatial redundancy in conventional 2-D latent representations. The model encodes images into a more compact 1-D format by synergistically using RWKV modules to capture global dependencies across image windows and Transformer blocks for local details within them. A dedicated RWKV Compression Model (RCM) further enhances efficiency by compressing these 1-D features. Experiments show MRT achieves state-of-the-art rate-distortion performance, significantly outperforming existing methods at extremely low bitrates by reducing redundancy more effectively.",
+    date: "2025-11-10",
+    tags: "Image",
+    img: "images/papers-images/img-20251110-1.png",
+    link: "https://arxiv.org/abs/2511.06717"
+  },
+  {
     title: "SleepRWKVNet: A multimodal sleep staging network integrating bidirectional interactive RWKV and physiological prior-driven sequence-aware loss",
     description: "This paper proposes SleepRWKVNet, a novel multimodal sleep staging network built upon a bidirectional interactive RWKV module (Bi-IFM). It addresses inconsistent modality contributions and inefficient long-sequence modeling by effectively fusing features from EEG, EOG, and EMG signals. The network also introduces a physiological prior-driven sequence-aware loss (PS-Loss), which incorporates subject-specific Markov transition probabilities to mitigate class imbalance and improve modeling of sleep stage transitions. Experiments on three public datasets demonstrate superior performance over existing methods, offering a robust solution for accurate automated sleep staging.",
     date: "2025-10-30",
@@ -48,7 +64,7 @@ const allProjects = [
     link: "https://dl.acm.org/doi/abs/10.1145/3746027.3755658"
   },
   {
-    title: "RS3-RWKV: Leveraging RWKV for Efficient Remote Sensing Semantic Segmentation",
+    title: "RS³-RWKV: Leveraging RWKV for Efficient Remote Sensing Semantic Segmentation",
     description: "This paper introduces RS3-RWKV, a novel framework based on the RWKV architecture for efficient semantic segmentation of high-resolution remote sensing images. To address challenges like multi-scale targets and complex spatial dependencies, the authors propose a proximity-sensitive WKV attention mechanism (PS-WKV) with a spiral scan and a scale-adaptive shift mechanism (SA-Shift). These innovations enhance the model's ability to capture global context and adapt to varying object sizes. Experiments on the LoveDA and ISPRS Potsdam datasets show that RS3-RWKV achieves a superior balance of accuracy and computational efficiency compared to CNN, Transformer, and Mamba models.",
     date: "2025-10-22",
     tags: "Image",
@@ -70,6 +86,14 @@ const allProjects = [
     tags: "3D/4D",
     img: "images/papers-images/img-20251008-1.png",
     link: "https://openreview.net/forum?id=kmNqnwA4aV"
+  },
+  {
+    title: "DREAMSTATE: DIFFUSING STATES AND PARAMETERS FOR RECURRENT LARGE LANGUAGE MODELS",
+    description: "This paper, based on the RWKV architecture, investigates the model's internal state as an editable knowledge representation. It introduces the DREAMSTATE framework, which uses a conditional Diffusion Transformer to model and generate RWKV states for controlled inference. Addressing the limitations of static recurrence, the authors propose a novel hybrid architecture where a diffusion model dynamically synthesizes the core WKV parameters based on global context. Experiments validate that the RWKV state is a structured manifold and confirm the training stability of this dynamic, context-aware design, opening new avenues for controllable generative models.",
+    date: "2025-10-08",
+    tags: "General",
+    img: "images/papers-images/img-20251008-2.png",
+    link: "https://openreview.net/forum?id=HHsD970kdE"
   },
   {
     title: "GDSR: Global-Detail Integration through Dual-Branch Network with Wavelet Losses for Remote Sensing Image Super-Resolution",
@@ -158,6 +182,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20250910-1.png",
     link: "https://arxiv.org/abs/2509.08583"
+  },
+  {
+    title: "Robotic control optimization based on receptance-weighted reinforcement learning",
+    description: "This paper proposes applying an improved Recurrent Weighted Kernel Value (RWKV) neural network architecture to reinforcement learning (RL) for robotic control. The authors optimize RWKV's channel mixing module and use the modified architecture to replace the self-attention mechanism in the Decision Transformer model. By treating robotic control as a sequence modeling task, this approach leverages RWKV's efficiency. Experiments on D4RL datasets show the proposed RL RWKV model achieves higher accuracy and faster performance compared to the Decision Transformer, demonstrating its potential for low-latency, real-world robotic applications.",
+    date: "2025-09-08",
+    tags: "General",
+    img: "images/papers-images/img-20250908-1.png",
+    link: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13801/138011N/Robotic-control-optimization-based-on-receptance-weighted-reinforcement-learning/10.1117/12.3076952.short"
   },
   {
     title: "Spectral Channel Mixing Transformer with Spectral-Center Attention for Hyperspectral Image Classification",
