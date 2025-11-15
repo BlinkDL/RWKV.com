@@ -3,7 +3,7 @@ const allProjects = [
     title: "Otter: Mitigating Background Distractions of Wide-Angle Few-Shot Action Recognition with Enhanced RWKV",
     description: "This paper, based on an enhanced Receptance Weighted Key Value (RWKV) architecture, introduces Otter to address background distractions in wide-angle few-shot action recognition (FSAR). The proposed model features two key components: the Compound Segmentation Module (CSM), which highlights subjects by segmenting frames and learning patch weights, and the Temporal Reconstruction Module (TRM), which reconstructs degraded temporal relations using bidirectional scanning. Otter combines these modules to simultaneously emphasize subjects and improve temporal modeling, achieving state-of-the-art results on challenging wide-angle video benchmarks.",
     date: "2025-11-11",
-    tags: "Sequence",
+    tags: "3D/4D",
     img: "images/papers-images/img-20251111-1.png",
     link: "https://arxiv.org/abs/2511.06741"
   },
@@ -91,7 +91,7 @@ const allProjects = [
     title: "DREAMSTATE: DIFFUSING STATES AND PARAMETERS FOR RECURRENT LARGE LANGUAGE MODELS",
     description: "This paper, based on the RWKV architecture, investigates the model's internal state as an editable knowledge representation. It introduces the DREAMSTATE framework, which uses a conditional Diffusion Transformer to model and generate RWKV states for controlled inference. Addressing the limitations of static recurrence, the authors propose a novel hybrid architecture where a diffusion model dynamically synthesizes the core WKV parameters based on global context. Experiments validate that the RWKV state is a structured manifold and confirm the training stability of this dynamic, context-aware design, opening new avenues for controllable generative models.",
     date: "2025-10-08",
-    tags: "General",
+    tags: "Language",
     img: "images/papers-images/img-20251008-2.png",
     link: "https://openreview.net/forum?id=HHsD970kdE"
   },
