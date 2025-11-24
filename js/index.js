@@ -1,5 +1,37 @@
 const allProjects = [
   {
+    title: "Evolution Strategies at the Hyperscale",
+    description: "Applying its novel method to fine-tune RWKV-7 models, this paper introduces Evolution Guided General Optimization via Low-rank Learning (EGGROLL), an evolution strategies algorithm for backprop-free optimization of billion-parameter networks. EGGROLL overcomes the computational and memory bottlenecks of traditional ES by employing low-rank parameter perturbations, analogous to LoRA. This dramatically improves training throughput, enabling stable pre-training of novel recurrent architectures and outperforming gradient-based methods in reasoning tasks. The method's effectiveness is demonstrated across reinforcement learning, LLM fine-tuning, and pre-training from scratch with purely integer datatypes.",
+    date: "2025-11-20",
+    tags: "General",
+    img: "images/papers-images/img-20251120-1.png",
+    link: "https://www.arxiv.org/abs/2511.16652"
+  },
+  {
+    title: "基于动态邻接融合与通道混合的图神经网络社团检测方法",
+    description: "Inspired by the RWKV-style ChannelMix architecture, this paper proposes the Temporal-Channel Graph Attention Network (TC-GAT) for dynamic community detection. The model addresses limitations in existing dynamic graph methods by introducing two novel components: a Dynamic Adjacency Fusion (DAF) module to capture diverse temporal behaviors via node-adaptive weights, and a lightweight Graph Channel Mixer (GCM) to enhance node representations by modeling feature channel interactions. Experiments on real-world dynamic graph datasets demonstrate that TC-GAT significantly outperforms mainstream models in both accuracy and efficiency, effectively balancing performance and computational cost.",
+    date: "2025-11-18",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251118-1.png",
+    link: "https://www.arocmag.cn/abs/2025.07.0271"
+  },
+  {
+    title: "RawRWKV : An efﬁcient raw image enhancement framework via RWKV architecture",
+    description: "This paper proposes RawRWKV, a novel framework based on the RWKV architecture for low-light raw image enhancement. Addressing the performance-efficiency trade-off in existing CNN and Vision Transformer methods, RawRWKV integrates RWKV blocks into a multi-scale U-Net structure. This design leverages linear attention to model global dependencies with low computational cost. Experiments on SID and MCR raw datasets show that the model achieves state-of-the-art performance in PSNR and SSIM metrics while maintaining low parameters and FLOPs, demonstrating RWKV's potential for efficient and effective image restoration.",
+    date: "2025-11-17",
+    tags: "Image",
+    img: "images/papers-images/img-20251117-1.png",
+    link: "https://link.springer.com/article/10.1007/s11760-025-04940-9"
+  },
+  {
+    title: "ASALP: An Automatic Scaling Architecture for Edge Node Resources Based on Load Prediction",
+    description: "This paper proposes ASALP, an automatic scaling architecture that enhances Kubernetes for edge computing using an improved RWKV-EFE model for proactive load prediction. To address the shortcomings of the default reactive autoscaler, ASALP integrates the RWKV-based predictor to forecast traffic and adjust resources in advance. This system, built on Kubernetes and KubeEdge, enables autonomous edge node scaling and dynamic load balancing. Experimental results demonstrate that this approach significantly improves request success rates and system stability compared to traditional methods, effectively mitigating issues caused by unstable network links in edge environments.",
+    date: "2025-11-16",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251116-1.png",
+    link: "https://link.springer.com/chapter/10.1007/978-3-032-10466-3_32"
+  },
+  {
     title: "Otter: Mitigating Background Distractions of Wide-Angle Few-Shot Action Recognition with Enhanced RWKV",
     description: "This paper, based on an enhanced Receptance Weighted Key Value (RWKV) architecture, introduces Otter to address background distractions in wide-angle few-shot action recognition (FSAR). The proposed model features two key components: the Compound Segmentation Module (CSM), which highlights subjects by segmenting frames and learning patch weights, and the Temporal Reconstruction Module (TRM), which reconstructs degraded temporal relations using bidirectional scanning. Otter combines these modules to simultaneously emphasize subjects and improve temporal modeling, achieving state-of-the-art results on challenging wide-angle video benchmarks.",
     date: "2025-11-11",
