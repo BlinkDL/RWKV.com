@@ -1,5 +1,29 @@
 const allProjects = [
   {
+    title: "FRWKV:Frequency-Domain Linear Attention for Long-Term Time Series Forecasting",
+    description: "This paper, based on RWKV's linear attention mechanism, proposes FRWKV, a frequency-domain linear-attention framework for long-term time series forecasting. By integrating RWKV's O(T) linear attention with frequency-domain analysis, FRWKV overcomes the quadratic complexity of traditional Transformers while effectively exploiting spectral information. The model processes real and imaginary frequency components separately through RWKV-style state recursion, achieving scalable long-sequence modeling. Extensive experiments on eight datasets demonstrate state-of-the-art performance, with ablation studies confirming the synergy between linear attention and frequency-domain processing.",
+    date: "2025-12-09",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251209-1.png",
+    link: "https://arxiv.org/abs/2512.07539"
+  },
+  {
+    title: "EG-Net: Edge-Global aware network for accurate skin lesion segmentation",
+    description: "This paper proposes EG-Net, a novel segmentation network for melanoma that integrates RWKV-based global modeling. The Edge-Global Aware Network combines an edge feature extraction module using HSV color space and gradient information with an RWKV-based global context module to enhance boundary precision and overall segmentation accuracy. Experiments on ISIC2016, HAM10000, and PH2 datasets demonstrate state-of-the-art performance, achieving Dice scores above 90% in cross-dataset validation, showcasing strong robustness and clinical potential.",
+    date: "2025-12-01",
+    tags: "Image",
+    img: "images/papers-images/img-20251201-1.png",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S1746809425018142"
+  },
+  {
+    title: "AFF-UNet-RWKV: A Lightweight Model for High-Quality Deblurring in Medical Imaging",
+    description: "This paper, based on RWKV-lite spatial mixer, proposes AFF-UNet-RWKV, a lightweight deep learning model for medical image deblurring. By integrating Attention Feature Fusion (AFF) with RWKV-lite, the model effectively fuses encoder-decoder features and captures long-range spatial dependencies. Experiments on the PathMNIST dataset show superior performance, achieving 32.03 dB PSNR and 0.898 SSIM, outperforming traditional methods and DeblurGAN in restoring image details and structures.",
+    date: "2025-11-20",
+    tags: "Image",
+    img: "images/papers-images/img-20251120-2.png",
+    link: "https://madison-proceedings.com/index.php/aetr/article/view/4338"
+  },
+  {
     title: "Evolution Strategies at the Hyperscale",
     description: "Applying its novel method to fine-tune RWKV-7 models, this paper introduces Evolution Guided General Optimization via Low-rank Learning (EGGROLL), an evolution strategies algorithm for backprop-free optimization of billion-parameter networks. EGGROLL overcomes the computational and memory bottlenecks of traditional ES by employing low-rank parameter perturbations, analogous to LoRA. This dramatically improves training throughput, enabling stable pre-training of novel recurrent architectures and outperforming gradient-based methods in reasoning tasks. The method's effectiveness is demonstrated across reinforcement learning, LLM fine-tuning, and pre-training from scratch with purely integer datatypes.",
     date: "2025-11-20",
@@ -46,6 +70,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20251110-1.png",
     link: "https://arxiv.org/abs/2511.06717"
+  },
+  {
+    title: "RWKVSR: Receptance Weighted Key-Value Network for Hyperspectral Image Super-Resolution",
+    description: "This paper, based on RWKV architecture, proposes RWKVSR for hyperspectral image super-resolution, addressing computational inefficiencies and spectral-spatial fusion challenges. The method integrates a linear-complexity RWKV module for global dependency modeling, a Spectral-Spatial Residual Module with anisotropic 3D convolutions for multi-scale feature extraction, and a Hyperspectral Frequency Loss for spectral consistency. Experiments on CAVE and Harvard datasets demonstrate state-of-the-art performance in balancing accuracy and efficiency.",
+    date: "2025-10-30",
+    tags: "Image",
+    img: "images/papers-images/img-20251030-2.png",
+    link: "https://ieeexplore.ieee.org/document/11222729"
   },
   {
     title: "SleepRWKVNet: A multimodal sleep staging network integrating bidirectional interactive RWKV and physiological prior-driven sequence-aware loss",
@@ -120,7 +152,7 @@ const allProjects = [
     link: "https://openreview.net/forum?id=kmNqnwA4aV"
   },
   {
-    title: "DREAMSTATE: DIFFUSING STATES AND PARAMETERS FOR RECURRENT LARGE LANGUAGE MODELS",
+    title: "DREAMSTATE: Diffusing States and Parameters for Recurrent Large Language Models",
     description: "This paper, based on the RWKV architecture, investigates the model's internal state as an editable knowledge representation. It introduces the DREAMSTATE framework, which uses a conditional Diffusion Transformer to model and generate RWKV states for controlled inference. Addressing the limitations of static recurrence, the authors propose a novel hybrid architecture where a diffusion model dynamically synthesizes the core WKV parameters based on global context. Experiments validate that the RWKV state is a structured manifold and confirm the training stability of this dynamic, context-aware design, opening new avenues for controllable generative models.",
     date: "2025-10-08",
     tags: "Language",
