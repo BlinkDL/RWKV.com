@@ -1,5 +1,29 @@
 const allProjects = [
   {
+    title: "LADY: Linear Attention for Autonomous Driving Efficiency without Transformers",
+    description: "This paper, based on RWKV-7 modules, proposes LADY, the first fully linear attention-based end-to-end autonomous driving model. It introduces a lightweight linear cross-attention mechanism to enable efficient cross-modal fusion while maintaining linear complexity. LADY fuses multi-frame camera and LiDAR features with constant computational and memory overhead, enabling long-range temporal context integration. Experiments on NAVSIM and Bench2Drive benchmarks show state-of-the-art performance with significantly reduced computational cost, validated on edge devices.",
+    date: "2025-12-17",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251217-1.png",
+    link: "https://arxiv.org/abs/2512.15038"
+  },
+  {
+    title: "SemanticBBV: A Semantic Signature for Cross-Program Knowledge Reuse in Microarchitecture Simulation",
+    description: "This paper, based on RWKV, introduces SemanticBBV, a two-stage framework for generating semantic, performance-aware program signatures to enable cross-program knowledge reuse in microarchitecture simulation. It first uses a lightweight RWKV-based encoder to create Basic Block Embeddings (BBEs) capturing assembly semantics, then aggregates these with an order-invariant Set Transformer co-trained with triplet loss and CPI regression. This approach achieves 86.3% accuracy in cross-program performance estimation using just 14 universal points, yielding a 7143× simulation speedup.",
+    date: "2025-12-11",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251211-1.png",
+    link: "https://arxiv.org/abs/2512.10231"
+  },
+  {
+    title: "Fourier-RWKV: A Multi-State Perception Network for Efficient Image Dehazing",
+    description: "This paper, based on RWKV, proposes Fourier-RWKV, a novel dehazing framework that integrates spatial, frequency-domain, and semantic perceptual states. It introduces DQ-Shift for adaptive spatial perception, extends WKV attention to the Fourier domain for global modeling, and employs SBM for encoder-decoder feature alignment. The model achieves state-of-the-art performance with linear complexity, effectively handling non-uniform haze while reducing computational overhead.",
+    date: "2025-12-09",
+    tags: "Image",
+    img: "images/papers-images/img-20251209-2.png",
+    link: "https://arxiv.org/abs/2512.08161"
+  },
+  {
     title: "FRWKV:Frequency-Domain Linear Attention for Long-Term Time Series Forecasting",
     description: "This paper, based on RWKV's linear attention mechanism, proposes FRWKV, a frequency-domain linear-attention framework for long-term time series forecasting. By integrating RWKV's O(T) linear attention with frequency-domain analysis, FRWKV overcomes the quadratic complexity of traditional Transformers while effectively exploiting spectral information. The model processes real and imaginary frequency components separately through RWKV-style state recursion, achieving scalable long-sequence modeling. Extensive experiments on eight datasets demonstrate state-of-the-art performance, with ablation studies confirming the synergy between linear attention and frequency-domain processing.",
     date: "2025-12-09",
