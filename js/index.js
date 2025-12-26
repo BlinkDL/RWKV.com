@@ -3,7 +3,7 @@ const allProjects = [
     title: "LADY: Linear Attention for Autonomous Driving Efficiency without Transformers",
     description: "This paper, based on RWKV-7 modules, proposes LADY, the first fully linear attention-based end-to-end autonomous driving model. It introduces a lightweight linear cross-attention mechanism to enable efficient cross-modal fusion while maintaining linear complexity. LADY fuses multi-frame camera and LiDAR features with constant computational and memory overhead, enabling long-range temporal context integration. Experiments on NAVSIM and Bench2Drive benchmarks show state-of-the-art performance with significantly reduced computational cost, validated on edge devices.",
     date: "2025-12-17",
-    tags: "Sequence",
+    tags: "3D/4D",
     img: "images/papers-images/img-20251217-1.png",
     link: "https://arxiv.org/abs/2512.15038"
   },
