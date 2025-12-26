@@ -1,9 +1,89 @@
 const allProjects = [
   {
+    title: "LADY: Linear Attention for Autonomous Driving Efficiency without Transformers",
+    description: "This paper, based on RWKV-7 modules, proposes LADY, the first fully linear attention-based end-to-end autonomous driving model. It introduces a lightweight linear cross-attention mechanism to enable efficient cross-modal fusion while maintaining linear complexity. LADY fuses multi-frame camera and LiDAR features with constant computational and memory overhead, enabling long-range temporal context integration. Experiments on NAVSIM and Bench2Drive benchmarks show state-of-the-art performance with significantly reduced computational cost, validated on edge devices.",
+    date: "2025-12-17",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20251217-1.png",
+    link: "https://arxiv.org/abs/2512.15038"
+  },
+  {
+    title: "SemanticBBV: A Semantic Signature for Cross-Program Knowledge Reuse in Microarchitecture Simulation",
+    description: "This paper, based on RWKV, introduces SemanticBBV, a two-stage framework for generating semantic, performance-aware program signatures to enable cross-program knowledge reuse in microarchitecture simulation. It first uses a lightweight RWKV-based encoder to create Basic Block Embeddings (BBEs) capturing assembly semantics, then aggregates these with an order-invariant Set Transformer co-trained with triplet loss and CPI regression. This approach achieves 86.3% accuracy in cross-program performance estimation using just 14 universal points, yielding a 7143× simulation speedup.",
+    date: "2025-12-11",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251211-1.png",
+    link: "https://arxiv.org/abs/2512.10231"
+  },
+  {
+    title: "Fourier-RWKV: A Multi-State Perception Network for Efficient Image Dehazing",
+    description: "This paper, based on RWKV, proposes Fourier-RWKV, a novel dehazing framework that integrates spatial, frequency-domain, and semantic perceptual states. It introduces DQ-Shift for adaptive spatial perception, extends WKV attention to the Fourier domain for global modeling, and employs SBM for encoder-decoder feature alignment. The model achieves state-of-the-art performance with linear complexity, effectively handling non-uniform haze while reducing computational overhead.",
+    date: "2025-12-09",
+    tags: "Image",
+    img: "images/papers-images/img-20251209-2.png",
+    link: "https://arxiv.org/abs/2512.08161"
+  },
+  {
+    title: "FRWKV:Frequency-Domain Linear Attention for Long-Term Time Series Forecasting",
+    description: "This paper, based on RWKV's linear attention mechanism, proposes FRWKV, a frequency-domain linear-attention framework for long-term time series forecasting. By integrating RWKV's O(T) linear attention with frequency-domain analysis, FRWKV overcomes the quadratic complexity of traditional Transformers while effectively exploiting spectral information. The model processes real and imaginary frequency components separately through RWKV-style state recursion, achieving scalable long-sequence modeling. Extensive experiments on eight datasets demonstrate state-of-the-art performance, with ablation studies confirming the synergy between linear attention and frequency-domain processing.",
+    date: "2025-12-09",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251209-1.png",
+    link: "https://arxiv.org/abs/2512.07539"
+  },
+  {
+    title: "EG-Net: Edge-Global aware network for accurate skin lesion segmentation",
+    description: "This paper proposes EG-Net, a novel segmentation network for melanoma that integrates RWKV-based global modeling. The Edge-Global Aware Network combines an edge feature extraction module using HSV color space and gradient information with an RWKV-based global context module to enhance boundary precision and overall segmentation accuracy. Experiments on ISIC2016, HAM10000, and PH2 datasets demonstrate state-of-the-art performance, achieving Dice scores above 90% in cross-dataset validation, showcasing strong robustness and clinical potential.",
+    date: "2025-12-01",
+    tags: "Image",
+    img: "images/papers-images/img-20251201-1.png",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S1746809425018142"
+  },
+  {
+    title: "AFF-UNet-RWKV: A Lightweight Model for High-Quality Deblurring in Medical Imaging",
+    description: "This paper, based on RWKV-lite spatial mixer, proposes AFF-UNet-RWKV, a lightweight deep learning model for medical image deblurring. By integrating Attention Feature Fusion (AFF) with RWKV-lite, the model effectively fuses encoder-decoder features and captures long-range spatial dependencies. Experiments on the PathMNIST dataset show superior performance, achieving 32.03 dB PSNR and 0.898 SSIM, outperforming traditional methods and DeblurGAN in restoring image details and structures.",
+    date: "2025-11-20",
+    tags: "Image",
+    img: "images/papers-images/img-20251120-2.png",
+    link: "https://madison-proceedings.com/index.php/aetr/article/view/4338"
+  },
+  {
+    title: "Evolution Strategies at the Hyperscale",
+    description: "Applying its novel method to fine-tune RWKV-7 models, this paper introduces Evolution Guided General Optimization via Low-rank Learning (EGGROLL), an evolution strategies algorithm for backprop-free optimization of billion-parameter networks. EGGROLL overcomes the computational and memory bottlenecks of traditional ES by employing low-rank parameter perturbations, analogous to LoRA. This dramatically improves training throughput, enabling stable pre-training of novel recurrent architectures and outperforming gradient-based methods in reasoning tasks. The method's effectiveness is demonstrated across reinforcement learning, LLM fine-tuning, and pre-training from scratch with purely integer datatypes.",
+    date: "2025-11-20",
+    tags: "General",
+    img: "images/papers-images/img-20251120-1.png",
+    link: "https://www.arxiv.org/abs/2511.16652"
+  },
+  {
+    title: "基于动态邻接融合与通道混合的图神经网络社团检测方法",
+    description: "Inspired by the RWKV-style ChannelMix architecture, this paper proposes the Temporal-Channel Graph Attention Network (TC-GAT) for dynamic community detection. The model addresses limitations in existing dynamic graph methods by introducing two novel components: a Dynamic Adjacency Fusion (DAF) module to capture diverse temporal behaviors via node-adaptive weights, and a lightweight Graph Channel Mixer (GCM) to enhance node representations by modeling feature channel interactions. Experiments on real-world dynamic graph datasets demonstrate that TC-GAT significantly outperforms mainstream models in both accuracy and efficiency, effectively balancing performance and computational cost.",
+    date: "2025-11-18",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251118-1.png",
+    link: "https://www.arocmag.cn/abs/2025.07.0271"
+  },
+  {
+    title: "RawRWKV : An efﬁcient raw image enhancement framework via RWKV architecture",
+    description: "This paper proposes RawRWKV, a novel framework based on the RWKV architecture for low-light raw image enhancement. Addressing the performance-efficiency trade-off in existing CNN and Vision Transformer methods, RawRWKV integrates RWKV blocks into a multi-scale U-Net structure. This design leverages linear attention to model global dependencies with low computational cost. Experiments on SID and MCR raw datasets show that the model achieves state-of-the-art performance in PSNR and SSIM metrics while maintaining low parameters and FLOPs, demonstrating RWKV's potential for efficient and effective image restoration.",
+    date: "2025-11-17",
+    tags: "Image",
+    img: "images/papers-images/img-20251117-1.png",
+    link: "https://link.springer.com/article/10.1007/s11760-025-04940-9"
+  },
+  {
+    title: "ASALP: An Automatic Scaling Architecture for Edge Node Resources Based on Load Prediction",
+    description: "This paper proposes ASALP, an automatic scaling architecture that enhances Kubernetes for edge computing using an improved RWKV-EFE model for proactive load prediction. To address the shortcomings of the default reactive autoscaler, ASALP integrates the RWKV-based predictor to forecast traffic and adjust resources in advance. This system, built on Kubernetes and KubeEdge, enables autonomous edge node scaling and dynamic load balancing. Experimental results demonstrate that this approach significantly improves request success rates and system stability compared to traditional methods, effectively mitigating issues caused by unstable network links in edge environments.",
+    date: "2025-11-16",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251116-1.png",
+    link: "https://link.springer.com/chapter/10.1007/978-3-032-10466-3_32"
+  },
+  {
     title: "Otter: Mitigating Background Distractions of Wide-Angle Few-Shot Action Recognition with Enhanced RWKV",
     description: "This paper, based on an enhanced Receptance Weighted Key Value (RWKV) architecture, introduces Otter to address background distractions in wide-angle few-shot action recognition (FSAR). The proposed model features two key components: the Compound Segmentation Module (CSM), which highlights subjects by segmenting frames and learning patch weights, and the Temporal Reconstruction Module (TRM), which reconstructs degraded temporal relations using bidirectional scanning. Otter combines these modules to simultaneously emphasize subjects and improve temporal modeling, achieving state-of-the-art results on challenging wide-angle video benchmarks.",
     date: "2025-11-11",
-    tags: "Sequence",
+    tags: "3D/4D",
     img: "images/papers-images/img-20251111-1.png",
     link: "https://arxiv.org/abs/2511.06741"
   },
@@ -14,6 +94,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20251110-1.png",
     link: "https://arxiv.org/abs/2511.06717"
+  },
+  {
+    title: "RWKVSR: Receptance Weighted Key-Value Network for Hyperspectral Image Super-Resolution",
+    description: "This paper, based on RWKV architecture, proposes RWKVSR for hyperspectral image super-resolution, addressing computational inefficiencies and spectral-spatial fusion challenges. The method integrates a linear-complexity RWKV module for global dependency modeling, a Spectral-Spatial Residual Module with anisotropic 3D convolutions for multi-scale feature extraction, and a Hyperspectral Frequency Loss for spectral consistency. Experiments on CAVE and Harvard datasets demonstrate state-of-the-art performance in balancing accuracy and efficiency.",
+    date: "2025-10-30",
+    tags: "Image",
+    img: "images/papers-images/img-20251030-2.png",
+    link: "https://ieeexplore.ieee.org/document/11222729"
   },
   {
     title: "SleepRWKVNet: A multimodal sleep staging network integrating bidirectional interactive RWKV and physiological prior-driven sequence-aware loss",
@@ -88,10 +176,10 @@ const allProjects = [
     link: "https://openreview.net/forum?id=kmNqnwA4aV"
   },
   {
-    title: "DREAMSTATE: DIFFUSING STATES AND PARAMETERS FOR RECURRENT LARGE LANGUAGE MODELS",
+    title: "DREAMSTATE: Diffusing States and Parameters for Recurrent Large Language Models",
     description: "This paper, based on the RWKV architecture, investigates the model's internal state as an editable knowledge representation. It introduces the DREAMSTATE framework, which uses a conditional Diffusion Transformer to model and generate RWKV states for controlled inference. Addressing the limitations of static recurrence, the authors propose a novel hybrid architecture where a diffusion model dynamically synthesizes the core WKV parameters based on global context. Experiments validate that the RWKV state is a structured manifold and confirm the training stability of this dynamic, context-aware design, opening new avenues for controllable generative models.",
     date: "2025-10-08",
-    tags: "General",
+    tags: "Language",
     img: "images/papers-images/img-20251008-2.png",
     link: "https://openreview.net/forum?id=HHsD970kdE"
   },
