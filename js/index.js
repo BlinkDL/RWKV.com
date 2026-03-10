@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "RWKV-Inspired Multi-modal Relation Modeling for Vision-Language Tracking",
+    description: "This paper proposes RrmTrack, a vision-language tracking framework based on RWKV. It introduces an RWKV-inspired modality interaction method: drawing on RWKV architecture to design a time mixing module for modeling relationships between language sequence information and image features, drawing on RWKV architecture to design a channel mixing module for facilitating information interaction between images, and leveraging RWKV's parallel training, linear attention mechanism, and efficient RNN inference characteristics to achieve accurate and fast target localization on multiple vision-language tracking benchmarks.",
+    date: "2026-02-27",
+    tags: "Image",
+    img: "images/papers-images/img-20260227-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11417442"
+  },
+  {
     title: "A high-performance defect detection for titanium strip via receptance weighted key value architecture-inspired context modeling and hierarchical differential fusion",
     description: "This paper proposes RHD-Net, introducing a C2-RWKV module inspired by the RWKV architecture for titanium strip defect detection. It reconstructs RWKV's time and channel mixing units as 2D spatial-channel mixing units, achieving selective dynamic accumulation of image features with linear complexity, and uses BDFM and HAFM modules for multi-scale and elongated defect detection.",
     date: "2026-02-24",
