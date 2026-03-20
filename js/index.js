@@ -1,5 +1,21 @@
 const allProjects = [
   {
+    "title": "PoseRWGCN: an attention-free dual-stream RWKV–GCN architecture for real-time 3D human pose estimation",
+    "description": "This paper presents PoseRWGCN, an attention-free dual-stream architecture for real-time 3D human pose estimation. The RWKV stream acts as the global temporal feature modeling branch, capturing long-range temporal dependencies via a recursive gating mechanism, which is adaptively fused with local spatial features from the GCN stream, achieving 62.1% FLOPs reduction and 0.6mm accuracy improvement.",
+    "date": "2026-03-09",
+    "tags": "3D/4D",
+    "img": "images/papers-images/img-20260309-1.png",
+    "link": "https://link.springer.com/article/10.1007/s40747-026-02239-x"
+  },
+  {
+    "title": "A multi-prior fusion phase unwrapping method based on RwkvU-Net in digital holography",
+    "description": "This paper proposes a RwkvU-Net architecture for digital holography phase unwrapping. It stacks Vision-RWKV modules as the encoder in the backbone network, combining CNN's local feature extraction capability to model global context information, improving phase unwrapping accuracy and robustness under complex noise conditions.",
+    "date": "2026-03-04",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260304-1.png",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0143816626001119"
+  },
+  {
     title: "RWKV-Inspired Multi-modal Relation Modeling for Vision-Language Tracking",
     description: "This paper proposes RrmTrack, a vision-language tracking framework based on RWKV. It introduces an RWKV-inspired modality interaction method: drawing on RWKV architecture to design a time mixing module for modeling relationships between language sequence information and image features, drawing on RWKV architecture to design a channel mixing module for facilitating information interaction between images, and leveraging RWKV's parallel training, linear attention mechanism, and efficient RNN inference characteristics to achieve accurate and fast target localization on multiple vision-language tracking benchmarks.",
     date: "2026-02-27",
