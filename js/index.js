@@ -1,11 +1,27 @@
 const allProjects = [
   {
+    "title": "Beyond Quadratic: Linear-Time Change Detection with RWKV",
+    "description": "This paper introduces ChangeRWKV, an efficient remote sensing change detection architecture built on the RWKV framework. It combines Transformer-like parallelizable training with RNN-like linear-time inference, using a hierarchical RWKV encoder and Spatial-Temporal Fusion Module to achieve state-of-the-art performance on the LEVIR-CD benchmark with significantly reduced parameters and FLOPs.",
+    "date": "2026-03-14",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260314-1.png",
+    "link": "https://ojs.aaai.org/index.php/AAAI/article/view/38167"
+  },
+  {
     "title": "PoseRWGCN: an attention-free dual-stream RWKV–GCN architecture for real-time 3D human pose estimation",
     "description": "This paper presents PoseRWGCN, an attention-free dual-stream architecture for real-time 3D human pose estimation. The RWKV stream acts as the global temporal feature modeling branch, capturing long-range temporal dependencies via a recursive gating mechanism, which is adaptively fused with local spatial features from the GCN stream, achieving 62.1% FLOPs reduction and 0.6mm accuracy improvement.",
     "date": "2026-03-09",
     "tags": "3D/4D",
     "img": "images/papers-images/img-20260309-1.png",
     "link": "https://link.springer.com/article/10.1007/s40747-026-02239-x"
+  },
+  {
+    "title": "Why Are Linear RNNs More Parallelizable?",
+    "description": "This paper provides a theoretical explanation for the parallelizability of Linear RNNs (LRNNs) by connecting them to complexity classes. It proves that LRNNs can be viewed as log-depth arithmetic circuits, while nonlinear RNNs face fundamental parallelization barriers due to solving L-complete problems. The work also identifies expressivity differences between popular LRNN variants.",
+    "date": "2026-03-04",
+    "tags": "General",
+    "img": "images/papers-images/img-20260304-2.png",
+    "link": "https://arxiv.org/abs/2603.03612"
   },
   {
     "title": "A multi-prior fusion phase unwrapping method based on RwkvU-Net in digital holography",
@@ -22,6 +38,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20260227-1.png",
     link: "https://ieeexplore.ieee.org/abstract/document/11417442"
+  },
+  {
+    "title": "OmniZip: Learning a Unified and Lightweight Lossless Compressor for Multi-Modal Data",
+    "description": "This paper proposes OmniZip, a unified lightweight lossless compressor for multi-modal data including images, text, speech, tactile data, databases, and gene sequences. It incorporates a modality-unified tokenizer, modality-routing context learning mechanism, and modality-routing feedforward design, achieving up to 62% higher compression efficiency than gzip across various datasets and supporting near real-time inference on edge devices.",
+    "date": "2026-02-25",
+    "tags": "General",
+    "img": "images/papers-images/img-20260225-1.png",
+    "link": "https://arxiv.org/abs/2602.22286"
   },
   {
     title: "A high-performance defect detection for titanium strip via receptance weighted key value architecture-inspired context modeling and hierarchical differential fusion",
