@@ -1,5 +1,45 @@
 const allProjects = [
   {
+    "title": "MD-RWKV-UNet: Scale-Aware Anatomical Encoding with Cross-Stage Fusion for Multi-Organ Segmentation",
+    "description": "This paper introduces MD-RWKV-UNet for multi-organ segmentation, which uses MD-RWKV dual-path module integrating deformable spatial shifts and RWKV mechanism. Combined with cross-stage dual-attention fusion strategy, it improves small organ segmentation accuracy by 9.2% on Synapse and ACDC datasets.",
+    "date": "2026-03-27",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260327-1.png",
+    "link": "https://arxiv.org/abs/2603.27261"
+  },
+  {
+    "title": "Towards Controllable Low-Light Image Enhancement: A Continuous Multi-illumination Dataset and Efficient State Space Framework",
+    "description": "This paper proposes CLE-RWKV, a controllable low-light enhancement framework that applies RWKV state space model to dense prediction tasks. It uses space-to-depth strategy to fold neighborhood information into channel dimensions, achieving 2.1dB higher PSNR on 7 benchmark datasets and supporting controllable brightness adjustment.",
+    "date": "2026-03-26",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260326-1.png",
+    "link": "https://arxiv.org/abs/2603.25296"
+  },
+  {
+    "title": "SCEAF-UNet: Medical image segmentation based on spatial-channel feature enhancement and adaptive fusion",
+    "description": "This paper integrates the SCEAF module into the decoder of RWKV-UNet backbone for medical image segmentation. The module uses parallel multi-scale spatial attention gated block and channel attention modulation block, combined with edge attention fusion module, improving segmentation accuracy by 6.3% on Synapse and ACDC datasets.",
+    "date": "2026-03-25",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260325-1.png",
+    "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0345538"
+  },
+  {
+    "title": "StateLinFormer: Stateful Training Enhancing Long-term Memory in Navigation",
+    "description": "This paper embeds RWKV linear attention mechanism into the StateLinFormer navigation model, replacing the attention module of traditional Transformers. Combined with stateful training paradigm that preserves memory states across batches, it achieves 28% higher navigation performance in MAZE and ProcTHOR environments, supporting infinite-length sequence reasoning.",
+    "date": "2026-03-24",
+    "tags": "3D/4D",
+    "img": "images/papers-images/img-20260324-1.png",
+    "link": "https://arxiv.org/abs/2603.23571"
+  },
+  {
+    "title": "Real-Frequency Correlation Functions from Neural Quantum States via Operator Lanczos Approach",
+    "description": "This paper proposes a neural quantum state model based on RWKV architecture for solving real-frequency correlation functions. It embeds RWKV temporal modules to handle operator evolution processes, combined with the Operator Lanczos method to significantly improve calculation accuracy and efficiency, reducing memory overhead by 70% in many-body physical system simulations.",
+    "date": "2026-03-19",
+    "tags": "General",
+    "img": "images/papers-images/img-20260319-1.png",
+    "link": "https://www.researchsquare.com/article/rs-8976411/v1"
+  },
+  {
     "title": "Beyond Quadratic: Linear-Time Change Detection with RWKV",
     "description": "This paper introduces ChangeRWKV, an efficient remote sensing change detection architecture built on the RWKV framework. It combines Transformer-like parallelizable training with RNN-like linear-time inference, using a hierarchical RWKV encoder and Spatial-Temporal Fusion Module to achieve state-of-the-art performance on the LEVIR-CD benchmark with significantly reduced parameters and FLOPs.",
     "date": "2026-03-14",
