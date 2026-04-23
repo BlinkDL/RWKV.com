@@ -1,11 +1,43 @@
 const allProjects = [
   {
+    "title": "RICEFuse: Robust Infrared and Color Image Fusion framework",
+    "description": "This paper proposes the RICEFuse robust infrared and color image fusion framework, embedding RWKV as a sequence feature extraction module in the image feature decoding branch, enhancing long-distance feature dependency modeling capabilities and improving image fusion quality and robustness.",
+    "date": "2026-04-06",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260406-1.png",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S1350449526001945"
+  },
+  {
+    "title": "Learning the Signature of Memorization in Autoregressive Language Models",
+    "description": "This paper validates the transferable membership inference attack method LT-MIA on RWKV-4 linear attention model, achieving 0.972 AUC performance, proving that language models optimized via gradient descent on cross-entropy loss have a universal memorization feature signature independent of specific architecture.",
+    "date": "2026-04-03",
+    "tags": "Language",
+    "img": "images/papers-images/img-20260403-1.png",
+    "link": "https://arxiv.org/abs/2604.03199"
+  },
+  {
     "title": "MD-RWKV-UNet: Scale-Aware Anatomical Encoding with Cross-Stage Fusion for Multi-Organ Segmentation",
     "description": "This paper introduces MD-RWKV-UNet for multi-organ segmentation, which uses MD-RWKV dual-path module integrating deformable spatial shifts and RWKV mechanism. Combined with cross-stage dual-attention fusion strategy, it improves small organ segmentation accuracy by 9.2% on Synapse and ACDC datasets.",
     "date": "2026-03-27",
     "tags": "Image",
     "img": "images/papers-images/img-20260327-1.png",
     "link": "https://arxiv.org/abs/2603.27261"
+  },
+  {
+    "title": "A novel TV-FEM-RWKV-TS model for time series prediction",
+    "description": "This paper proposes the TV-FEM-RWKV-TS time series prediction model, embedding RWKV modules into the time series prediction backbone network, combined with finite element method to decompose temporal features, improving long-term time series prediction accuracy and reducing computational complexity.",
+    "date": "2026-03-26",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260326-3.png",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0360319926012255"
+  },
+  {
+    "title": "MMCGR: Multi-Modal Contrastive Graph Reasoning framework",
+    "description": "This paper proposes the MMCGR multi-modal contrastive graph reasoning framework, using RWKV as a sequence encoder embedded in the multi-modal feature processing branch, enhancing cross-modal temporal correlation modeling capabilities and improving inference accuracy for multi-modal tasks.",
+    "date": "2026-03-26",
+    "tags": "General",
+    "img": "images/papers-images/img-20260326-2.png",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0925231226008210"
   },
   {
     "title": "Towards Controllable Low-Light Image Enhancement: A Continuous Multi-illumination Dataset and Efficient State Space Framework",
@@ -134,6 +166,14 @@ const allProjects = [
     tags: "Sequence",
     img: "images/papers-images/img-20260204-1.png",
     link: "https://www.sciencedirect.com/science/article/abs/pii/S0957417426004197"
+  },
+  {
+    "title": "Asymptotic Semantic Collapse in Hierarchical Optimization",
+    "description": "This paper, based on RWKV-7 13B GGUF checkpoint, conducts a dataset-free benchmark with zero hash collisions, reporting mean compliance of 0.50 under greedy decoding and 0.531 under stochastic decoding, with final Jaccard-to-anchor similarity values of 0.295 and 0.224 respectively. It studies asymptotic semantic collapse in multi-agent language systems, modeling semantic states on Riemannian manifolds and analyzing projection dynamics.",
+    "date": "2026-02-01",
+    "tags": "Language",
+    "img": "images/papers-images/img-20260201-2.png",
+    "link": "https://arxiv.org/abs/2602.18450"
   },
   {
     title: "KAN We Flow? Advancing Robotic Manipulation with 3D Flow Matching via KAN & RWKV",
