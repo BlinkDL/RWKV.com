@@ -1,4 +1,28 @@
 const allProjects = [
+    {
+    "title": "One More Time: Revisiting Neural Quantum States from a Reinforcement Learning Perspective",
+    "description": "This work proposes Proximal Wavefunction Optimization for neural quantum states and fine-tunes a 1.5B-parameter RWKV-7 model as an autoregressive NQS. RWKV supplies large-scale sequence modeling for wavefunction representation and stable optimization on the 1D Ising model.",
+    "date": "2026-07-02",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260702-1.png",
+    "link": "https://arxiv.org/abs/2607.02292"
+  },
+  {
+    "title": "MG-RWKV: Multi-Grained Context-Aware RWKV for Temporal Forgery Localization",
+    "description": "MG-RWKV uses RWKV's data-dependent state evolution for O(T) full-sequence temporal forgery localization. It adds bidirectional RWKV, multi-granularity mixture-of-experts routing, and cross-granularity consistency to capture global authentic context and abrupt forgery boundaries.",
+    "date": "2026-07-01",
+    "tags": "3D/4D",
+    "img": "images/papers-images/img-20260701-1.png",
+    "link": "https://arxiv.org/abs/2607.00902"
+  },
+  {
+    "title": "Pengembangan Sistem Generator MIDI Berbasis Web Menggunakan Arsitektur RWKV",
+    "description": "This paper builds a web-based MIDI melody generator on RWKV. MIDI note sequences are tokenized and modeled with RWKV to capture long-range musical dependencies efficiently, then integrated into a Gradio web interface for low-latency real-time generation.",
+    "date": "2026-06-30",
+    "tags": "Audio",
+    "img": "images/papers-images/img-20260630-1.png",
+    "link": "https://jurnal.ilmubersama.com/index.php/sudo/article/view/1777"
+  },
   {
     "title": "ASSCG: Just-Right Gating over Chattering for Fast-Slow LLM Planning in Autonomous Driving",
     "description": "ASSCG builds an RWKV-based slow-system control gate for fast-slow autonomous-driving planners. It treats LLM invocation as sequential Query, Cache, or Drop decisions, reducing latency while improving closed-loop planning.",
