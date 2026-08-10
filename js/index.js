@@ -1,4 +1,92 @@
 const allProjects = [
+  {
+    "title": "Compass: Degradation-Simulated Reciprocal Learning with Lightweight Needle RWKV for Multimodal Crack Segmentation under Missing Modalities",
+    "description": "Compass is a lightweight multimodal crack segmentation framework designed for arbitrary missing-modality conditions. It combines degradation-simulated distillation, a Needle Block, and evidence topology-preserving fusion; Needle injects crack-orientation priors into WKV modulation to balance semantic completion, structural modeling, and uncertainty suppression with only 2.58M parameters.",
+    "date": "2026-08-04",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260804-1.jpg",
+    "link": "https://arxiv.org/abs/2608.03559"
+  },
+  {
+    "title": "RWKV-TS+: Adaptive Long-range Prompt for Multiple Time Series Tasks",
+    "description": "RWKV-TS+ extends time-series modeling beyond a single batch without adding parameters. A patch feature collector, cross-batch temporal feature aggregator, and long-prompt operator carry historical batch states forward, improving long-range dependency modeling for forecasting, classification, anomaly detection, and imputation.",
+    "date": "2026-07-27",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260727-2.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11625994"
+  },
+  {
+    "title": "Single-fibre internal observability in lithium-ion batteries",
+    "description": "This work combines a single fibre Bragg grating sensor with RWKV-7 inference to observe internal thermo-mechanical states in lithium-ion batteries in real time. Nine differentiable constraints spanning electrochemical heat generation, Bragg optics, heat transfer, energy conservation, and mechanical feasibility enable lightweight deployment for adaptive battery safety management.",
+    "date": "2026-07-27",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260727-1.jpg",
+    "link": "https://www.researchsquare.com/article/rs-10142450/v1"
+  },
+  {
+    "title": "Enhancing Daily Runoff Prediction via Uniform Design and Meta-Learning Integrated Hyperparameter Optimization Embedded in Transformer",
+    "description": "This paper presents UD-ML-Transformer for efficient daily runoff prediction under high-dimensional hyperparameter search. Uniform design creates configurations that cover the parameter space, a multilayer-perceptron meta-learner predicts promising combinations, and empirical validation selects the final setup to improve accuracy and tuning efficiency across multiple river basins.",
+    "date": "2026-07-25",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260725-1.jpg",
+    "link": "https://www.mdpi.com/2306-5338/13/8/201"
+  },
+  {
+    "title": "CLUIE: Clustering-Aware Recurrent Propagation with Local Structural Compensation for Underwater Image Enhancement",
+    "description": "CLUIE introduces a clustering-aware RWKV framework for underwater image enhancement. Semantic dynamic rearrangement replaces fixed scan paths with content-adaptive token trajectories, while dark-response-modulated local propagation restores neighborhood continuity lost during rearrangement, enabling adaptive long-range modeling across heterogeneous degradation regions.",
+    "date": "2026-07-23",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260723-1.jpg",
+    "link": "https://arxiv.org/abs/2607.21467"
+  },
+  {
+    "title": "Predictive Temporal Evidence Accumulation for Robust Motor Imagery EEG Decoding with CDBC-Net",
+    "description": "CDBC-Net addresses temporal and cross-subject variation in motor-imagery EEG with a dual-branch contrastive framework. A spatial-spectral branch captures local sensorimotor rhythms, while an RWKV-based temporal branch preserves historical state; future-token regularization, view consistency, and cross-branch alignment improve subject-independent robustness.",
+    "date": "2026-07-22",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260722-1.png",
+    "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7163019"
+  },
+  {
+    "title": "DDLSR: Dual domain learning and Arbitrary-Upsample MRI Super-Resolution via Spectro-Spatial linear attention",
+    "description": "DDLSR is a dual-domain framework for arbitrary-scale MRI super-resolution. It combines bidirectional WKV global modeling adapted to 2D medical images with an FFT frequency branch, jointly recovering anatomical structure and high-frequency detail while linear attention reduces the computation and memory required for high-resolution reconstruction.",
+    "date": "2026-07-21",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260721-1.jpg",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S1746809426016253"
+  },
+  {
+    "title": "CMRWNet: Cross-Modal RWKV Network With Window-Guided Alignment for High-Fidelity Pansharpening",
+    "description": "CMRWNet performs high-fidelity pansharpening with cross-modal RWKV fusion for spectrally stable panchromatic injection and precise multispectral-panchromatic alignment. PAN-RWKV uses prefix-decay scans along rows and columns to model global image context with linear complexity.",
+    "date": "2026-07-17",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260717-1.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11614160"
+  },
+  {
+    "title": "LB-RiR: Lateral and Boundary-Aware RWKV-in-RWKV for Esophageal OCT Segmentation",
+    "description": "LB-RiR targets speckle noise, tissue folding, and weak boundaries in esophageal OCT images. Its axial-local and lateral-global strategy encodes depth changes within A-scans and bidirectionally models continuity across adjacent scans, while region-overlap, boundary-gradient, and topology-consistency losses improve tissue-layer segmentation.",
+    "date": "2026-07-15",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260715-3.jpg",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11610969"
+  },
+  {
+    "title": "FreRWKV-Net: Frequency-Guided Efficient Sequence Modeling for Retinal Vessel Segmentation",
+    "description": "FreRWKV-Net combines Vision RWKV's efficient long-range sequence modeling with discrete-wavelet frequency information and a dedicated scan strategy. The frequency-guided design strengthens representations of both fine capillaries and major vessels for multi-scale retinal vessel segmentation.",
+    "date": "2026-07-15",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260715-2.png",
+    "link": "https://link.springer.com/chapter/10.1007/978-981-92-3495-0_14"
+  },
+  {
+    "title": "HyperRWKV: Mimicking Human Visual Perception with Hypergraph RWKV for Medical Image Segmentation",
+    "description": "HyperRWKV is a medical image segmentation architecture inspired by human visual perception. It pairs a U-Net encoder with a global-local RWKV decoder and uses multi-receptive-field hypergraphs to fuse spatial, frequency-domain, and multi-scale cues, preserving fine detail while efficiently modeling long-range context.",
+    "date": "2026-07-15",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260715-1.png",
+    "link": "https://link.springer.com/chapter/10.1007/978-981-92-3495-0_2"
+  },
     {
     "title": "One More Time: Revisiting Neural Quantum States from a Reinforcement Learning Perspective",
     "description": "This work proposes Proximal Wavefunction Optimization for neural quantum states and fine-tunes a 1.5B-parameter RWKV-7 model as an autoregressive NQS. RWKV supplies large-scale sequence modeling for wavefunction representation and stable optimization on the 1D Ising model.",
@@ -30,6 +118,14 @@ const allProjects = [
     "tags": "Sequence",
     "img": "images/papers-images/img-20260624-1.png",
     "link": "https://arxiv.org/abs/2606.25509"
+  },
+  {
+    "title": "Learnable Contrastive Decoding for Dehallucination in LLMs",
+    "description": "Learnable Contrastive Decoding reduces hallucinations without modifying the main language model's parameters. It dynamically selects RWKV intermediate layers with complementary semantics and uses attention-weighted fusion to contrast their distributions with the final layer during decoding, improving factuality, consistency, and generation diversity.",
+    "date": "2026-06-21",
+    "tags": "Language",
+    "img": "images/papers-images/img-20260621-1.png",
+    "link": "http://linklings.s3.amazonaws.com/organizations/WCCI/wcci2026/submissions/stype114/bFCz8-ijcnn_pap5163s2.pdf"
   },
   {
     "title": "Neural Events: Discrete Asynchronous Autoencoders for Event-Based Vision",
