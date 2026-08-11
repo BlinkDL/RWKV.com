@@ -76,7 +76,7 @@ const allProjects = [
     "description": "FreRWKV-Net combines Vision RWKV's efficient long-range sequence modeling with discrete-wavelet frequency information and a dedicated scan strategy. The frequency-guided design strengthens representations of both fine capillaries and major vessels for multi-scale retinal vessel segmentation.",
     "date": "2026-07-15",
     "tags": "Image",
-    "img": "images/papers-images/img-20260715-2.png",
+    "img": "images/papers-images/img-20260715-2.jpg",
     "link": "https://link.springer.com/chapter/10.1007/978-981-92-3495-0_14"
   },
   {
@@ -84,7 +84,7 @@ const allProjects = [
     "description": "HyperRWKV is a medical image segmentation architecture inspired by human visual perception. It pairs a U-Net encoder with a global-local RWKV decoder and uses multi-receptive-field hypergraphs to fuse spatial, frequency-domain, and multi-scale cues, preserving fine detail while efficiently modeling long-range context.",
     "date": "2026-07-15",
     "tags": "Image",
-    "img": "images/papers-images/img-20260715-1.png",
+    "img": "images/papers-images/img-20260715-1.jpg",
     "link": "https://link.springer.com/chapter/10.1007/978-981-92-3495-0_2"
   },
     {
