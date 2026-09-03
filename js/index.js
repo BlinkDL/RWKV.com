@@ -2102,8 +2102,7 @@ function displayProjects() {
 
     projectCard.innerHTML = `
       <div class="relative w-full h-48 bg-gray-100 flex items-center justify-center overflow-hidden flex-shrink-0">
-        <img src="${project.img}" alt="Project Image" onerror="this.onerror=null; this.src='images/papers-images/paper-placeholder.svg';" class="w-full h-full object-cover transition-transform duration-200 ease-in-out hover:scale-105">
-        ${project.imagePending ? '<span class="absolute bottom-2 left-2 rounded bg-gray-900/75 px-2 py-1 text-xs font-medium text-white">Cover image pending</span>' : ''}
+        <img src="${project.img}" alt="Project Image" class="w-full h-full object-cover transition-transform duration-200 ease-in-out hover:scale-105">
       </div>
       <div class="p-4 flex flex-col flex-grow">
         <h3 class="text-lg font-semibold text-gray-800 mb-2 project-card-title line-clamp-2" title="${project.title}">
