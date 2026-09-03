@@ -1,5 +1,85 @@
 const allProjects = [
   {
+    "title": "SANE: State Anomaly Neutralization for Stable Extreme-Context Delta-Rule Models",
+    "description": "SANE identifies localized norm explosions in RWKV-7 during extreme-context extrapolation and applies adaptive tanh compression at chunk boundaries. It preserves parallel training structure, remains numerically stable over a 100M-token prefix, and retains functional reasoning while the uncompressed baseline overflows.",
+    "date": "2026-08-25",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260825-1.jpg",
+    "link": "https://arxiv.org/abs/2608.22354"
+  },
+  {
+    "title": "TriAIF-RWKV: A Physiology-Guided Spatiotemporal Framework for Robust Arterial Input Function Selection in CT Perfusion Imaging",
+    "description": "TriAIF-RWKV combines spatial vascular localization, Dilated-RWKV temporal modeling, and physiology-informed scoring for automated arterial input function selection in CT perfusion imaging. It improves waveform fidelity and downstream perfusion consistency, reaching a global waveform PCC of 0.973.",
+    "date": "2026-08-22",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260822-1.jpg",
+    "link": "https://www.mdpi.com/1099-4300/28/9/944"
+  },
+  {
+    "title": "CROWNFuse: Recurrent Cross-Modal Memory Interaction with Edge-Frequency Recalibration for Infrared and Visible Image Fusion",
+    "description": "CROWNFuse introduces recurrent cross-modal memory interaction with edge-frequency recalibration for infrared and visible image fusion, using RWKV-inspired sequence modeling to preserve complementary detail across modalities.",
+    "date": "2026-08-20",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260820-1.jpg",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0925231226022745"
+  },
+  {
+    "title": "Topology-aware linear attention with deformable receptance for coronary artery segmentation",
+    "description": "This work proposes topology-aware linear attention with deformable receptance for coronary artery segmentation, targeting efficient global context modeling while preserving vessel connectivity and fine anatomical boundaries.",
+    "date": "2026-08-20",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260820-2.jpg",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0957417426029684"
+  },
+  {
+    "title": "Stable autoregressive modelling of supercontinuum generation: A 1D-RWKV surrogate model with physical constraints",
+    "description": "This work introduces a 1D-RWKV surrogate for supercontinuum generation that combines autoregressive rollout with a physical noise cutoff. The model predicts complex nonlinear spectra without downsampling, achieving an average NRMSE of 0.048 on 100 unseen test datasets while enabling fast, large-scale inference.",
+    "date": "2026-08-18",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260818-1.jpg",
+    "link": "https://www.sciencedirect.com/science/article/pii/S003039922601515X"
+  },
+  {
+    "title": "HRWKV-Net: A Hybrid Receptance Weighted Key-Value Network for Remote Sensing Image Super-Resolution",
+    "description": "HRWKV-Net combines bidirectional RWKV global modeling with window-based attention for remote sensing image super-resolution. Its Adaptive Cross-Scale Frequency Decomposition module bridges encoder and decoder features, improving reconstruction fidelity across multiple remote sensing benchmarks with efficient computation.",
+    "date": "2026-08-18",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260818-2.jpg",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11658542"
+  },
+  {
+    "title": "HSI-FrFRWKV: Fractional Fourier RWKV for Cross-Scene Coastal Wetland Mapping on Hyperspectral Images",
+    "description": "HSI-FrFRWKV combines fractional Fourier transform features with RWKV linear-complexity modeling for cross-scene coastal wetland mapping. Its amplitude-phase learning and replay-based self-distillation improve robustness to sensor and environmental domain shifts.",
+    "date": "2026-08-17",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260817-1.jpg",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11657448"
+  },
+  {
+    "title": "IceRWKV: A Novel River Ice Segmentation Network Based on Context Clustering RWKV",
+    "description": "IceRWKV is an efficient river ice segmentation network that combines context-clustering RWKV global-local modeling with a Geometry-Direction Co-sensing Module and Haar wavelet downsampling. It preserves irregular ice boundaries and high-frequency details while achieving 93.41% mIoU and 37.19 FPS on NWPU_YRCC_EX.",
+    "date": "2026-08-10",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260810-1.jpg",
+    "link": "https://www.mdpi.com/2072-4292/18/16/2683"
+  },
+  {
+    "title": "Volute Scanning-Empowered Hierarchical RWKV for Robust Polyp Segmentation",
+    "description": "This paper presents a hierarchical RWKV-in-RWKV framework for robust polyp segmentation. External and internal polyp-RWKV blocks model global semantics and fine details, while edge-aware WKV and volute scanning preserve spatial continuity and boundary quality.",
+    "date": "2026-08-05",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260805-1.jpg",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11643383"
+  },
+  {
+    "title": "Learning to prefer: Reward-driven infrared-visible fusion via RWKV",
+    "description": "Learning to Prefer introduces a reward-driven infrared-visible image fusion framework built around RWKV, using preference signals to guide the preservation of complementary thermal and visible details.",
+    "date": "2026-08-04",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260804-2.jpg",
+    "link": "https://www.sciencedirect.com/science/article/pii/S1566253526005610"
+  },
+  {
     "title": "Compass: Degradation-Simulated Reciprocal Learning with Lightweight Needle RWKV for Multimodal Crack Segmentation under Missing Modalities",
     "description": "Compass is a lightweight multimodal crack segmentation framework designed for arbitrary missing-modality conditions. It combines degradation-simulated distillation, a Needle Block, and evidence topology-preserving fusion; Needle injects crack-orientation priors into WKV modulation to balance semantic completion, structural modeling, and uncertainty suppression with only 2.58M parameters.",
     "date": "2026-08-04",
