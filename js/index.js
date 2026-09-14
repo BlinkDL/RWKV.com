@@ -1,5 +1,21 @@
 const allProjects = [
   {
+    "title": "TSFANet: Two-Stage Feature Aggregation Network for pavement crack segmentation",
+    "description": "TSFANet combines parallel ResNet and RWKV backbones for local crack details and global structural dependencies. Its two-stage feature aggregation uses implicit-explicit interaction, semantic gating, spatial-frequency attention, and hierarchical refinement to recover thin and fragmented pavement cracks.",
+    "date": "2026-10-10",
+    "tags": "Image",
+    "img": "images/papers-images/img-20261010-1.jpg",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0950061826027716"
+  },
+  {
+    "title": "SRWKV: A Shape-Guided RWKV With Adaptive Receptive Fields for Efficient Medical Image Segmentation",
+    "description": "SRWKV uses a predicted shape prior to guide RWKV token traversal during decoding, improving structural coherence in medical image segmentation. A deformable adaptive shift module adjusts token interactions to local anatomy, combining efficient global modeling with flexible receptive fields.",
+    "date": "2026-09-03",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260903-1.jpg",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11676832"
+  },
+  {
     "title": "SANE: State Anomaly Neutralization for Stable Extreme-Context Delta-Rule Models",
     "description": "SANE identifies localized norm explosions in RWKV-7 during extreme-context extrapolation and applies adaptive tanh compression at chunk boundaries. It preserves parallel training structure, remains numerically stable over a 100M-token prefix, and retains functional reasoning while the uncompressed baseline overflows.",
     "date": "2026-08-25",
