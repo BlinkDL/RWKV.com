@@ -8,6 +8,54 @@ const allProjects = [
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0950061826027716"
   },
   {
+    "title": "NinaXander: Feasibility and Limits of Composing Frozen Language Models Across Architecture Families via a Shared Latent Space",
+    "description": "NinaXander composes frozen RWKV-4-Raven-7B and Tulu-Pythia-6.9b layers with a single trained shared-latent adapter. A five-layer Pythia / 27-layer RWKV composition reduces Transformer KV-cache size by 84.4% relative to full Pythia, with multiple-choice accuracy not significantly different from RWKV. No composition matches Pythia's multiple-choice accuracy, and WikiText language modeling deteriorates sharply.",
+    "date": "2026-09-29",
+    "tags": "General",
+    "img": "images/papers-images/img-20260929-1.jpg",
+    "link": "https://arxiv.org/abs/2609.38261"
+  },
+  {
+    "title": "GW-VRWKV: Synergizing Global and Window-Based Local Perception in VRWKV for Hyperspectral Image Classification",
+    "description": "GW-VRWKV combines global and window-based local VRWKV branches for hyperspectral image classification. An initial perception module strengthens spatial-spectral features, while bidirectional guidance fusion coordinates global channel information and local responses. Code and training logs are publicly available.",
+    "date": "2026-09-28",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260928-1.jpg",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11712166"
+  },
+  {
+    "title": "Delayed Supervision for Test-Time Language Models",
+    "description": "During post-training, delayed supervision adds simulator-grounded QA after long intervals of unrelated events, teaching test-time memory to retain facts and track revisions. It improves aggregate BABILong and single-needle RULER scores over event-only next-token training for LaCT and DeltaNet, with RWKV-7 evaluated separately. The study does not isolate delay as the sole cause of improvement.",
+    "date": "2026-09-26",
+    "tags": "Language",
+    "img": "images/papers-images/img-20260926-1.jpg",
+    "link": "https://arxiv.org/abs/2609.32312"
+  },
+  {
+    "title": "FA-Diff: Leveraging Frequency-Aware RWKV Diffusion for OCT to Correlation-Stability Map Translation",
+    "description": "FA-Diff translates OCT images into correlation-stability maps using a frequency-aware RWKV diffusion framework. Its multi-granularity shift and adaptive wavelet sub-band normalization improve global context modeling and reconstruction of fine elasticity-related textures.",
+    "date": "2026-09-25",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260925-1.jpg",
+    "link": "https://link.springer.com/chapter/10.1007/978-3-032-38260-3_20"
+  },
+  {
+    "title": "X2Bone: Reconstructing 3D Bone Structures from 2D Biplanar X-Rays via Cross-RWKV",
+    "description": "X2Bone reconstructs 3D pelvic bone structures from biplanar X-rays. Cross-RWKV models long-range bidirectional interactions between views with linear complexity, and a view-aware 3D Expand module lifts fused features into volumetric space. Evaluation uses digitally reconstructed radiographs simulated from CTPelvic1K CT scans.",
+    "date": "2026-09-25",
+    "tags": "3D/4D",
+    "img": "images/papers-images/img-20260925-2.jpg",
+    "link": "https://link.springer.com/chapter/10.1007/978-3-032-38186-6_38"
+  },
+  {
+    "title": "RWPNet: A Receptance Weighted Key Value Based Deep Fusion Network for Pansharpening",
+    "description": "RWPNet applies spatial-spectral RWKV modeling to pansharpening. Channel WKV captures cross-band dependencies, convolutional refinement preserves local details, and dual-branch cross-fusion exchanges panchromatic and multispectral features to improve spatial detail and spectral consistency.",
+    "date": "2026-09-15",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260915-1.jpg",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11691595"
+  },
+  {
     "title": "SRWKV: A Shape-Guided RWKV With Adaptive Receptive Fields for Efficient Medical Image Segmentation",
     "description": "SRWKV uses a predicted shape prior to guide RWKV token traversal during decoding, improving structural coherence in medical image segmentation. A deformable adaptive shift module adjusts token interactions to local anatomy, combining efficient global modeling with flexible receptive fields.",
     "date": "2026-09-03",
@@ -158,6 +206,14 @@ const allProjects = [
     "tags": "Image",
     "img": "images/papers-images/img-20260717-1.png",
     "link": "https://ieeexplore.ieee.org/abstract/document/11614160"
+  },
+  {
+    "title": "Bone Stick Classification via Dual-view Parallel Vision Architecture",
+    "description": "This method classifies archaeological bone sticks using two parallel Vision-RWKV branches for front and back views. Improved UNet++ segmentation isolates each artifact, and cooperative feature fusion combines both views, reaching 94.76% classification accuracy.",
+    "date": "2026-07-17",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260717-2.jpg",
+    "link": "https://www.sciengine.com/QKW-CSandA/doi/10.15888/j.cnki.csa.010242"
   },
   {
     "title": "LB-RiR: Lateral and Boundary-Aware RWKV-in-RWKV for Esophageal OCT Segmentation",
